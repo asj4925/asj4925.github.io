@@ -2178,7 +2178,7 @@
 	.scroll_table table {min-width:780px;}
 
 	.subtop_menu ul {justify-content:space-around;}
-	.subtop_menu ul li a {padding:18px 5px;}
+	/* 2023-02 */ .subtop_menu ul li a {padding:18px 4px;}
 	.subtop_menu > ul > li.on > a:before {width:28px; height:28px; margin:-14px 0 0 -14px;}
 
 	.page_tab {margin-top:60px;}
