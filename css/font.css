@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 100;
+	src:url('font/GOTHAM-THIN.eot');
+	src:url('font/GOTHAM-THIN.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-THIN.woff') format('woff'),
+	url('font/GOTHAM-THIN.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 200;
+	src:url('font/GOTHAM-XLIGHT.eot');
+	src:url('font/GOTHAM-XLIGHT.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-XLIGHT.woff') format('woff'),
+	url('font/GOTHAM-XLIGHT.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 300;
+	src:url('font/GOTHAM-LIGHT.eot');
+	src:url('font/GOTHAM-LIGHT.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-LIGHT.woff') format('woff'),
+	url('font/GOTHAM-LIGHT.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 400;
+	src:url('font/GOTHAM-BOOK.eot');
+	src:url('font/GOTHAM-BOOK.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-BOOK.woff') format('woff'),
+	url('font/GOTHAM-BOOK.woff2') format('woff2'),
+	url('font/GOTHAM-BOOK.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 500;
+	src:url('font/GOTHAM-MEDIUM.eot');
+	src:url('font/GOTHAM-MEDIUM.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-MEDIUM.woff') format('woff'),
+	url('font/GOTHAM-MEDIUM.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 600;
+	src:url('font/GOTHAM-BOLD.eot');
+	src:url('font/GOTHAM-BOLD.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-BOLD.woff') format('woff'),
+	url('font/GOTHAM-BOLD.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 700;
+	src:url('font/GOTHAM-BLACK.eot');
+	src:url('font/GOTHAM-BLACK.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-BLACK.woff') format('woff'),
+	url('font/GOTHAM-BLACK.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham';
+	font-style: normal;
+	font-weight: 800;
+	src:url('font/GOTHAM-ULTRA.eot');
+	src:url('font/GOTHAM-ULTRA.eot?#iefix') format('embedded-opentype'),
+	url('font/GOTHAM-ULTRA.woff') format('woff'),
+	url('font/GOTHAM-ULTRA.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'gotham-round';
+	font-style: normal;
+	font-weight: 300;
+	src:url('font/GothamRounded-Light.eot');
+	src:url('font/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+	url('font/GothamRounded-Light.woff') format('woff'),
+	url('font/GothamRounded-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'gotham-round';
+	font-style: normal;
+	font-weight: 400;
+	src:url('font/GothamRounded-Book.eot');
+	src:url('font/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+	url('font/GothamRounded-Book.woff') format('woff'),
+	url('font/GothamRounded-Book.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'gotham-round';
+	font-style: normal;
+	font-weight: 500;
+	src:url('font/GothamRounded-Medium.eot');
+	src:url('font/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
+	url('font/GothamRounded-Medium.woff') format('woff'),
+	url('font/GothamRounded-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'gotham-round';
+	font-style: normal;
+	font-weight: 600;
+	src:url('font/GothamRounded-Bold.eot');
+	src:url('font/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+	url('font/GothamRounded-Bold.woff') format('woff'),
+	url('font/GothamRounded-Bold.otf') format('opentype');
+}
+
+/* S: 2022.01.24 폰트추가 */
+@font-face {
+	font-family: 'MeiryoUI';
+	font-style: normal;
+	font-weight: 500;
+	src:url('font/MeiryoUI-Regular.eot');
+	src:url('font/MeiryoUI-Regular.eot?#iefix') format('embedded-opentype'),
+	url('font/MeiryoUI-Regular.woff') format('woff'),
+	url('font/MeiryoUI-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MeiryoUI';
+	font-style: normal;
+	font-weight: 600;
+	src:url('font/MeiryoUI-Bold.eot');
+	src:url('font/MeiryoUI-Bold.eot?#iefix') format('embedded-opentype'),
+	url('font/MeiryoUI-Bold.woff') format('woff'),
+	url('font/MeiryoUI-Bold.ttf') format('truetype');
+}
+/* E: 2022.01.24 폰트추가 */

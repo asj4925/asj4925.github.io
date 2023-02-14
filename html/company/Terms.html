@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="all" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/slick.min.js"></script>
+	<script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<!-- <script src="../../js/sub.js"></script> -->
+	<meta property="og:image" content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg">
+	<title>비상교육</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="top_floating"><p><a href="../pricing/pricing.html">GET STARTED FREE FOR 30 DAYS!</a></p></div>
+		<header>
+			<h1><a href="../main/Main_1.html"><img src="../../images/ico/ico_logo.png" alt="AllviA"></a></h1>
+			<nav>
+				<h2><a href="#;">menu</a></h2>
+				<ul class="mb_hidden">
+					<li><a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
+						<ul class="depth02">
+							<li><a href="../explore/Explore_1.html">Features</a>
+								<ul>
+									<li><a href="../explore/Explore_1.html">Overview</a></li>
+									<li><a href="../explore/Remote.html">Remote</a></li>
+								</ul>
+							</li>
+							<li><a href="../explore/Explore_2.html">Wings</a></li>
+							<li><a href="../explore/Explore_3.html">ELiF</a></li>
+							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+						</ul>
+					</li>
+					<li><a href="../pricing/pricing.html"><span>PRICING</span></a>
+						<ul class="depth02">
+							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
+							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+						</ul>						
+					</li>
+					<li class="on"><a href="../resources/News_1.html"><span>RESOURCES</span></a>
+						<ul class="depth02">
+							<li><a href="../resources/News_1.html">Blog</a>
+								<ul>
+									<li><a href="../resources/News_1.html">News</a></li>
+									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
+								</ul>
+							</li>
+							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
+							<li><a href="../resources/Faq_1.html">Support</a>
+								<ul>
+									<li><a href="../resources/Faq_1.html">FAQ</a></li>
+									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
+									<li><a href="#;">Chat</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="util mb_hidden">
+				<div class="user">
+					<a href="#;">MY DASHBOARD</a>
+					<a href="#;">SIGN UP</a>
+				</div>
+				<a href="#;" class="start">GET STARTED FREE</a>
+				<div class="lang">
+					<a href="#;" class="en">EN</a>
+					<ul>
+						<li>EN</li>
+						<li>KR</li>
+						<li>JP</li>
+						<li>CH</li>
+						<li>SP</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_dim"></div>
+			<div class="mobile_menu">
+				<p class="menu_logo"><img src="../../images/ico/ico_logo_w.png" alt="AllviA"></p>
+				<div class="login_wrap">
+					<!-- <div class="login_after">
+						<p>WELCOME!</p>
+						<div class="user_info">
+							<strong>allvia123</strong>
+							<a href="../dashboard/CashPoint_1.html" class="my_btn">MY DASHBOARD</a>
+						</div>
+						<a href="#;" class="txt_btn">LOG OUT</a>
+						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
+					</div> -->
+					<div class="login_before">
+						<a href="../login/Login.html" class="login_btn">LOG IN</a>
+						<a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
+						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
+					</div>
+				</div>
+				<ul class="menu">
+					<li><a href="#;"><span>Explore</span></a>
+						<ul class="depth02">
+														<li><a href="../explore/Explore_1.html">Features</a>
+								<ul>
+									<li><a href="../explore/Explore_1.html">Overview</a></li>
+									<li><a href="../explore/Remote.html">Remote</a></li>
+								</ul>
+							</li>
+
+							<li><a href="../explore/Explore_2.html">Wings</a></li>
+							<li><a href="../explore/Explore_3.html">ELiF</a></li>
+							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+						</ul>
+					</li>
+					<li><a href="#;">Pricing</a>
+						<ul>
+							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
+							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+						</ul>
+					</li>
+					<li><a href="#;">Resources</a>
+						<ul>
+							<li><a href="../resources/News_1.html">Blog</a>
+								<ul>
+									<li><a href="../resources/News_1.html">News</a></li>
+									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
+								</ul>
+							</li>
+							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
+							<li><a href="../resources/Faq_1.html">Support</a>
+								<ul>
+									<li><a href="../resources/Faq_1.html">FAQ</a></li>
+									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
+									<li><a href="#;">Chat</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#;">Company</a>
+						<ul>
+							<li><a href="../company/Aboutus.html">About Us</a></li>
+							<li><a href="../company/Policy.html">Privacy Policy</a></li>
+							<li class="current"><a href="../company/Terms.html">Terms & Conditions</a></li><!-- 현재페이지에 해당하는 메뉴에 current 클래스 추가 -->
+						</ul>
+					</li>
+				</ul>
+				<div class="sns">
+					<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
+					<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkin">linkedin</a>
+					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
+					<a href="../main/Main_1.html" class="home">home</a>
+				</div>
+				<div class="lang">
+					<a href="#;" class="on">EN</a>
+					<a href="#;">ES</a>
+					<a href="#;">JP</a>
+					<!-- <a href="#;">KR</a>
+					<a href="#;">CH</a> -->
+				</div>
+				<a href="#;" class="menu_close">menu close</a>
+			</div>
+		</header>
+		<div id="container" class="sub subC">
+			<div id="contents" class="wrapper no_pd">
+				<h3>AllviA Edu Terms of Use</h3>
+				<div class="policy_wrap terms">
+					<p class="stit">Chapter 1: General Provisions</p>
+					<div class="para01">
+						<p class="sstit">Article 1 (Purpose)</p>
+						<div class="para02">
+							<p>These terms and conditions apply to the use of educational content and internet-related services (hereinafter referred to as the 'service') provided by the Allvia Edu site (allviaedu.com) provided to users by Emergency Education Co., Ltd. (hereinafter referred to as the 'company'). The purpose is to stipulate rights, obligations, responsibilities, and other necessary matters between the company and users.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 2 (define)</p>
+						<div class="para02">
+							<p>Definitions of terms used in these Terms and Conditions are as follows.</p>
+							<p>1. Company: It refers to ‘Emergency Education Co., Ltd.’.</p>
+							<p>2. Site: 'allviaedu.com' refers to the site operated by the company to provide services.</p>
+							<p>3. App, launcher: Refers to applications and installation files installed on portable terminals such as smartphones and tablets to implement the services provided by the company.</p>
+							<p>4. User: Refers to members and non-members who access the site and app and receive the services provided by the company in accordance with these terms and conditions.</p>
+							<p>5. Member: A person who has registered as a member by providing personal information to the company and has concluded a service use contract with the company in accordance with these terms and conditions. They are classified as resellers, schools, and teachers, respectively, and the following services are provided.</p>
+							<p>① Reseller: Conduct sales by country/brand and manage/operate schools with the approval of the company’s operator</p>
+							<p>② School: With the approval of the reseller, services are provided by country/brand, registration and management of students, classes, and teachers, etc.</p>
+							<p>③ Teacher: Registration and management of students, classes, and teachers, checking the status of students taking learning contents, checking other learning results, etc.</p>
+							<p>6. Non-member: A person who is not a member and uses the service provided by the company.</p>
+							<p>7. ID (ID): A combination of letters and numbers or an email selected by a member and approved by the company for member identification and service use.</p>
+							<p>8. Password: Refers to the English letters and numbers set by the member and registered with the company for the purpose of verifying the identity of the member and protecting the rights and interests and confidentiality of the member.</p>
+							<p>9. Content: Data or information expressed in codes, characters, voices, sounds, images, or videos used in information and communications networks under Article 2, Paragraph 1, Paragraph 1 of the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc. , refers to those manufactured or processed in an electronic form to increase the utility in their preservation and use.</p>
+							<p>10. Cyber ​​Money: You can purchase content and services as a virtual payment method used in the name of cash and points used within the company's site. The name and type may be different, and a separate usage guide will be posted.</p>
+							<p>11. Use voucher: This is a product with the right to use when additionally assigning students to all learning and specific learning.</p>
+							<p>12. Free service: Refers to a service that can be used without paying for the service.</p>
+							<p>13. Paid service: Refers to a service that can be used after payment is made to use the service.</p>
+							<p>14. Payment: It means that the member pays the company a certain amount set by the company through various payment methods stipulated in each subparagraph of Article 20 of this Agreement in order to use the paid service.</p>
+							<p>15. Cancellation: The company or member cancels the contract of use after opening the service.</p>
+							<p>16. Operator (manager): Refers to a person or organization (company) selected by the company for the overall management and smooth operation of the service.</p>
+							<p>17. Posts: Refers to information such as texts, symbols, sounds, images, and videos posted on the company's site when a member uses the service, including texts, photos, videos, and various files, links, and comments.</p>
+							<p>18. Definitions of terms other than the terms in each subparagraph of the preceding paragraph are in accordance with transaction practices and related laws.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 3 (Provision of company information, etc.)</p>
+						<div class="para02">
+							<p>The contents of these terms and conditions, trade name, representative name, address (including the address where user complaints can be handled), phone number, facsimile number, e-mail address, business registration number, mail-order business report number and individual It is posted on the initial screen of the online service so that users can easily identify the person in charge of information management. However, the terms and conditions can be viewed by the user through the connection screen.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 4 (Posting of terms and conditions, etc.)</p>
+						<div class="para02">
+							<p>The company publishes these terms and conditions on the site so that users can check the contents of the terms through a separate connection screen.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 5 (Revision of Terms and Conditions, etc.)</p>
+						<div class="para02">
+							<p>1. The company may amend these terms and conditions to the extent that it does not violate relevant laws such as the Content Industry Promotion Act, the Consumer Protection Act in Electronic Commerce, etc., and the Act on the Regulation of Terms and Conditions.</p>
+							<p>2. When the company revises the terms and conditions, the date of application and the reason for the revision shall be specified, along with the current terms and conditions, on the initial screen of the service from 7 days before the effective date (30 days for changes unfavorable to users or significant changes) to after the effective date It is notified for a considerable period of time, and the revised terms and conditions, effective date and reason for change are sent to existing members by e-mail.</p>
+							<p>3. If the member does not agree to the application of the revised terms and conditions, the member may stop using the service and withdraw from membership.</p>
+							<p>4. If an existing member does not raise an objection within the same period despite the notice or notice pursuant to Paragraph 2 of the same Article, it is deemed to have agreed to the changed terms and conditions.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 6 (Interpretation of terms and conditions, etc.)</p>
+						<div class="para02">
+							<p>Matters not stipulated in these terms and conditions and interpretation of these terms and conditions shall be governed by relevant laws and regulations, individual terms and conditions of service, detailed usage guidelines and rules, etc. or commercial practices set by the company.</p>
+						</div>	
+					</div>
+					<p class="stit bdtop">Chapter 2: Membership</p>
+					<div class="para01">
+						<p class="sstit">Article 7 (Membership)</p>
+						<div class="para02">
+							<p>1. For membership registration with a reseller and a school, the user agrees to the terms and conditions, fills out the relevant information in the prescribed application form provided by the company, and applies for membership. This is done with the approval of Membership registration for other student and teacher members is completed when the school member registers the prescribed information collected by obtaining individual consent necessary for explanation of the company's service use and personal information collection at the academy in question. The registration and management of personal information of teachers and student members belongs to the school member, so registration is made without the company's separate approval.
+							<p>2. All information entered by the member in the application form in the preceding paragraph is considered to be real data.</p>
+							<p>3. In principle, the company approves the membership registration in response to the user's application in Paragraph 1 of this Article. However, the company may not approve or withhold applications falling under each of the following subparagraphs, and may cancel even after approval.</p>
+							<p>① In the event that the normal service use is disrupted due to circumstances beyond the company's control</p>
+							<p>② If it is not your real name or you use someone else's name</p>
+							<p>③ If false information is entered or the company does not provide information</p>
+							<p>④ When the same user double-registered with different IDs</p>
+							<p>⑤ When using your ID by sharing it with others</p>
+							<p>⑥ If there is a history of membership withdrawal in violation of the member's obligations under Article 15 of these Terms and Conditions</p>
+							<p>⑦ In case it is judged not to meet the application requirements set by the company</p>
+							<p>4. The company may withhold approval if there is no room for service-related facilities or if there is a technical or business problem.</p>
+							<p>5. In the event of non-approval or reservation of membership application in accordance with paragraphs 3 and 4, the company must notify the applicant. However, exceptions are made when the company cannot notify the applicant without a reason attributable to the company.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 8 (Special rules for membership registration of users under the age of 14)</p>
+						<div class="para02">
+							<p>1. Users under the age of 14 must fully understand the purpose of collection and use of personal information and obtain consent from a legal representative, such as parents, before applying for membership and providing their personal information.</p>
+							<p>2. The company cancels or disallows subscriptions to users under the age of 14 who have not gone through the verification process for consent of their legal representatives, such as parents.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 9 (Change of Member Information)</p>
+						<div class="para02">
+							<p>1. Resellers and school members can view and modify their personal information at any time by entering the password correctly through the member information management screen.</p>
+							<p>2. School members can modify the passwords of members (teachers, students) of the academy, and manage the member's service use rights.</p>
+							<p>3. The company is not responsible for any disadvantages caused by the member's failure to notify the company of the change even though the information entered at the time of membership application has been changed.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 10 (Obligation for member ID and password management)</p>
+						<div class="para02">
+							<p>1. The member is responsible for managing the member's ID and password, and should not allow a third party to use it.</p>
+							<p>2. If the member recognizes that the ID and password have been stolen or used by a third party, he/she must immediately notify the company.</p>
+							<p>3. In the case of paragraph 2, the company may request the member to take necessary measures, such as changing the password, in order to protect the member's personal information and prevent other illegal uses, is not responsible for</p>
+							<p>4. If a member has created multiple IDs, the company may notify the member and delete other IDs other than the representative ID selected by the member.</p>
+							<p>5. The company may hold members responsible if they violate the obligations of this clause.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 11 (Notification to Members)</p>
+						<div class="para02">
+							<p>1. In the event of an event that needs to be notified to the member, the company may notify the member through the e-mail address provided by the member, a pop-up window, wired/wireless, etc.</p>
+							<p>2. In the case of notice to all members, the company may replace the notice in the preceding paragraph by posting it on the bulletin board of the company website for more than 7 days. However, for important matters related to the transaction, such as the member's use of paid services, the notice in Paragraph 1 is given.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 12 (Withdrawal of membership and loss of qualifications, etc.)</p>
+						<div class="para02">
+							<p>1. If a member wishes to withdraw from membership, he/she may request the company to withdraw from membership. In the case of resellers and school members, if they request the company to withdraw from membership or if they lose their qualifications as a registered reseller or school, the company will handle the withdrawal of membership. Deleting member information will result in withdrawal.</p>
+							<p>2. When a school member withdraws, the existing student and teacher members, learning history data, etc. registered by the school member will be deleted immediately and will not be restored even when re-joining.</p>
+							<p>3. If a member violates these terms and conditions or related laws, the company may restrict the use of the service or lose membership.</p>
+							<p>4. In accordance with the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc. and the Enforcement Decree of the Act, the personal information of members (human members) who have not used the service for one year in a row are stored and managed separately from the personal information of other members. and will not use or provide such personal information unless otherwise provided by law. In this case, the fact that necessary measures are to be taken 30 days before the date of action, the fact that personal information is stored and managed separately, and the items of personal information are sent by e-mail, writing, facsimile, telephone or similar methods Notify members.</p>
+						</div>	
+					</div>
+					<p class="stit bdtop">Chapter 3: Service Use Agreement</p>
+					<div class="para01">
+						<p class="sstit">Article 13 (posting of contents, etc.)</p>
+						<div class="para02">
+							<p>1. The company displays the following items on the initial screen or packaging of the content in an easy-to-understand manner for users.</p>
+							<p>① Name and type of content</p>
+							<p>② Content price and period of use</p>
+							<p>③ The name of the content creator (in the case of a corporation, the name of the corporation)</p>
+							<p>④ Contents of content, usage method, usage fee and other terms and conditions</p>
+							<p>2. The company provides users with information on available devices for each content and the minimum technical specifications required for use.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 14 (Cyber ​​Money Payment, Use and Refund)</p>
+						<div class="para02">
+							<p class="mb15">Olbia Edu's cyber money is called V-cash and points.</p>
+							<p>1. The V-cash can be recharged by the member using the payment method set by the company.</p>
+							<p>2. V-cash can be used to pay for paid services and vouchers.</p>
+							<p>3. Refund of unused V-cash is possible with the method paid by the member.</p>
+							<p>4. Points will be paid in accordance with the company's separate regulations.</p>
+							<p>5. Points can be used in units of 1 point for the purchase of paid services and vouchers, and may not be available for certain services.</p>
+							<p>6. Points are non-refundable and cannot be converted to V-cash or cash.</p>
+							<p>7. Points are non-transferable.</p>
+							<p>8. The validity period of points is one year, and in the case of special points, the validity period is indicated separately, and if not used during the period, it automatically expires.</p>
+							<p>9. Remaining V-cash and points will expire when you cancel your membership.</p>
+							<p>10. When the service (or business) is terminated, the remaining V-cash and points will automatically expire.</p>
+							<p>11. Members may charge cyber money (regardless of name, such as V-cash) on the site using the payment method proposed by the company, and request a refund for the unused paid cyber money balance excluding discounts and fees. can. However, partial refunds are possible within 10 days of payment, but after 10 days of payment, cash can be refunded only for cyber money that has been paid in full using the payment method proposed by the company, and partial refunds are not possible.</p>
+							<p>12. Cyber ​​money (regardless of name, such as points) paid by the company to members as an event free of charge can only be used within the validity period and is non-refundable. The validity period of cyber money follows the standards set by the company policy, and after that period, it automatically expires. More information on this can be found within the company website.</p>
+							<p>13. A member may file an objection to the company if there is an error in the cyber money accumulation or if all or part of it has been deleted. After checking the details of the member's objection, the company notifies the member of the result, and if the objection is justified, the company takes measures such as recovery of cyber money immediately.</p>
+							<p>14. When the company terminates the cyber money service for business or technical reasons, the company notifies the member at least 30 days in advance, and for the cyber money that is not used within this period, the member will be compensated according to the compensation method set in advance. can.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 15 (Establishment of contract of use, etc.)</p>
+						<div class="para02">
+							<p>The service use contract is established when the reseller, school member, and the company separately conclude a service use contract.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 16 (Automatic Payment and Termination)</p>
+						<div class="para02">
+							<p>1. The company may retain the member's payment-related information for a certain period of time after the service use period and service use period ends in order to automatically renew the service use contract every month and charge a fee.</p>
+							<p>2. If a member applies for automatic payment and does not request a separate cancellation request, regardless of whether the paid service is actually used or not, billing and payment are automatically made on the designated payment date and method every month. (Calculated as service days from the 1st day following the first payment date)
+							<p>3. The expiration date of the service use contract due to cancellation of automatic payment is up to one month from the date of automatic payment. When automatic payment is canceled, members can use the service for 1 month from the regular payment date.</p>
+							<p>4. If you use someone else's payment information without their consent, you will be held responsible for civil/criminal liability and may be punished by relevant laws.</p>
+							<p>5. If regular payment is not made due to change of payment information, loss of credit card or mobile phone, or other reasons, service use is automatically suspended after one month from the last regular payment date. If automatic payment is not made due to loss or other reasons, payment will be automatically stopped after one month from the last automatic payment date.</p>
+							<p>6. The company is not responsible for any damages resulting from the suspension of regular payment due to reasons attributable to the member, such as non-payment of the service fee, and the suspension of service use.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 17 (Obligations of the Company)</p>
+						<div class="para02">
+							<p>1. The company must faithfully and in good faith exercise the rights and fulfill the obligations stipulated in the laws and regulations and these terms and conditions.</p>
+							<p>2. The company must have a security system to protect personal information (including credit information) so that members can use contents safely, and disclose and comply with the privacy policy</p>
+							<p>3. If the company recognizes that the opinions or complaints raised by members in relation to the use of content are justified, they will be handled without delay. For opinions or complaints raised by members, the process and results are communicated through the bulletin board or e-mail.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 18 (Responsibilities of Members)</p>
+						<div class="para02">
+							<p>1. A member shall not engage in the following acts, and if a member violates this, the company may limit the use of all or part of the service by setting a period, or immediately terminate the contract of use after a maximum period of time. However, in the case of the above sanctions, the company gives the member an opportunity to explain for a certain period of time, and if the member proves that there was no intention or negligence, the company extends the period of use by the period of suspension of service provision .</p>
+							<p>① Entering false information or stealing other people's information (personal information such as ID) when applying or changing</p>
+							<p>② Acts of duplicating information (contents) obtained using the service for purposes other than the use of users without prior consent of the company, using it for publication, transmission, etc., or providing it to a third party;</p>
+							<p>③ Change of information posted on the company</p>
+							<p>④ Transmission or posting of information prohibited by the company (computer programs, etc.)</p>
+							<p>⑤ Infringement of intellectual property rights such as copyrights of the company and other third parties</p>
+							<p>⑥ Acts that damage the reputation of the company and other third parties or interfere with business</p>
+							<p>⑦ Acts of disclosing or posting obscene or violent words, writings, images, sounds, or other information that goes against public order and morals on the site of the “company”</p>
+							<p>⑧ Conducting business activities such as selling products using the service without prior consent of the company</p>
+							<p>⑨ Acts of using the contents provided by the company outside of private use, such as for public reproduction to the public in public places and commercial places, stores, etc.</p>
+							<p>⑩ Interfere with other users' use of the service or impersonate the company's management, employees, or officials</p>
+							<p>⑪ Other illegal or unfair acts</p>
+							<p>2. Members must comply with related laws and regulations, the provisions of these terms and conditions, notices for use and content-related notices, notices from the company, etc., and must not engage in any other acts that interfere with the business of the company.</p>
+							<p>3. Members cannot transfer, donate, or provide as collateral to others the right to use the service or other contractual status without the company's express consent or approval.</p>
+							<p>4. Members must safely manage their IDs and passwords and comply with the ID sharing prohibition policy announced separately by the company.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 19 (Prohibition of Unlawful Use)</p>
+						<div class="para02">
+							<p>1. The company considers any of the following cases to be fraudulent.</p>
+							<p>① When simultaneous connection is issued from two or more PCs with the same ID</p>
+							<p>② When using the service from multiple PCs or IPs with the same ID</p>
+							<p>③ When using the member's ID to allow others to use the service</p>
+							<p>④ Selling, renting, or transferring services to others using the member's ID and advertising them</p>
+							<p>2. If an illegal user is found in accordance with the preceding paragraph, the company may immediately suspend the use of the service or terminate the contract of use after a period of notice, and may hold the member responsible for all consequences arising from the illegal use. there is.</p>
+							<p>3. If the member has any objection to the measures in Paragraph 2 of this Article from the company, he/she may explain it to the company do.</p>
+							<p>4. Identification methods and blocking of illegal use</p>
+							<p>① The company classifies and checks whether the member uses the service illegally through the server based on data such as IP information collected and confirmed while using the service.</p>
+							<p>② The company forcibly blocks access to the service if the user executes a duplicate program while using the service or accesses the same ID at the same time.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 20 (Method of Payment for Content Use)</p>
+						<div class="para02">
+							<p>The payment method for the use of contents can be made by any of the following methods, however, in the case of regular payment, account transfer is not possible.</p>
+							<p>1. Account transfer</p>
+							<p>2. Credit Card (Visa, Master, JCB, Amex, UnionPay)</p>
+							<p>3. Payment by electronic money (Paypal, UnionPay)</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 21 (Provision and Suspension of Services)</p>
+						<div class="para02">
+							<p>1. In principle, content service is provided 24 hours a day, 7 days a week.</p>
+							<p>2. The company may temporarily suspend the provision of content services in the event of maintenance, replacement and breakdown of information and communication facilities such as computers, communication interruption, or significant operational reasons. In this case, the company notifies the member in the method stipulated in Article 11. However, if there is an unavoidable reason that the company cannot notify in advance, it can be notified afterwards.</p>
+							<p>3. Compensation for damages suffered by members due to the temporary suspension of paid (contents) service due to reasons attributable to the company, such as extending the service period for the period during which the service was not used. However, the company is not responsible if the service is stopped or a failure occurs due to the intention or negligence of a third party.</p>
+							<p>4. In the event that the company becomes unable to provide services for reasons such as conversion of business items, abandonment of business, integration between companies, etc., it will notify the member in the manner set out in Article 11 and refund in accordance with Article 25.</p>
+							<p>5. The company may conduct regular inspections if necessary for the provision of services, and the period of regular inspections shall follow the notice on the service provision screen.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 22 (Change of content service)</p>
+						<div class="para02">
+							<p>1. The company may change the content service provided in accordance with operational and technical needs in cases where there are significant reasons.</p>
+							<p>2. For smooth service, the company may separate and store learning-related data (learning content, assignments, learning history, etc.) that has elapsed one year after the completion of learning within the site. Therefore, the learning data that has passed one year after the end of the learning is not checked within the site, but can be viewed (or checked separately) if requested through the customer center. However, it may not be provided if there may be a problem with the current learning data during data recovery. In addition, if 5 years have elapsed since membership withdrawal or completion of learning, learning-related data will be permanently deleted.</p>
+							<p>3. If the service is changed in accordance with paragraph 1, the company notifies the member of the reason for the change and the change in the method of Article 11.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 23 (Provision of Information and Posting of Advertisements)</p>
+						<div class="para02">
+							<p>1. The company may provide members with various information deemed necessary while using the service through notices or e-mail.</p>
+							<p>2. In connection with the provision of services, the company may place advertisements on the service screen, the company's site, and e-mail. Members who have received e-mails with advertisements, etc. may refuse to receive them.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 24 (Posts and deletion of members)</p>
+						<div class="para02">
+							<p>1. The company may immediately delete posts registered by members that violate these terms and conditions, the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc., or if they fall under any of the following subparagraphs. However, in the case of No. 10, the matter is notified in advance on the notice of the company.</p>
+							<p>① In case of content that slanders or damages the company, other members or third parties</p>
+							<p>② In case of disseminating content that violates public order and morals</p>
+							<p>③ If the content is recognized as being related to a criminal act</p>
+							<p>④ In the case of content that infringes on the company's copyright, third party's copyright, etc.</p>
+							<p>⑤ If a dispute is caused in a way that violates laws or infringes on the rights of others</p>
+							<p>⑥ In case of posting unnecessary or unauthorized advertisements or promotional materials</p>
+							<p>⑦ If the content is created by stealing or impersonating another person's personal information, or if the information entered by another person is forged or altered without permission</p>
+							<p>⑧ In case of violating the purpose of posting, such as posting multiple duplicates of the same content</p>
+							<p>⑨ If it is judged that the company's bulletin board operation guidelines, etc. are violated</p>
+							<p>⑩ If the company determines that there is not enough capacity for service facilities</p>
+							<p>2. A person whose legal interests are infringed by the information posted on the bulletin board operated by the company may request the company to delete the information or publish the content of the rebuttal. In this case, the company will take the necessary measures without delay and notify the applicant immediately.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 25 (Attribution of Copyright, etc.)</p>
+						<div class="para02">
+							<p>1. Copyrights and other intellectual property rights for works created by the company belong to the company.</p>
+							<p>2. The user may copy, transmit, publish, distribute, broadcast, or other methods for profit-making purposes without prior consent of the company or the provider, among the information obtained by using the service provided by the company, whose intellectual property rights belong to the company or the provider You must not use it as a website or allow a third party to use it.</p>
+							<p>3. The copyright of posts posted by users in the service is protected by the Copyright Act. The company may use members' posts only for limited purposes for company promotion. However, if the member raises an objection, the use will be stopped.</p>
+							<p>4. The user allows the company to use the posts posted by the user for the following purposes at home and abroad. However, in the case of Nos. 2 and 3, if a user raises an objection, the company will stop displaying and distributing it from the point of raising the objection.</p>
+							<p>① Reproduction, transmission, display, distribution of user posts within the service, and modifying the size of user posts in a way such as changing or simplifying them in order to expose excellent posts on the service screen</p>
+							<p>② Displaying and distributing user posts within the services of related sites operated by the company</p>
+							<p>③ To have media, telecommunication companies, etc. report and broadcast the contents of the user's posts for the purpose of promoting the company's services</p>
+							<p>5. Notwithstanding the provisions of Paragraph 4, if the company uses the user's post for a commercial purpose other than the purpose specified in each subparagraph of Paragraph 4 (for example, when providing a post to a third party and receiving monetary consideration, etc.) You must obtain consent from the user in advance. The company's request for use of the postings, the user's consent, and the withdrawal of consent follow the method requested by the company, such as by phone, e-mail, or fax.</p>
+							<p>6. If a member withdraws or loses membership in accordance with Article 17 Paragraph 1, the company may delete the member's posts without separate consent or notification procedure.</p>
+							<p>7. The company may change the posting location of the post without changing the content of the original post for reasons such as a merger of the company, business transfer, or integration between sites operated by the company.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 26 (Personal Information Protection)</p>
+						<div class="para02">
+							<p>1. The company strives to protect users' personal information as stipulated by relevant laws, such as the Act on Promotion of Information and Communications Network Utilization and Information Protection. For the protection and use of personal information, the relevant laws and the company's personal information processing policy apply.</p>
+							<p>2. When the company collects the user's personally identifiable personal information, the consent of the user is obtained, and the user may at any time request the viewing and correction of errors in his/her personal information possessed by the company, and the company We undertake to take necessary action without delay.</p>
+							<p>3. The company cannot use the information provided by the user in the application for use, etc. and the information collected pursuant to Paragraph 1 for other purposes without the consent of the user or provide it to a third party. However, with the exception of the following cases.</p>
+							<p>① When providing in a form that cannot identify a specific individual as it is necessary for statistical preparation, academic research, or market research</p>
+							<p>② In case it is necessary for the settlement of fees according to the provision of contents</p>
+							<p>③ When it is necessary to verify the identity to prevent theft</p>
+							<p>④ In case there is an unavoidable reason required by the provisions of the terms and conditions or laws</p>
+							<p>4. For the protection of personal information, the company limits the number of managers and takes responsibility for damage to users due to loss, theft, leakage, falsification, etc. of personal information.</p>
+							<p>5. The company or the person who received personal information from it may use personal information within the range agreed by the user, and if the purpose is achieved, the personal information will be destroyed without delay.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 26 (Special Provisions Applicable to Users Outside of Korea)</p>
+						<div class="para02">
+							<p>While the company strives to form a global service with consistent standards for all, it also strives to comply with local laws in each region. Members must consent to personal data being transferred to and processed in Korea. The following provisions apply to members who interact with the company outside of Korea.</p>
+						</div>	
+					</div>
+					<p class="stit bdtop">Chapter 4 Cancellation and Refund of Service Use Agreement</p>
+					<div class="para01">
+						<p class="sstit">Article 27 (Cancellation of Member's Service Use Agreement)</p>
+						<div class="para02">
+							<p>1. A member who has entered into a service use contract with the company may request cancellation of the service use contract. However, it may be applied differently to each product within the scope that does not violate these Terms and Conditions and related laws.</p>
+							<p>2. If a member wishes to withdraw (cancellation) the subscription under Paragraph 1, he/she must call the customer center of the company or express his/her intention to the company by facsimile transmission, etc.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 28 (Member's Cancellation, Change and Refund Policy)</p>
+						<div class="para02">
+							<p>The cancellation policy and refund policy for deposit (cash) products purchased by school members on the site are as follows.</p>
+							<p>1. Members who have entered into a contract with the company regarding the use of the service may partially cancel the subscription within 10 days from the payment approval date, a 5% fee will be charged, and partial cancellation is not possible for the subscription after 10 days. do. However, the member's right to withdraw subscription may be limited in accordance with related laws or if the company has taken any of the following actions..</p>
+							<p>2. Purchased deposit (cash) can be canceled or refunded in full, and partial cancellation or refund is not possible..</p>
+							<p>3. If a member wishes to withdraw (cancellation) the subscription under Paragraph 1, he/she must express his/her intention to the company through the website (My dashboard) or customer center inquiry. When a member expresses an intention to cancel the service use contract, the company immediately accepts it.</p>
+							<p>4. If there is a refund amount after the member confirms the withdrawal of subscription, cancellation/cancellation application, in principle, the company requests the business operator for each payment method to stop or cancel the billing within 3 business days from the date of receipt of the member's expression of intention In principle, refunds will be made to the same payment method paid by the member. However, if you take measures in accordance with relevant laws (e-commerce law, content industry promotion law, etc.), such as notifying that it is a content (service) that cannot be withdrawn (cancellation), the member's right to withdraw subscription may be restricted.</p>
+							<p>5. When refunding, the company will refund all or part of the payment in the same way as the user paid. However, if a refund is not possible in the same way, it will be immediately notified to the user and refund will be made in the method selected by the user. However, if the company notifies the member in advance and falls under each of the subparagraphs below, there may be differences in the refund method and refund period for each individual payment method.</p>
+							<p>① In the case of payment methods that require confirmation of receipt, such as credit card, within 3 business days from the date of confirmation of receipt.</p>
+							<p>② In the case of a refund that has passed the deadline, etc., when the business operator for each payment method has previously set a deadline for stopping billing or canceling payment through an agreement with the company.</p>
+							<p>③ In case the member has a profit obtained as a result of using the paid service/use right or in the case of mid-term cancellation</p>
+							<p>When a member does not immediately provide information or materials necessary for refund processing to the company (in case of failing to submit a copy of the applicant's account and identification card when refunding cash, or providing an account in the name of another person, etc.).</p>
+							<p>⑤ If there is an explicit expression of the member's intention".</p>
+							<p>6. In the case of a refund by the company, the amount corresponding to the profit obtained by the member from the use of the service and the amount specified by the company to be deducted according to the case, such as a penalty, may be deducted and refunded.</p>
+							<p>7. In accordance with the Content User Protection Guidelines, etc., the Company may refund by deducting any incidental expenses and fees that the Company has borne or will bear.</p>
+							<p>8. The company is not responsible for refunds for services for which the member has not paid for it directly, such as receiving paid services or use vouchers as a gift, or acquiring free/free of charge through promotions, etc.</p>
+							<p>9. If a member violates the member's obligations stipulated in these terms and conditions, the contract may be canceled, terminated, service use restricted, or claim for damages, etc. The amount to be borne by the member is deducted and refunded. In this case, the member may file an objection against the company's actions according to the procedures set by the company, and if the company confirms that it is justified, it may resume using the service, etc. If proven, the company extends the period of use by the period of suspension of the service.</p>
+							<p>10. In the case of cash purchases that are being paid for on a monthly basis according to the member's application or consent, if the member fails to pay the fee for the paid service, the paid service may not automatically proceed on the day of the overdue. Members who wish to maintain the benefits through this service must take measures in advance to prevent arrears of usage fees or delinquency of payment methods.</p>
+							<p>11. If a member who is using a monthly payment paid service withdraws, the use of the paid service will be terminated immediately. If the company voluntarily withdraws without requesting a refund even though the company has confirmed the intention to refund the member, the company does not take any responsibility for the recovery of the account.</p>
+							<p>12. The company may provide free tickets (regardless of name) through the event for free, and cancellation and refund are not possible in this case.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 29 (Refund of overdue amout)</p>
+						<div class="para02">
+							<p>1. In the event of an overpayment due to reasons attributable to the company, the company will refund the full amount. However, if a refund is not possible in the same way, we will notify you in advance.</p>
+							<p>2. In the event of an overpayment due to a cause attributable to the company, the company will refund the entire amount of the overpayment regardless of contract costs or fees. However, in the event of an overpayment due to a cause attributable to the user, the cost required for the company to refund the overpayment shall be borne by the user within a reasonable range.</p>
+							<p>3. The company is responsible for proving that the usage fee has been properly charged in the event that the user refuses to refund for the excessive amount claimed by the user.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 30 (Company Cancellation/Termination of Contract and Restriction on Use)</p>
+						<div class="para02">
+							<p>1. The company may cancel or terminate the contract without prior notice or limit the use of the service by setting a period if the user has performed the acts specified in Article 15, Paragraph 1 and Article 16 Paragraph 2.</p>
+							<p>2. Cancellation or termination of Paragraph 1 takes effect when the company expresses its intention to the user in accordance with the notification method set by the company.</p>
+							<p>3. In the case of cancellation or termination of the contract of use due to reasons attributable to the user, the refund provisions of Article 25 may not apply.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 31 (Compensation for damage to service defects, etc.)</p>
+						<div class="para02">
+							<p>1. In the event of service suspension or failure, the company will notify the user in advance within 24 hours from the time of service suspension or failure. However, if the service is stopped or a failure occurs due to a cause attributable to the user, it is not included in the service suspension/disruption time.</p>
+							<p>2. In the event that the Company notifies in advance of the suspension or failure of the service, the Company shall relieve the user's damage in accordance with the following subparagraphs. However, 24 hours per month are not included in suspension/disruption time for facility inspection and maintenance for the purpose of service improvement.</p>
+							<p>① In case the service suspension/disruption time exceeds 10 hours per month: Extend the period of use free of charge for 10 hours and twice the time exceeding it</p>
+							<p>② In case the service suspension/disabled time does not exceed 10 hours per month: Extend the time corresponding to the stop/disabled time free of charge</p>
+							<p>3. In the event that the Company does not notify in advance of the suspension or failure of the service, the Company shall relieve the user's damage in accordance with the following subparagraphs.</p>
+							<p>① In case the accumulated time of service suspension or failure for one month exceeds 72 hours: Refund of usage fee and compensation for damages for the remaining period including contract cancellation or termination and unused period (provided that the company has no intention or negligence) We are not responsible for damages if we prove</p>
+							<p>② In case of service suspension or failure due to reasons attributable to the company: 3 times the service suspension/disruption time is extended free of charge</p>
+							<p>③ In the event of service suspension or failure due to force majeure or illegal acts of a third party: The contract cannot be canceled, but the service period is extended for free for as long as the service is suspended or disabled</p>
+						</div>	
+					</div>
+					<p class="stit bdtop">Chapter 5 ETC</p>
+					<div class="para01">
+						<p class="sstit">Article 32 (Exemption clause)</p>
+						<div class="para02">
+							<p>1. The company is exempted from liability for content provision if it is unable to provide the content due to a natural disaster or force majeure equivalent thereto.</p>
+							<p>2. The company is not responsible for any obstacles to the use of content due to reasons attributable to the user.</p>
+							<p>3. The company is not responsible for the reliability and accuracy of information, data, facts, etc. posted by members in relation to the contents.</p>
+							<p>4. The company is not responsible for disputes between users or between users and third parties through content.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 33 (Settlement of Disputes)</p>
+						<div class="para02">
+							<p>1. In the event of a dispute, the company takes appropriate and prompt measures by reflecting the legitimate opinions or complaints raised by users. However, if prompt processing is difficult, the company notifies the user of the reason and the processing schedule.</p>
+							<p>2. In the event of a dispute, the company or the user may apply for dispute mediation to the Contents Dispute Mediation Committee as stipulated in Article 28 of the Contents Industry Promotion Act.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">Article 34 (Governing Law and Jurisdiction)</p>
+						<div class="para02">
+							<p>1. These Terms and Conditions shall be governed by and construed in accordance with the laws of the Republic of Korea.</p>
+							<p>2. In case of filing a lawsuit due to a dispute between the company and the user, it must be filed in the Seoul Central District Court of the Republic of Korea.</p>
+						</div>	
+					</div>
+					<div class="para01">
+						<p class="sstit">[Appendix]</p>
+						<div class="para02">
+							<p>These terms and conditions are effective from October 15, 2021.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div><!-- //container -->
+		<footer>
+			<div class="wrapper">
+				<div class="sitemap">
+					<ul>
+						<li>
+							<a href="../explore/Explore_1.html">EXPLORE</a>
+							<ul>
+								<li><a href="../explore/Explore_1.html">Features</a>
+									<ul class="depth-2">
+										<li><a href="../explore/Explore_1.html">Overview</a></li>
+										<li><a href="../explore/Remote.html">Remote</a></li>
+									</ul>
+								</li>
+								<li><a href="../explore/Explore_2.html">Wings</a></li>
+								<li><a href="../explore/Explore_3.html">ELiF</a></li>
+								<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="../pricing/pricing.html">PRICING</a>
+							<ul>
+								<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
+								<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+								<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+								<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="../resources/News_1.html">RESOURCES</a>
+							<ul>
+								<li><a href="../resources/News_1.html">Blog</a>
+									<ul class="depth-2">
+										<li><a href="../resources/News_1.html">News</a></li>
+										<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
+									</ul>
+								</li>
+								<li><a href="../resources/Resellers_1.html">Resellers</a></li>
+								<li><a href="../resources/Faq_1.html">Support</a>
+									<ul class="depth-2">
+										<li><a href="../resources/Faq_1.html">FAQ</a></li>
+										<li><a href="../resources/Contact_1.html">Contact Us</a></li>
+										<li><a href="#;">Chat</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</li>
+						<li>
+							<a href="../company/Aboutus.html">COMPANY</a>
+							<ul>
+								<li><a href="../company/Aboutus.html">About Us</a></li>
+								<li><a href="../company/Policy.html">Privacy Policy</a></li>
+								<li><a href="../company/Terms.html">Terms & Conditions</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="foot_info">
+					<p class="btm_logo"><img src="../../images/ico/ico_btm_logo.png" alt="VISANG"></p>
+					<p class="copy">COPYRIGHT © VISANG EDUCATION INC. <br>ALL RIGHTS RESERVED</p>
+					<div class="sns">
+						<strong>FOLLOW US</strong>
+						<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
+						<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkedin">linkedin</a>
+						<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

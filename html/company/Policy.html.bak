@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="all" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="../../js/slick.min.js"></script>
+	<script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<!-- <script src="../../js/sub.js"></script> -->
+	<meta property="og:image" content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg">
+	<title>비상교육</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="top_floating"><p><a href="../pricing/pricing.html">GET STARTED FREE FOR 30 DAYS!</a></p></div>
+		<header>
+			<h1><a href="../main/Main_1.html"><img src="../../images/ico/ico_logo.png" alt="AllviA"></a></h1>
+			<nav>
+				<h2><a href="#;">menu</a></h2>
+				<ul class="mb_hidden">
+					<li><a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
+						<ul class="depth02">
+														<li><a href="../explore/Explore_1.html">Features</a>
+								<ul>
+									<li><a href="../explore/Explore_1.html">Overview</a></li>
+									<li><a href="../explore/Remote.html">Remote</a></li>
+								</ul>
+							</li>
+
+							<li><a href="../explore/Explore_2.html">Wings</a></li>
+							<li><a href="../explore/Explore_3.html">ELiF</a></li>
+							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+						</ul>
+					</li>
+					<li><a href="../pricing/pricing.html"><span>PRICING</span></a>
+						<ul class="depth02">
+							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
+							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+						</ul>						
+					</li>
+					<li class="on"><a href="../resources/News_1.html"><span>RESOURCES</span></a>
+						<ul class="depth02">
+							<li><a href="../resources/News_1.html">Blog</a>
+								<ul>
+									<li><a href="../resources/News_1.html">News</a></li>
+									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
+								</ul>
+							</li>
+							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
+							<li><a href="../resources/Faq_1.html">Support</a>
+								<ul>
+									<li><a href="../resources/Faq_1.html">FAQ</a></li>
+									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
+									<li><a href="#;">Chat</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="util mb_hidden">
+				<div class="user">
+					<a href="#;">MY DASHBOARD</a>
+					<a href="#;">SIGN UP</a>
+				</div>
+				<a href="#;" class="start">GET STARTED FREE</a>
+				<div class="lang">
+					<a href="#;" class="en">EN</a>
+					<ul>
+						<li>EN</li>
+						<li>KR</li>
+						<li>JP</li>
+						<li>CH</li>
+						<li>SP</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_dim"></div>
+			<div class="mobile_menu">
+				<p class="menu_logo"><img src="../../images/ico/ico_logo_w.png" alt="AllviA"></p>
+				<div class="login_wrap">
+					<!-- <div class="login_after">
+						<p>WELCOME!</p>
+						<div class="user_info">
+							<strong>allvia123</strong>
+							<a href="../dashboard/CashPoint_1.html" class="my_btn">MY DASHBOARD</a>
+						</div>
+						<a href="#;" class="txt_btn">LOG OUT</a>
+						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
+					</div> -->
+					<div class="login_before">
+						<a href="../login/Login.html" class="login_btn">LOG IN</a>
+						<a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
+						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
+					</div>
+				</div>
+				<ul class="menu">
+					<li><a href="#;"><span>Explore</span></a>
+						<ul class="depth02">
+														<li><a href="../explore/Explore_1.html">Features</a>
+								<ul>
+									<li><a href="../explore/Explore_1.html">Overview</a></li>
+									<li><a href="../explore/Remote.html">Remote</a></li>
+								</ul>
+							</li>
+
+							<li><a href="../explore/Explore_2.html">Wings</a></li>
+							<li><a href="../explore/Explore_3.html">ELiF</a></li>
+							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+						</ul>
+					</li>
+					<li><a href="#;">Pricing</a>
+						<ul>
+							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
+							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+						</ul>
+					</li>
+					<li><a href="#;">Resources</a>
+						<ul>
+							<li><a href="../resources/News_1.html">Blog</a>
+								<ul>
+									<li><a href="../resources/News_1.html">News</a></li>
+									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
+								</ul>
+							</li>
+							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
+							<li><a href="../resources/Faq_1.html">Support</a>
+								<ul>
+									<li><a href="../resources/Faq_1.html">FAQ</a></li>
+									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
+									<li><a href="#;">Chat</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#;">Company</a>
+						<ul>
+							<li><a href="../company/Aboutus.html">About Us</a></li>
+							<li class="current"><a href="../company/Policy.html">Privacy Policy</a></li><!-- 현재페이지에 해당하는 메뉴에 current 클래스 추가 -->
+							<li><a href="../company/Terms.html">Terms & Conditions</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="sns">
+					<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
+					<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkin">linkedin</a>
+					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
+					<a href="../main/Main_1.html" class="home">home</a>
+				</div>
+				<div class="lang">
+					<a href="#;" class="on">EN</a>
+					<a href="#;">ES</a>
+					<a href="#;">JP</a>
+					<!-- <a href="#;">KR</a>
+					<a href="#;">CH</a> -->
+				</div>
+				<a href="#;" class="menu_close">menu close</a>
+			</div>
+		</header>
+		<div id="container" class="sub">
+			<div id="contents" class="wrapper no_pd">
+				<h3>VISANG EDUCATION INC. PRIVACY POLICY</h3>
+				<div class="policy_wrap">
+					<p>Visang Education Inc. (hereinafter referred to as the ‘Company’) is always putting in the utmost efforts to highly value and protect the personal information of the users. The Company complies with 「ACT ON PROMOTION OF INFORMATION AND COMMUNICATIONS NETWORK UTILIZATION AND INFORMATION PROTECTION, ETC.」, 「PERSONAL INFORMATION PROTECTION ACT」, 「PROTECTION OF COMMUNICATIONS SECRETS ACT」, and other relevant regulations on privacy policy prescribed by law, with which information communication service providers must comply.</p>
+					<p>The Company guarantees the rights of the user and notifies the contents of personal information processing (collection, use, provision, and destruction), protection measures, and problem solving through the following privacy policies.</p>
+					<div class="para01">
+						<p class="stit">1. Collection of Personal Information</p>
+						<div class="para02">
+							<p>① Principles of personal information collection</p>
+							<p>·The &lt;Company&gt; categorizes essential and optional items to collect only the minimal amount of personal information required for provision of the services and makes sure to request consent from the user prior to collection.</p>
+							<p>※Essential Items and Optional Items</p>
+							<p>-Essential Items: Information required to carry out the essential functions of the services</p>
+							<p>-Optional Items: Information collected additionally to provide added values, which does not limit the use of the services even if not inputted</p>
+							<p>·The &lt;Company&gt;processes and retains personal information for the retention period of personal information according to the laws, or for the retention period of personal information, which was given consent by the user at the time of collection of personal information.</p>
+							<p>·Pursuant to Article 31 (Rights of Legal Representatives) of 「INFORMATION AND COMMUNICATION NETWORK ACT」, we obtain consent of the legal representative in order to collect personal information of a child under 14 years of age to collection.</p>
+							<p>·The &lt;Company&gt; does not collect any information on ideologies, beliefs, joining/withdrawal from a labor union and/or a political party, political views, health,sex life, etc. as well as other sensitive personal information which may significantly infringe the user’s privacy.</p>
+							<p>※Methods of Personal Information Collection</p>
+							<p>·The &lt;Company&gt; collects the user’s personal information via its website.</p>
+							<p>·Information generated through device information and log analysis programs may be automatically generated and collected in the process of use of a PC web and a mobile web.</p>
+							<p>③ Purposes and items of personal information collection</p>
+						</div>
+						<div class="para03">
+							<p class="sstit">Information collected at the time of need</p>
+							<div class="para04 grey_table">
+								<table>
+									<caption>Information collected at the time of need</caption>
+									<thead>
+										<tr>
+											<th scope="col">Purpose</th>
+											<th scope="col">Items of personal information to be collected</th>
+											<th scope="col">Retention period</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Partnership/Proposal</td>
+											<td>Name, email, phone number, company name, company information, company website, products of interest</td>
+											<td>The information shall be retained for 3 months after revision of matters on partnership/proposal is completed for user search and destroyed without delay afterwards</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="para03">
+							<p class="sstit">Information Generated in the Course of Service Use</p>
+							<div class="para04 grey_table">
+								<table>
+									<caption>Information Generated in the Course of Service Use</caption>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Items of personal information to be collected</th>
+											<th scope="col">Retention period</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Identity verification</td>
+											<td>CI</td>
+											<td rowspan="2">Until the membership withdrawal or <br>the obligatory period designated by law</td>
+										</tr>
+										<tr>
+											<td>Service usage statistics, etc.</td>
+											<td>IP address, cookies, time and date of visit, history of service use<br>※ In case of using a mobile service, mobile device information <br class="dp_pc">(unique device ID information and OS version)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="para04">
+								<p>④ Right of the user to refuse installation and operation of cookies</p>
+								<p>·  Cookies refer to a small quantity of information that servers used to operate a website sends to the computer browser of the user and are stored in the PC of the user.</p>
+								<p>·  Purpose of use of cookies</p>
+								<p>- Maintain the environment of the service use set by the user and provide more convenient use of the Internet services when the user revisits the website</p>
+								<p>- Analyze information on visit services, access time and frequency, and the information generated or inputted during the use and provide services and advertisements specialized for the preferences and interests of the user</p>
+								<p>· The user has the right to make a choice on provision of cookies and can select Enable cookies / Checking when saving cookies / Deny cookies on settings on the web browser.</p>
+								<p>- Internet Explorer: Tools at the top of the web browser > Internet Options > Privacy > Settings</p>
+								<p>- Chrome: Settings on the right side of the web browser > Advanced at the bottom > Content settings > Cookies</p>
+							</div>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">2. Use of Collected Personal Information</p>
+						<div class="para02">
+							<p>The &lt;Company&gt; processes personal information for the following purposes. Personal information being processed is not used for purposes other than the following purposes and, in the event of change to the purpose of the use, we will take the necessary measures including obtaining consent of the user in advance.</p>
+							<div class="mt20 grey_table">
+								<table>
+									<caption>Information Generated in the Course of Service Use</caption>
+									<colgroup>
+										<col class="w30p">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Purpose of use</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Partnership/Proposal</td>
+											<td>Personal information is processed for the purposes of verification of ID of members and the company of the partnership/proposal,<br>contacts for delivery of information on partnership/proposal details, etc.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">3. Provision and Consignment of Personal Information</p>
+						<div class="para02">
+							<p>① Provision of personal information to a third party</p>
+							<p>· In principle, The &lt;Company&gt; processes the user’s personal information within the range specified under ‘2. Use of collected personal information’ and shall not process it beyond the original range or provide it to a third party.</p>
+							<p>· For better provision of services, in the event of providing or sharing any personal information to or with a third party, we will specify the recipient, items of personal information to be provided, the purpose for which the recipient of personal information uses such information, and the period for which the recipient retains personal information. We will obtain consent of the user in advance and will not provide and/or share any information to and/or with a third party if the user does not consent.</p>
+							<p>· However, personal information will be provided to a third party if a situation applies to special regulations of law such as Article 17 of the PERSONAL INFORMATION PROTECTION ACT.</p>
+							<p>② Consignment of personal information processing</p>
+							<p>· The &lt;Company&gt; does not consign any personal information processing tasks.</p>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">4. Destruction of Personal Information</p>
+						<div class="para02">
+							<p>① Destruction of personal information</p>
+							<p>· The &lt;Company&gt; destroys the information the corresponding personal information without delay when purposes of collection and use of personal information have been fulfilled. However, in the event of imposition of obligations for information preservation under the applicable laws and in the event of having obtained separate consent of the user for the retention period, personal information will be safely kept for the corresponding period.</p>
+							<p>· Information that needs to be preserved in accordance with the following relevant laws will be destroyed after being retained for the period stipulated under the corresponding laws.</p>
+							<div class="mt20 grey_table mb20">
+								<table>
+									<caption>Information Generated in the Course of Service Use</caption>
+									<colgroup>
+										<col class="w30p">
+										<col class="w50p">
+										<col class="w20p">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Relevant laws</th>
+											<th scope="col">Objects to be preserved</th>
+											<th scope="col">Retention period</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3">Article 6 of ACT ON THE CONSUMER PROTECTION<br>IN ELECTRONIC COMMERCE, ETC.</td>
+											<td>Records on contracts or cancellation, etc.</td>
+											<td>5years</td>
+										</tr>
+										<tr>
+											<td class="bd_ln">Records on payments and supply of goods, etc.</td>
+											<td>5years</td>
+										</tr>
+										<tr>
+											<td class="bd_ln">Records on settlement of consumer complaints or resolution of disputes</td>
+											<td>5years</td>
+										</tr>
+										<tr>
+											<td>PROTECTION OF COMMUNICATIONS SECRETS ACT</td>
+											<td>Internet log records, the data on tracing a location of connectors</td>
+											<td>5years</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>② Processes and methods of destroying personal information</p>
+							<p>· Information printed on paper: Shred with a paper shredder or incinerate</p>
+							<p>· Information in electronic format: Delete by using a technical method that prevents recovery of records</p>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">5. Operation of an Organization Responsible for Personal Information</p>
+						<div class="para02">
+							<p>① Chief privacy officer and the department in charge</p>
+							<p>The &lt;Company&gt; has designated a chief privacy officer and is operating the department of personal information protection in order to take responsibility for tasks on the user’s personal information processing, answer the user’s inquires, and settle complaints.</p>
+							<div class="mt20 grey_table mb20">
+								<table>
+									<caption>5. Operation of an Organization Responsible for Personal Information</caption>
+									<thead>
+										<tr>
+											<th scope="col">Chief Privacy Officer (CPO)</th>
+											<th scope="col">Department Responsible for Personal Information</th>
+											<th scope="col">Contact</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Affiliation: Management Support Core<br class="dp_pc"> Name: Woo Sang Lee</td>
+											<td>Information Security Cell</td>
+											<td>Phone: 82 1544-0554<br>Email: privacy@visang.com</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>· The user may contact the chief privacy officer or the department to inquire or report any issues relevant to protection of personal information, settlement of complaints, damage relief, etc.</p>
+							<p>② Remedy for infringement of rights and benefits</p>
+							<p>· If you need to relieve damage, report issues, or get counseling with respect to infringement of personal information, you may seek assistance by contacting the following institutions.</p>
+							<p>· These institutions are irrelevant to the &lt;Company&gt;</p>
+							<div class="mt20 grey_table mb20">
+								<table>
+									<caption>5. Operation of an Organization Responsible for Personal Information</caption>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Website</th>
+											<th scope="col">Phone</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Personal Information Infringement Report Center <br class="dp_pc">(Operated by Korea Internet & Security Agency)</td>
+											<td>privacy.kisa.or.kr</td>
+											<td>82 118 (without an area code)</td>
+										</tr>
+										<tr>
+											<td>Personal Information Dispute Mediation Committee</td>
+											<td>www.kopico.go.kr</td>
+											<td>82 1833 6972 (without an area code)</td>
+										</tr>
+										<tr>
+											<td>Cybercrime Investigation Division <br class="dp_pc">of the Supreme Prosecutors' Office</td>
+											<td>wwww.spo.go.kr</td>
+											<td>82 1301 (without an area code)</td>
+										</tr>
+										<tr>
+											<td>KNPA Cyber Bureau</td>
+											<td>http://cyberbureau.police.go.kr</td>
+											<td>82 182 (without an area code)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">6. Method of Exercising Rights and Obligations of Legal Representatives</p>
+						<div class="para02">
+							<p>① Method of exercising rights</p>
+							<p>· The user can exercise rights related to protection of personal information on the &lt;Company&gt; at any time in the following methods.</p>
+							<div class="mt20 grey_table mb20">
+								<table>
+									<caption>Method of Exercising Rights and Obligations of Legal Representatives</caption>
+									<colgroup>
+										<col class="w30p">	
+										<col>	
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Method of request</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Requests for access to, correction, deletion and processing revision, etc. of personal information</td>
+											<td>Inquiries via letter, phone call and email, etc. to the department informed under ‘5. Operation of an organization responsible for personal information‘</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>· In the event of requests for correction/deletion of the user’s personal information, the corresponding personal information will not be used or provided until completion of processing of the corresponding request to ensure accuracy of personal information. However, if the erroneous personal information has already been provided to a third party, we will notify the recipient of the errors without delay so that the errors can be corrected.</p>
+							<p>· The user’s rights can be exercised through representatives including the legal representative and the delegatee. In such case, the user needs to submit the power of attorney in accordance with the Attached Form No. 11 in the ENFORCEMENT RULE OF THE PERSONAL INFORMATION PROTECTION ACT.</p>
+							<p>· With respect to the access request for personal information and the request for suspension of processing personal information, the rights of the data subject may be restricted according to Article 35 (5) and Article 37 (2).</p>
+							<p>· Requests for correction and deletion of personal information cannot be processed if the personal information is stipulated as the subject of collection under other laws.</p>
+							<p>· The &lt;Company&gt; confirms whether the person who has requested access to, correction/deletion and suspension of processing of personal information is the principal or the duly authorized representative.</p>
+							<p>② User obligations</p>
+							<p>· The user must not infringe any personal information and privacy of the principal the data subject or others that the &lt;Company&gt; is processing in violation of the relevant laws including the PERSONAL INFORMATION PROTECTION ACT.</p>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">7. Measures to Secure Safety of Personal Information</p>
+						<div class="para02">
+							<p>The &lt;Company&gt; highly values the user’s personal information and is putting in the following efforts in personal information processing.</p>
+							<p>① Establishment of internal control plan</p>
+							<p>· We have established and implemented an internal control plan as the standard for safe personal information processing.</p>
+							<p>② Minimization of personnel involved in handling of personal information</p>
+							<p>· We are reducing the possibility of disclosure of personal information by minimizing the number of the personnel handling personal information and separating the external Internet network from the internal network of the PCs of the personnel. Also, we have systematically prepared the standards for controlling access to the database and the personal information protection system, and are conducting continuous monitoring.</p>
+							<p>③ Regular education</p>
+							<p>· We are emphasizing the importance of personal information by conducting a regular training for personal information handlers and by propagating personal information issues to all employees of the Company.</p>
+							<p>④ Protection from hacking or viruses</p>
+							<p>· Our system has been installed in the controlled access zone from the outside to protect personal information from being disclosed or damaged. Also, we regularly back up the database in preparation for damages to personal information and preventing disclosure and damages to the database by using vaccination programs.</p>
+							<p>⑤ Encryption of personal information</p>
+							<p>· We are using encrypted telecommunication sectors when transmitting personal information of users, and key information including passwords, etc. is encrypted by using safe encryption algorithms.</p>
+							<p>⑥ Physical control</p>
+							<p>· Systems related to personal information processing are located within a controlled zone with access restrictions. Also, any documents and auxiliary storage media that contain personal information are stored in a safe place with locking devices.</p>
+						</div>
+					</div>
+					<div class="para01">
+						<p class="stit">8. Obligation of Notification</p>
+						<div class="para02">
+							<p>This Privacy Policy will be effective from MAY/19/2020</p>
+							<p>· In case of any addition, deletion and revision to the contents of the Privacy Policy, such will be notified 7 days prior to the enforcement date through the notice, etc. In case of any changes to the contents important to the rights or obligations of the user, they will be notified at least 30 days in advance.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- //container -->
+		<footer>
+			<div class="wrapper">
+				<div class="sitemap">
+					<ul>
+						<li>
+							<a href="../explore/Explore_1.html">EXPLORE</a>
+							<ul>
+															<li><a href="../explore/Explore_1.html">Features</a>
+								<ul>
+									<li><a href="../explore/Explore_1.html">Overview</a></li>
+									<li><a href="../explore/Remote.html">Remote</a></li>
+								</ul>
+							</li>
+
+								<li><a href="../explore/Explore_2.html">Wings</a></li>
+								<li><a href="../explore/Explore_3.html">ELiF</a></li>
+								<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="../pricing/pricing.html">PRICING</a>
+							<ul>
+								<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
+								<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+								<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+								<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="../resources/News_1.html">RESOURCES</a>
+							<ul>
+								<li><a href="../resources/News_1.html">News</a></li>
+								<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
+								<li><a href="../resources/Resellers_1.html">Resellers</a></li>
+								<li><a href="../resources/Faq_1.html">FAQ</a></li>
+								<li><a href="../resources/Contact_1.html">Contact Us</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="../company/Aboutus.html">COMPANY</a>
+							<ul>
+								<li><a href="../company/Aboutus.html">About Us</a></li>
+								<li><a href="../company/Policy.html">Privacy Policy</a></li>
+								<li><a href="../company/Terms.html">Terms & Conditions</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="foot_info">
+					<p class="btm_logo"><img src="../../images/ico/ico_btm_logo.png" alt="VISANG"></p>
+					<p class="copy">COPYRIGHT © VISANG EDUCATION INC. <br>ALL RIGHTS RESERVED</p>
+					<div class="sns">
+						<strong>FOLLOW US</strong>
+						<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
+						<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkedin">linkedin</a>
+						<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

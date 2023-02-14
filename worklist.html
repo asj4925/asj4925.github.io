@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>worklist</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="all" />
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+	<style>
+		* {margin:0; padding:0; border:0;}
+		body {font-family:'Noto Sans KR', 'Malgun gothic', '맑은 고딕', 'Arial', sans-serif; font-weight:300; background:#f8f8f8;}
+		ul,ol {list-style:none;}
+		header h1 {padding:50px 0; text-align:center; font-weight:300;}
+
+		.container {position:relative; padding:0 300px 100px 50px;}
+		table {width:100%; border-spacing:0;}
+		table caption {position:absolute; width:0px; height:0px; text-indent:-9999px;}
+		table thead th {padding:15px 10px; color:#fff; font-size:17px; font-weight:300; background:#333;}
+		table tbody td {padding:15px 10px; text-align:center; font-size:15px; border-bottom:1px solid #ddd;}
+		table tbody td a {color:#000;}
+		table tbody .ok {color:green;}
+		table tbody .yet {color:red;}
+
+		.progress {position:absolute; z-index:1; right:50px; top:0; width:200px; padding:20px; border:1px solid #ddd; background:#fff; box-sizing:border-box; transition:all .5s ease;}
+		.progress h2 {text-align:center; font-size:20px; font-weight:300; margin-bottom:20px;}
+		.progress ul li {position:relative; font-size:14px; margin:5px 0; padding-left:10px; }
+		.progress ul li:before {position:absolute; z-index:1; left:0; top:10px; content:''; width:2px; height:2px; background:#000;}
+		.progress ul li:after {display:block; content:''; clear:both;}
+		.progress ul li span {float:right; text-align:right; font-weight:500;}
+		.progress ul li .ing {color:red;}
+		.progress ul li .complete {color:green;}
+	</style>
+	<script>
+		$(function(){
+			var fileTable = $('table'),
+				progress = $('.progress');
+
+			progress.find('.total').text(fileTable.find('tbody tr').length);
+			progress.find('.ing').text(fileTable.find('td.yet').length);
+			progress.find('.complete').text(fileTable.find('td.ok').length);
+
+
+
+			$(window).on('scroll', function(){
+				var scrT = $(window).scrollTop();
+
+				if (scrT > $('.container').offset().top){
+					progress.css("top",scrT - progress.height());
+				}else{
+					progress.css("top","0");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<h1>비상교육 Worklist</h1>
+		</header>
+
+		<div class="container">
+			<table>
+				<caption>Worklist</caption>
+				<colgroup>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col style="width:15%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>1depth</th>
+						<th>2depth</th>
+						<th>3depth</th>
+						<th>4depth</th>
+						<th>디렉토리</th>
+						<th>파일명</th>
+						<th>상태</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Main_1</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/html/main/</td>
+						<td><a href="html/main/Main_1.html" target="_blank">Main_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>01_EXPLORE</td>
+						<td>Explore_1.html</td>
+						<td></td>
+						<td></td>
+						<td>/html/explore/</td>
+						<td><a href="html/explore/Explore_1.html" target="_blank">Explore_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Explore_2.html</td>
+						<td></td>
+						<td></td>
+						<td>/html/explore/</td>
+						<td><a href="html/explore/Explore_2.html" target="_blank">Explore_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Explore_3.html</td>
+						<td></td>
+						<td></td>
+						<td>/html/explore/</td>
+						<td><a href="html/explore/Explore_3.html" target="_blank">Explore_3.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Explore_play.html</td>
+						<td></td>
+						<td></td>
+						<td>/html/explore/</td>
+						<td><a href="html/explore/Explore_play.html" target="_blank">Explore_play.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Explore_play1.html</td>
+						<td></td>
+						<td></td>
+						<td>/content/base/</td>
+						<td><a href="content/base/Explore_play1.html" target="_blank">Explore_play1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Explore_play2.html</td>
+						<td></td>
+						<td></td>
+						<td>/content/base/</td>
+						<td><a href="content/base/Explore_play2.html" target="_blank">Explore_play2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<!-- <tr>
+						<td></td>
+						<td>Explore_play3.html</td>
+						<td></td>
+						<td></td>
+						<td>/html/explore/</td>
+						<td><a href="html/explore/Explore_play3.html" target="_blank">Explore_play3.html</a></td>
+						<td class="ok">완료</td>
+						<td>커밍순 팝업 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Explore_play4.html</td>
+						<td></td>
+						<td></td>
+						<td>/html/explore/</td>
+						<td><a href="html/explore/Explore_play4.html" target="_blank">Explore_play4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr> -->
+					<tr>
+						<td>02_PRICING</td>
+						<td>pricing</td>
+						<td></td>
+						<td></td>
+						<td>/html/pricing/</td>
+						<td><a href="html/pricing/pricing.html" target="_blank">pricing.html</a></td>
+						<td class="ok">완료</td>
+						<td>Pricing_1-5 팝업</td>
+					</tr>
+                    <tr>
+						<td></td>
+						<td>pricing_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/pricing/</td>
+						<td><a href="html/pricing/pricing_1.html" target="_blank">pricing_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>Pricing_1-6 팝업</td>
+					</tr>
+					<tr>
+						<td>03_RESOURCES</td>
+						<td>News_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/News_1.html" target="_blank">News_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>News_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/News_2.html" target="_blank">News_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>VideoGuide_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/VideoGuide_1.html" target="_blank">VideoGuide_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>VideoGuide_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/VideoGuide_2.html" target="_blank">VideoGuide_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Resellers_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/Resellers_1.html" target="_blank">Resellers_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>Resellers_2 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Faq_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/Faq_1.html" target="_blank">Faq_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>Faq_1_open 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Faq_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/Faq_2.html" target="_blank">Faq_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Contact_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/resources/</td>
+						<td><a href="html/resources/Contact_1.html" target="_blank">Contact_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>Contact_2, Contact_3 포함</td>
+					</tr>
+					<tr>
+						<td>04_DASHBOARD</td>
+						<td>CashPoint_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_1.html" target="_blank">CashPoint_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_2.html" target="_blank">CashPoint_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_3</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_3.html" target="_blank">CashPoint_3.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_4</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_4.html" target="_blank">CashPoint_4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_5</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_5.html" target="_blank">CashPoint_5.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_6</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_6.html" target="_blank">CashPoint_6.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_7</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_7.html" target="_blank">CashPoint_7.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_8</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_8.html" target="_blank">CashPoint_8.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>CashPoint_9</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/CashPoint_9.html" target="_blank">CashPoint_9.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Cash_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Cash_1.html" target="_blank">Cash_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Cash_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Cash_2.html" target="_blank">Cash_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Autopay_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Autopay_1.html" target="_blank">Autopay_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Autopay_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Autopay_2.html" target="_blank">Autopay_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Autopay_3</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Autopay_3.html" target="_blank">Autopay_3.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Autopay_4</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Autopay_4.html" target="_blank">Autopay_4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Ticket_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Ticket_1.html" target="_blank">Ticket_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>ticket2, ticke3, ticke5, ticke6<br>포함</td>
+					</tr>
+					<!-- <tr>
+						<td></td>
+						<td>Ticket_4</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Ticket_4.html" target="_blank">Ticket_4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr> -->
+					<tr>
+						<td></td>
+						<td>Myinfo_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Myinfo_1.html" target="_blank">Myinfo_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>myinfo_2, myinfo_3 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Myinfo_school_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/dashboard/</td>
+						<td><a href="html/dashboard/Myinfo_school_1.html" target="_blank">Myinfo_school_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>Myinfo_school_2 포함</td>
+					</tr>
+					<tr>
+						<td>05_COMPANY</td>
+						<td>Aboutus</td>
+						<td></td>
+						<td></td>
+						<td>/html/company/</td>
+						<td><a href="html/company/Aboutus.html" target="_blank">Aboutus.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Policy</td>
+						<td></td>
+						<td></td>
+						<td>/html/company/</td>
+						<td><a href="html/company/Policy.html" target="_blank">Policy.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Terms</td>
+						<td></td>
+						<td></td>
+						<td>/html/company/</td>
+						<td><a href="html/company/Terms.html" target="_blank">Terms.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>06_LOGIN</td>
+						<td>Login</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Login.html" target="_blank">Login.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id.html" target="_blank">Find_id.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_1.html" target="_blank">Find_id_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_2.html" target="_blank">Find_id_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_3</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_3.html" target="_blank">Find_id_3.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_4</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_4.html" target="_blank">Find_id_4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_5</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_5.html" target="_blank">Find_id_5.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_6</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_6.html" target="_blank">Find_id_6.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_id_7</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_id_7.html" target="_blank">Find_id_7.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw.html" target="_blank">Find_pw.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_1.html" target="_blank">Find_pw_1.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_2.html" target="_blank">Find_pw_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_3</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_3.html" target="_blank">Find_pw_3.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_4</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_4.html" target="_blank">Find_pw_4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_5</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_5.html" target="_blank">Find_pw_5.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_6</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_6.html" target="_blank">Find_pw_6.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_7</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_7.html" target="_blank">Find_pw_7.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Find_pw_8</td>
+						<td></td>
+						<td></td>
+						<td>/html/login/</td>
+						<td><a href="html/login/Find_pw_8.html" target="_blank">Find_pw_8.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>07_JOIN</td>
+						<td>Signup_1</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_1.html" target="_blank">Signup_1.html</a></td>
+						<td class="ok">완료</td>
+						<td>Signup 포함, Signup_8 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_2</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_2.html" target="_blank">Signup_2.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_3</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_3.html" target="_blank">Signup_3.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_4</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_4.html" target="_blank">Signup_4.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_5</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_5.html" target="_blank">Signup_5.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_6</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_6.html" target="_blank">Signup_6.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_7</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_7.html" target="_blank">Signup_7.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_9</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_9.html" target="_blank">Signup_9.html</a></td>
+						<td class="ok">완료</td>
+						<td>Signup_10 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_11</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_11.html" target="_blank">Signup_11.html</a></td>
+						<td class="ok">완료</td>
+						<td>Signup_14 팝업과 동일</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_12</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_12.html" target="_blank">Signup_12.html</a></td>
+						<td class="ok">완료</td>
+						<td>Signup_13 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_15</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_15.html" target="_blank">Signup_15.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_16</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_16.html" target="_blank">Signup_16.html</a></td>
+						<td class="ok">완료</td>
+						<td>Signup_17 포함</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_18</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_18.html" target="_blank">Signup_18.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Signup_19</td>
+						<td></td>
+						<td></td>
+						<td>/html/join/</td>
+						<td><a href="html/join/Signup_19.html" target="_blank">Signup_19.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+                    <tr>
+						<td>08_ETC</td>
+						<td>error</td>
+						<td></td>
+						<td></td>
+						<td>/html/etc/</td>
+						<td><a href="html/etc/error.html" target="_blank">error.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+                    <tr>
+						<td></td>
+						<td>email</td>
+						<td></td>
+						<td></td>
+						<td>/html/etc/</td>
+						<td><a href="html/etc/email.html" target="_blank">email.html</a></td>
+						<td class="ok">완료</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="progress">
+				<h2>작업안내</h2>
+				<ul>
+					<li>총 파일개수 <span class="total"></span></li>
+					<li>작업중 <span class="ing"></span></li>
+					<li>완료 <span class="complete"></span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
