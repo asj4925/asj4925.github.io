@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const videos = popContainer.querySelectorAll("video");
 
                 unlock();
-                
+
                 if(teacherIframe) teacherIframe.src = null;
                 if(studentIframe) studentIframe.src = null;
 
@@ -206,9 +206,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const currentStep = Array.from(demoStep).find(step => step.style.display === "block");
         const videoType = [...currentStep.querySelectorAll(".item")].filter(el => el.getAttribute("viewType") === "video");
+        const demoTip = document.getElementById("demo_tip");
 
         activityPop.style.display = "block";
-        lock("landscape");
         if(activeFunc) eval(activeFunc);
         if(activeIndex !== undefined) showActTitle(activeIndex);
         else showActTitle();
@@ -230,10 +230,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if(infoBtn) infoBtn.style.display = "none";
         } else {
+            lock("landscape");
             if(activityVideo) activityVideo.forEach(video => video.style.display = "none");
             if(activityContent) activityContent.style.display = "block";
             if(teacherView) adjustSizeView(teacherView);
             if(studentView) adjustSizeView(studentView);
+            demoTip.style.display = "block";
         }
     }
 
