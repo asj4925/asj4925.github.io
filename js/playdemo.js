@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const videoType = [...currentStep.querySelectorAll(".item")].filter(el => el.getAttribute("viewType") === "video");
 
         activityPop.style.display = "block";
+        window.screen.orientation.lock("landscape");
         if(activeFunc) eval(activeFunc);
         if(activeIndex !== undefined) showActTitle(activeIndex);
         else showActTitle();
@@ -275,6 +276,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
         
     // screen.lockOrientation('landscape');
-    screen.orientation.lock("landscape");
     // screen.orientation.unlock();
 });
