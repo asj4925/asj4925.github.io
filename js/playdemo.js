@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const videoType = [...currentStep.querySelectorAll(".item")].filter(el => el.getAttribute("viewType") === "video");
 
         activityPop.style.display = "block";
-        window.screen.orientation.lock("landscape");
+        window.screen.orientation.lock("landscape-primary");
         if(activeFunc) eval(activeFunc);
         if(activeIndex !== undefined) showActTitle(activeIndex);
         else showActTitle();
