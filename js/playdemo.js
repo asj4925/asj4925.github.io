@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const iframes = popContainer.querySelectorAll("iframe");
                 const videos = popContainer.querySelectorAll("video");
 
+                unlock();
+                
                 if(teacherIframe) teacherIframe.src = null;
                 if(studentIframe) studentIframe.src = null;
 
@@ -206,7 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const videoType = [...currentStep.querySelectorAll(".item")].filter(el => el.getAttribute("viewType") === "video");
 
         activityPop.style.display = "block";
-        // window.screen.orientation.lock("landscape-primary");
         lock("landscape");
         if(activeFunc) eval(activeFunc);
         if(activeIndex !== undefined) showActTitle(activeIndex);
@@ -276,8 +277,8 @@ document.addEventListener('DOMContentLoaded', () => {
         activeChoiceIndex(choiceVideo);
     }
         
-    // screen.lockOrientation('landscape');
-    // screen.orientation.unlock();
+
+    // lock orientaion
     function lock(orientation) {
         let de = document.documentElement;
         if(de.requestFullscreen) de.requestFullscreen();
@@ -286,5 +287,13 @@ document.addEventListener('DOMContentLoaded', () => {
         else if(de.msRequestFullscreen) de.msRequestFullscreen();
 
         screen.orientation.lock(orientation);
+    }
+
+    function unlock() {
+        screen.orientation.unlock();
+        if(document.exitFullscreen) document.exitFullscreen();
+        else if(document.webkitExitFullscreen) document.webkitExitFullscreen();
+        else if(document.mozCancelFullscreen) document.mozCancelFullscreen();
+        else if(document.msExitFullscreen) document.msExitFullscreen();
     }
 });
