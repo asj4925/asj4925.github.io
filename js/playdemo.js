@@ -148,7 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function adjustSizeView(view) {
         const frame = view.offsetParent;
-        const scale = frame.offsetWidth / 1280;
+        let scale = frame.offsetWidth / 1280;
+        if(window.innerHeight === screen.height) scale *= 1.1;
         view.style.transform = `scale(${scale})`;
     }
 
