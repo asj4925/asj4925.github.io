@@ -206,7 +206,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const videoType = [...currentStep.querySelectorAll(".item")].filter(el => el.getAttribute("viewType") === "video");
 
         activityPop.style.display = "block";
-        window.screen.orientation.lock("landscape-primary");
+        // window.screen.orientation.lock("landscape-primary");
+        lock("landscape");
         if(activeFunc) eval(activeFunc);
         if(activeIndex !== undefined) showActTitle(activeIndex);
         else showActTitle();
@@ -277,4 +278,13 @@ document.addEventListener('DOMContentLoaded', () => {
         
     // screen.lockOrientation('landscape');
     // screen.orientation.unlock();
+    function lock(orientation) {
+        let de = document.documentElement;
+        if(de.requestFullscreen) de.requestFullscreen();
+        else if(de.mozRequestFullscreen) de.mozRequestFullscreen();
+        else if(de.webkitRequestFullscreen) de.webkitRequestFullscreen();
+        else if(de.msRequestFullscreen) de.msRequestFullscreen();
+
+        screen.orientation.lock(orientation);
+    }
 });
