@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const iframes = popContainer.querySelectorAll("iframe");
                 const videos = popContainer.querySelectorAll("video");
 
-                unlock();
+                // unlock(); 2023-02-22 삭제
 
                 if(teacherIframe) teacherIframe.src = null;
                 if(studentIframe) studentIframe.src = null;
@@ -149,7 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function adjustSizeView(view) {
         const frame = view.offsetParent;
         let scale = frame.offsetWidth / 1280;
-        if(window.innerHeight === screen.height) scale *= 1.1;
         view.style.transform = `scale(${scale})`;
     }
 
@@ -231,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if(infoBtn) infoBtn.style.display = "none";
         } else {
-            lock("landscape");
+            // lock("landscape"); 2023-02-22 삭제
             if(activityVideo) activityVideo.forEach(video => video.style.display = "none");
             if(activityContent) activityContent.style.display = "block";
             if(teacherView) adjustSizeView(teacherView);
@@ -281,22 +280,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
         
 
-    // lock orientaion
-    function lock(orientation) {
-        let de = document.documentElement;
-        if(de.requestFullscreen) de.requestFullscreen();
-        else if(de.mozRequestFullscreen) de.mozRequestFullscreen();
-        else if(de.webkitRequestFullscreen) de.webkitRequestFullscreen();
-        else if(de.msRequestFullscreen) de.msRequestFullscreen();
-
-        screen.orientation.lock(orientation);
-    }
-
-    function unlock() {
-        screen.orientation.unlock();
-        if(document.exitFullscreen) document.exitFullscreen();
-        else if(document.webkitExitFullscreen) document.webkitExitFullscreen();
-        else if(document.mozCancelFullscreen) document.mozCancelFullscreen();
-        else if(document.msExitFullscreen) document.msExitFullscreen();
-    }
+    // lock orientaion 2023-02-22 삭제
 });
