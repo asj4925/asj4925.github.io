@@ -291,10 +291,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener("orientationchange", () => {
         if(activityPop.style.display === "block" && titles[1].classList.contains("on") && window.orientation === 90) {
-            alert("rotate");
             subTitle.forEach((sub) => {
                 if(sub.classList.contains("on")) sub.click();
             });
+            alert("rotate");
         }
     });
 });
