@@ -100,6 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     vid.pause();
                     vid.currentTime = 0;
                 })
+
+                // 2023-02-23
+                if(chatbot) chatbot.style.display = "block";
             });
         });
     }
@@ -146,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const activityVideo = activityPop.querySelectorAll(".thumb");
     const infoBtn = document.querySelector(".btn_info");
     const demoTip = document.getElementById("demo_tip"); // 2023-02-23 자리옮김
+    const chatbot = document.getElementById("custom_chat_button"); // 2023-02-23
 
     function adjustSizeView(view) {
         const frame = view.offsetParent;
@@ -244,6 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if(studentView) adjustSizeView(studentView);
             demoTip.style.display = "block";
         }
+        // 2023-02-23
+        if(chatbot) chatbot.style.display = "none";
     }
 
     if(subTitle) {
@@ -289,12 +295,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // lock orientaion 2023-02-22 삭제
 
+    // -ing
     window.addEventListener("orientationchange", () => {
         if(activityPop.style.display === "block" && titles[1].classList.contains("on") && window.orientation === 90) {
-            subTitle.forEach((sub) => {
-                if(sub.classList.contains("on")) sub.click();
+            const subItems = activityPop.querySelectorAll(".sub_tit li");
+            subItems.forEach((sub) => {
+                if(sub.classList.contains("on")) {
+                    console.log("subtitle", sub);
+                    sub.click();
+                }
             });
-            alert("rotate");
         }
     });
 });
