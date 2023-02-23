@@ -290,10 +290,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // lock orientaion 2023-02-22 삭제
 
     window.addEventListener("orientationchange", () => {
-        console.log("orientationchange");
-        const teacherView = document.querySelector("#teacher_m div");
-        const studentView = document.querySelector("#student_m div");
-        if(teacherView) adjustSizeView(teacherView);
-        if(studentView) adjustSizeView(studentView);
+        if(activityPop.style.display === "block") {
+            console.log("orientationchange");
+            subTitle.forEach((sub) => {
+                if(sub.classList.contains("on")) sub.click();
+            });
+        }
     });
 });
