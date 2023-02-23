@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const activityContent = activityPop.querySelector(".ac_con");
     const activityVideo = activityPop.querySelectorAll(".thumb");
     const infoBtn = document.querySelector(".btn_info");
+    const demoTip = document.getElementById("demo_tip"); // 2023-02-23 자리옮김
 
     function adjustSizeView(view) {
         const frame = view.offsetParent;
@@ -185,13 +186,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if(titles) {
-        titles.forEach((tit) => {
+        titles.forEach((tit, tidx) => {
             const siblings = [...tit.parentElement.children].filter(el => el !== tit);
 
             tit.addEventListener("click", () => {
                 tit.classList.add("on");
                 siblings.forEach((s) => s.classList.remove("on"));
-                showSubTitle(tit);   
+                showSubTitle(tit);
+                // 2023-02-23
+                demoTip.querySelectorAll("p").forEach((tip, idx) => {
+                    if(idx === tidx) tip.style.display = "block";
+                    else tip.style.display = "none";
+                });
+                demoTip.style.display = "block";
             });
         });
     }
@@ -206,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const currentStep = Array.from(demoStep).find(step => step.style.display === "block");
         const videoType = [...currentStep.querySelectorAll(".item")].filter(el => el.getAttribute("viewType") === "video");
-        const demoTip = document.getElementById("demo_tip");
+        // const demoTip = document.getElementById("demo_tip"); 2023-02-23 삭제(상단으로 옮김)
 
         activityPop.style.display = "block";
         if(activeFunc) eval(activeFunc);
@@ -281,4 +288,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
 
     // lock orientaion 2023-02-22 삭제
+
+    window.addEventListener("orientationchange", () => {
+        console.log("orientationchange");
+        const teacherView = document.querySelector("#teacher_m div");
+        const studentView = document.querySelector("#student_m div");
+        if(teacherView) adjustSizeView(teacherView);
+        if(studentView) adjustSizeView(studentView);
+    });
 });
