@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const activityContent = activityPop.querySelector(".ac_con");
     const activityVideo = activityPop.querySelectorAll(".thumb");
     const infoBtn = document.querySelector(".btn_info");
-    const demoTip = document.getElementById("demo_tip"); // 2023-02-23 자리옮김
+    const demoTip = document.getElementById("demo_tip"); // 2023-02-23
     const chatbot = document.getElementById("custom_chat_button"); // 2023-02-23
 
     function adjustSizeView(view) {
@@ -292,19 +292,27 @@ document.addEventListener('DOMContentLoaded', () => {
         activeChoiceIndex(choiceVideo);
     }
         
-
-    // lock orientaion 2023-02-22 삭제
-
-    // -ing
+    // 2023-02-24
+    // screen rotate
     window.addEventListener("orientationchange", () => {
-        if(activityPop.style.display === "block" && titles[1].classList.contains("on") && window.orientation === 90) {
-            const subItems = activityPop.querySelectorAll(".sub_tit li");
-            subItems.forEach((sub) => {
-                if(sub.classList.contains("on")) {
-                    console.log("subtitle", sub);
-                    sub.click();
-                }
-            });
+        if(activityPop.style.display === "block" && window.orientation === 90) {
+            const currentStep = Array.from(demoStep).find(step => step.style.display === "block");
+            let activeChoice, activeFunc;
+            if(!currentStep.querySelector(".program")) {
+                activeChoice = Array.from(currentStep.querySelectorAll("input")).find(radio => radio.checked).parentElement;
+                activeFunc = activeChoice.getAttribute("activeFunc");
+            }
+
+            // wings, elif
+            if(activeFunc) eval(activeFunc);
+
+            // od, odf, mathalive
+            else {
+                const subItems = activityPop.querySelectorAll(".sub_tit li");
+                subItems.forEach((sub) => {
+                    if(sub.classList.contains("on")) sub.click();
+                });
+            }
         }
     });
 });
