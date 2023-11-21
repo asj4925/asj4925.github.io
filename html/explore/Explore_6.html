@@ -1,681 +1,1285 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="robots" content="all" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-	<script src="../../js/jquery-3.4.1.min.js"></script>
-	<script src="../../js/slick.min.js"></script>
-	<script src="../../js/jquery.selectric.min.js"></script>
-	<script src="../../js/common.js"></script>
-	<script src="https://player.vimeo.com/api/player.js"></script>
-	<meta property="og:image" content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg">
-	<title>비상교육</title>
-</head>
-<body>
-	<div id="wrap">
-		<header>
-			<h1><a href="../main/Main_1.html"><img src="../../images/ico/ico_logo.png" alt="AllviA"></a></h1>
-			<nav>
-				<h2><a href="#;">menu</a></h2>
-				<ul class="mb_hidden">
-					<li class="on"><a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
-						<ul class="depth02">
-							<li><a href="../explore/Explore_1.html">Features</a>
-								<ul>
-									<li><a href="../explore/Explore_1.html">Overview</a></li>
-									<li><a href="../explore/Remote.html">Remote</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_2.html">Preschool</a>
-								<ul>
-									<li><a href="../explore/Explore_2.html">Wings</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
-								<ul>
-									<li><a href="../explore/Explore_3.html">ELiF</a></li>
-									<li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
-									<li><a href="../explore/Explore_6.html">Math Alive</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
-								<ul>
-									<li><a href="../explore/Explore_4.html">Oxford Discover Futures</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-						</ul>
-					</li>
-					<li><a href="../pricing/pricing.html"><span>PRICING</span></a>
-						<ul class="depth02">
-							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-						</ul>						
-					</li>
-					<li><a href="../resources/News_1.html"><span>RESOURCES</span></a>
-						<ul class="depth02">
-							<li><a href="../resources/News_1.html">Blog</a>
-								<ul>
-									<li><a href="../resources/News_1.html">News</a></li>
-									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-								</ul>
-							</li>
-							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-							<li><a href="../resources/Faq_1.html">Support</a>
-								<ul>
-									<li><a href="../resources/Faq_1.html">FAQ</a></li>
-									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-									<li><a href="#;">Chat</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="util mb_hidden">
-				<div class="user">
-					<a href="../login/Login.html">LOG IN</a>
-					<a href="../join/Signup_1.html">SIGN UP</a>
-				</div>
-				<a href="../pricing/pricing.html#price01" class="start">GET STARTED FREE</a>
-				<div class="lang">
-					<a href="#;" class="en">EN</a>
-					<ul>
-						<li>EN</li>
-						<li>KR</li>
-						<li>JP</li>
-						<li>CH</li>
-						<li>SP</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header_dim"></div>
-			<div class="mobile_menu">
-				<p class="menu_logo"><img src="../../images/ico/ico_logo_w.png" alt="AllviA"></p>
-				<div class="login_wrap">
-					<div class="login_before">
-						<a href="../login/Login.html" class="login_btn">LOG IN</a>
-						<a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
-						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
-					</div>
-				</div>
-				<ul class="menu">
-					<li><a href="#;"><span>Explore</span></a>
-						<ul class="depth02">
-							<li><a href="../explore/Explore_1.html">Features</a>
-								<ul>
-									<li><a href="../explore/Explore_1.html">Overview</a></li>
-									<li><a href="../explore/Remote.html">Remote</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_2.html">Preschool</a>
-								<ul>
-									<li><a href="../explore/Explore_2.html">Wings</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
-								<ul>
-									<li><a href="../explore/Explore_3.html">ELiF</a></li>
-									<li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
-									<li><a href="../explore/Explore_6.html">Math Alive</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
-								<ul>
-									<li><a href="../explore/Explore_4.html">Oxford Discover Futures</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-						</ul>
-					</li>
-					<li><a href="#;">Pricing</a>
-						<ul>
-							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-						</ul>
-					</li>
-					<li><a href="#;">Resources</a>
-						<ul>
-							<li><a href="../resources/News_1.html">Blog</a>
-								<ul>
-									<li><a href="../resources/News_1.html">News</a></li>
-									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-								</ul>
-							</li>
-							<li><a href="../resources/Resellers_1.html">Partners</a></li>
-							<li><a href="../resources/Faq_1.html">Support</a>
-								<ul>
-									<li><a href="../resources/Faq_1.html">FAQ</a></li>
-									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#;">Company</a>
-						<ul>
-							<li><a href="../company/Aboutus.html">About Us</a></li>
-							<li><a href="../company/Policy.html">Privacy Policy</a></li>
-							<li><a href="../company/Terms.html">Terms & Conditions</a></li>
-						</ul>
-					</li>
-				</ul>
-				<div class="sns">
-					<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
-					<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkin">linkedin</a>
-					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
-					<a href="../main/Main_1.html" class="home">home</a>
-				</div>
-				<div class="lang">
-					<a href="#;" class="on">EN</a>
-					<a href="#;">ES</a>
-					<a href="#;">JP</a>
-				</div>
-				<a href="#;" class="menu_close">menu close</a>
-			</div>
-		</header>
-		<div id="container" class="sub subA">
-			<div class="subtop_menu">
-				<ul class="wrapper">
-					<li><a href="../explore/Explore_1.html">Features</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_1.html">Overview</a></li>
-							<li><a href="../explore/Remote.html">Remote</a></li>
-						</ul>
-					</li>
-					<li><a href="../explore/Explore_2.html">Preschool</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_2.html">Wings</a></li>
-						</ul>
-					</li>
-					<li class="on"><a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
-						<ul class="subtop_sub">
-							<li><a href="../explore/Explore_3.html">ELiF</a></li>
-							<li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
-							<li class="on"><a href="../explore/Explore_6.html">Math Alive</a></li>
-						</ul>
-					</li>
-					<li><a href="../explore/Explore_4.html">Secondary (up to Gr.8)</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_4.html">Oxford Discover Futures</a></li>
-						</ul>
-					</li>
-					<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-				</ul>
-			</div>
-			<!-- [s] 2022-09-30 플로팅 배너 (플레이더데모 매스얼라이브로 연결) -->
-			<a class="floating_banner demo dp_mb" href="../explore/Explore_play5.html">
-				<span>PLAY THE DEMO</span>
-			</a>
-			<!-- [e] 2022-09-30 플로팅 배너 -->			
-			<div id="contents" class="nobtm">
-				<div class="exp_intro mathalive">
-					<div class="exp_top">
-						<i><img class="logo" src="../../images/ico/ico_mathalive_logo.png" alt="MATH ALIVE"></i>
-						<div class="con">
-							<p class="tit">Why Math Alive?</p>
-							<ul class="math_intro">
-								<li>
-									<i><img src="../../images/pic/pic_math_top01.png"/></i>
-									<h6>Accurate and Deep <br class="dp_pc"/>Concept Understanding</h6>
-									<p>Allow understanding of <br class="dp_pc"/>concepts, principles, and laws <br class="dp_pc"/>of mathematics through <br class="dp_pc"/>first hand</p>
-								</li>
-								<li>
-									<i><img src="../../images/pic/pic_math_top02.png"/></i>
-									<h6>Acquisition of <br class="dp_pc"/>Problem-Solving Skills</h6>
-									<p>Structure the problem <br class="dp_pc"/>situation to be resolved <br class="dp_pc"/>step by step</p>
-								</li>
-								<li>
-									<i><img src="../../images/pic/pic_math_top03.png"/></i>
-									<h6>Formation of a Positive <br class="dp_pc"/>Attitude Towards Math</h6>
-									<p>Provide a mathematical <br class="dp_pc"/>experience that is interesting, <br class="dp_pc"/>challenging, and allows a taste <br class="dp_pc"/>of success</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<h4>Learning Features</h4>
-						<div class="math_learning_features">
-							<div class="depth-1">
-								<button id="inclass"># In-Class</button>
-								<button id="home"># Home Learning</button>
-							</div>
-							<div class="depth-2 inclass">
-								<button class="btn_slide prev dp_mb">이전</button>
-								<div class="slide">
-									<div class="tab">
-										<button id="inclass-1">Concept Learning</button>
-										<button id="inclass-2">Problem Solving</button>
-										<button id="inclass-3">Reasoning & <br/>Communication</button>
-										<button id="inclass-4">Adaptive & <br/>Engaging Learning</button>
-									</div>
-								</div>
-								<button class="btn_slide next dp_mb">다음</button>
-							</div>
-							<div class="depth-2 home">
-								<div class="tab">
-									<button id="home-1">Homework</button>
-									<button id="home-2">Report</button>
-								</div>
-							</div>
-							<div class="content">
-								<div class="inner">
-									<div class="inclass-1 no_img">
-										<div>
-											<div>
-												<h6>Episode</h6>
-												<p>Conceptual exploration activities beginning by raising questions that ask, “Why?”</p>	
-											</div>
-											<div>
-												<h6>Concept Tool</h6>
-												<p>Intuitive acquisition of abstract mathematical concepts through the manipulation of the Concept Tool</p>	
-											</div>
-										</div>
-										<div>
-											<div>
-												<iframe src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/mathaliveconcept1.mp4" allow="fullscreen;" allowfullscreen></iframe>
-											</div>
-											<div>
-												<iframe src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/mathaliveconcept2.mp4" allow="fullscreen;" allowfullscreen></iframe>
-											</div>
-										</div>
-									</div>
-									<div class="inclass-2">
-										<h6>Problem Solving</h6>
-										<p class="list">
-											<span>Enhancement of mathematical reasoning ability</span>
-											<span>Problem-solving learning oriented from the perspective of “How to Solve It”</span>
-										</p>
-										<div class="img_wrap">
-											<div>
-												<img src="../../images/pic/pic_math_inclass2_1.png" alt="Understand">
-												<p>Understand</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass2_2.png" alt="Strategize">
-												<p>Strategize</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass2_3.png" alt="Solve">
-												<p>Solve</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass2_4.png" alt="Look Back">
-												<p>Look Back</p>
-											</div>
-										</div>
-									</div>
-									<div class="inclass-3">
-										<h6>Reasoning & Communication</h6>
-										<p>
-											Fosters metacognitive learning, which emphasizes self-realized understanding through <br class="dp_pc"/>
-											processes that use the students’ own language and expression <br class="dp_mb"/>(text, drawing, speaking, etc.)
-										</p>
-										<div class="img_wrap">
-											<div>
-												<img src="../../images/pic/pic_math_inclass3_1.png" alt="Math Journal">
-												<p>Math Journal</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass3_2.png" alt="Role Play">
-												<p>Role Play</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass3_3.png" alt="Concept Board">
-												<p>Concept Board</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass3_4.png" alt="Lyrics Lab">
-												<p>Lyrics Lab</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass3_5.png" alt="Let Me Explain">
-												<p>Let Me Explain</p>
-											</div>
-										</div>
-									</div>
-									<div class="inclass-4">
-										<h6>Adaptive & Engaging Learning</h6>
-										<p>
-											Increases learner engagement and improves outcomes through personal learning data <br/>
-											- “Adaptive Learning” assigns problems based on each student’s achievement level derived <br class="dp_pc"/>
-											from the results of Concept Learning.
-										</p>
-										<div class="img_wrap">
-											<div>
-												<img src="../../images/pic/pic_math_inclass4_1.png" alt="Adaptive & Engaging Learning">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass4_2.png" alt="Adaptive & Engaging Learning">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass4_3.png" alt="Adaptive & Engaging Learning">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass4_4.png" alt="Adaptive & Engaging Learning">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass4_5.png" alt="Adaptive & Engaging Learning">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_inclass4_6.png" alt="Adaptive & Engaging Learning">
-											</div>
-										</div>
-									</div>
-									<div class="home-1">
-										<h6>Homework</h6>
-										<p>Review content for missed problems and other content for strategies are provided after class lessons <br class="dp_pc"/>as homework.</p>
-										<div class="img_wrap">
-											<div>
-												<img src="../../images/pic/pic_math_home1_1.png" alt="Homework">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_home1_2.png" alt="Homework">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_home1_3.png" alt="Homework">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_home1_4.png" alt="Homework">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_home1_5.png" alt="Homework">
-											</div>
-										</div>
-									</div>
-									<div class="home-2">
-										<h6>Report</h6>
-										<p>
-											Parents can check their children's attendance and learning status. In addition, through the evaluation report, <br class="dp_pc"/>
-											you can identify the vulnerabilities of the analyzed students and set the learning direction.
-										</p>
-										<div class="img_wrap">
-											<div>
-												<img src="../../images/pic/pic_math_home2_1.png" alt="Report">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_home2_2.png" alt="Report">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_math_home2_3.png" alt="Report">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="exp_section">
-						<h4>Assessment</h4>
-						<ul class="math_assessment">
-							<li class="diagnostic">
-								<h6>Diagnostic Test</h6>
-								<div class="img">
-									<img src="../../images/pic/pic_math_assessment_1.png" alt="Diagnostic Test" class="dp_pc">
-									<img src="../../images/pic/pic_math_assessment_1_m.png" alt="Diagnostic Test" class="dp_mb">
-									<img class="bg_line" src="../../images/pic/pic_math_assessment_line_l.png" alt="red bg line">
-								</div>
-								<p>The Diagnostic tests begin with a placement test (PT) upon first entry to the school.</p>
-							</li>
-							<li class="module">
-								<h6>Module Assessment</h6>
-								<div class="img">
-									<img src="../../images/pic/pic_math_assessment_2.png" alt="Module Assessment">
-									<img class="bg_line" src="../../images/pic/pic_math_assessment_line_r.png" alt="red bg line">
-								</div>
-								<p>Module evaluation conducted after completion of each module learning.</p>
-							</li>
-						</ul>
-					</div>
-					<div class="exp_section bg_blue">
-						<h4>Learning Aids</h4>
-						<div class="math_aids">
-							<div class="bg_l">
-								<div class="img_l">
-									<img src="../../images/pic/pic_math_aid_1.png" alt="Math Tools">
-									<dl>
-										<dt>Math Tools</dt>
-										<dd>Focus on classes with a variety of Math Tools</dd>
-									</dl>
-								</div>
-								<div class="img_r">
-									<img src="../../images/pic/pic_math_aid_2.png" alt="3 Minutes Activity">
-									<dl>
-										<dt>3 Minutes Activity</dt>
-										<dd>Satisfy students' interests and desires through <br class="dp_pc"/>math-based games</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="bg_r">
-								<div class="img_l">
-									<img src="../../images/pic/pic_math_aid_3.png" alt="Concept Library">
-									<dl>
-										<dt>Concept Library</dt>
-										<dd>Conceptual review activities by curriculum and concept</dd>
-									</dl>
-								</div>
-								<div class="img_r">
-									<img src="../../images/pic/pic_math_aid_4.png" alt="Capsule World">
-									<dl>
-										<dt>Capsule World</dt>
-										<dd>Achieve a sense of accomplishment and <br class="dp_pc"/>engagement through a reward system</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="exp_section">
-						<h4>Curriculum</h4>
-						<div class="math_curriculum">
-							<p>Curriculum structure is set according to the US Common Core (CCSS) <br class="dp_pc"/>achievement standards (Kindergarten - Grade 5).</p>
-							<div class="btn_right">
-								<a href="#math_curriculum_pop" class="btn_blue next pop_call">Class Composition</a>
-							</div>
-							<img src="../../images/pic/pic_math_curriculum.png" alt="MathAlive Curriculum" class="dp_pc"/>
-							<img src="../../images/pic/pic_math_curriculum_m.png" alt="MathAlive Curriculum" class="dp_mb"/>
-							<a href="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/pdf/Math+Alive_Curriculum.pdf" target="_blank" class="btn_blue down">DOWNLOAD</a>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<div class="wrapper">
-							<h4>Video & Brochure</h4>
-							<div class="video_bro">
-								<div class="pro_video">
-									<strong>Promotion video</strong>	
-									<div>
-										<iframe src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/MathAlivePromotionVideo.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MathAlive Promotion Video"></iframe>
-									</div>
-								</div>
-								<div class="brochure">
-									<strong>Brochure</strong>
-									<div class="bro_wrap">
-										<iframe src="https://book.allviaedu.com/view/index.html?contbase=/[MathAlive]Brochure/&title=abcd" frameborder="0" allow="fullscreen"></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div><!-- //container -->
-		<footer>
-			<div class="wrapper">
-				<div class="sitemap">
-					<ul>
-						<li>
-							<a href="../explore/Explore_1.html">EXPLORE</a>
-							<ul>
-								<li><a href="../explore/Explore_1.html">Features</a>
-									<ul class="depth-2">
-										<li><a href="../explore/Explore_1.html">Overview</a></li>
-										<li><a href="../explore/Remote.html">Remote</a></li>
-									</ul>
-								</li>
-								<li><a href="../explore/Explore_2.html">Preschool</a>
-									<ul class="depth-2">
-										<li><a href="../explore/Explore_2.html">Wings</a></li>
-									</ul>
-								</li>
-								<li><a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
-									<ul class="depth-2">
-										<li><a href="../explore/Explore_3.html">ELiF</a></li>
-										<li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
-										<li><a href="../explore/Explore_6.html">Math Alive</a></li>
-									</ul>
-								</li>
-								<li><a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
-									<ul class="depth-2">
-										<li><a href="../explore/Explore_4.html">Oxford Discover Futures</a></li>
-									</ul>
-								</li>
-								<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="../pricing/pricing.html">PRICING</a>
-							<ul>
-								<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-								<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-								<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-								<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="../resources/News_1.html">RESOURCES</a>
-							<ul>
-								<li><a href="../resources/News_1.html">Blog</a>
-									<ul class="depth-2">
-										<li><a href="../resources/News_1.html">News</a></li>
-										<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-									</ul>
-								</li>
-								<li><a href="../resources/Resellers_1.html">Partners</a></li>
-								<li><a href="../resources/Faq_1.html">Support</a>
-									<ul class="depth-2">
-										<li><a href="../resources/Faq_1.html">FAQ</a></li>
-										<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-									</ul>
-								</li>	
-							</ul>
-						</li>
-						<li>
-							<a href="../company/Aboutus.html">COMPANY</a>
-							<ul>
-								<li><a href="../company/Aboutus.html">About Us</a></li>
-								<li><a href="../company/Policy.html">Privacy Policy</a></li>
-								<li><a href="../company/Terms.html">Terms & Conditions</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="foot_info">
-					<p class="btm_logo"><img src="../../images/ico/ico_btm_logo.png" alt="VISANG"></p>
-					<p class="copy">COPYRIGHT © VISANG EDUCATION INC. <br>ALL RIGHTS RESERVED</p>
-					<div class="sns">
-						<strong>FOLLOW US</strong>
-						<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
-						<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkedin">linkedin</a>
-						<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<div id="math_curriculum_pop" class="popup_wrap">
-		<div class="popup">
-			<div class="inner">
-				<h4>Class Composition</h4>
-				<div class="txt_wrap">
-					<p>• Math Alive reorganizes primary math concepts into 519 Concepts.</p>
-					<p>• Two - three concepts are grouped into meaningful learning units and defined as Topics</p>
-					<p>• Three - four topics are grouped into meaningful learning and assessment units and defined as Modules.</p>
-				</div>
-				<img src="../../images/pic/pic_math_curriculum_2.png" alt="Class Composition" class="dp_pc"/>
-				<img src="../../images/pic/pic_math_curriculum_2_m.png" alt="Class Composition" class="dp_mb"/>
-			</div>
-			<button class="btn_close pop_close_btn">close</button>
-		</div>
-	</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/jquery.selectric.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <meta
+      property="og:image"
+      content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg"
+    />
+    <title>비상교육</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>
+          <a href="../main/Main_1.html"
+            ><img src="../../images/ico/ico_logo.png" alt="AllviA"
+          /></a>
+        </h1>
+        <nav>
+          <h2><a href="#;">menu</a></h2>
+          <ul class="mb_hidden">
+            <li class="on">
+              <a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../explore/Explore_1.html">Features</a>
+                  <ul>
+                    <li><a href="../explore/Explore_1.html">Overview</a></li>
+                    <li><a href="../explore/Remote.html">Remote</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_2.html">Preschool</a>
+                  <ul>
+                    <li><a href="../explore/Explore_2.html">Wings</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+                  <ul>
+                    <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                    <li>
+                      <a href="../explore/Explore_5.html">Oxford Discover</a>
+                    </li>
+                    <li><a href="../explore/Explore_6.html">Math Alive</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
+                  <ul>
+                    <li>
+                      <a href="../explore/Explore_4.html"
+                        >Oxford Discover Futures</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_play.html">Play the Demo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../pricing/pricing.html"><span>PRICING</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../pricing/pricing.html#price01">Get Started Free</a>
+                </li>
+                <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../resources/News_1.html"><span>RESOURCES</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../resources/Resellers_1.html">Resellers</a></li>
+                <li>
+                  <a href="../resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../resources/Contact_1.html">Contact Us</a>
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="util mb_hidden">
+          <div class="user">
+            <a href="../login/Login.html">LOG IN</a>
+            <a href="../join/Signup_1.html">SIGN UP</a>
+          </div>
+          <a href="../pricing/pricing.html#price01" class="start"
+            >GET STARTED FREE</a
+          >
+          <div class="lang">
+            <a href="#;" class="en">EN</a>
+            <ul>
+              <li>EN</li>
+              <li>KR</li>
+              <li>JP</li>
+              <li>CH</li>
+              <li>SP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_dim"></div>
+        <div class="mobile_menu">
+          <p class="menu_logo">
+            <img src="../../images/ico/ico_logo_w.png" alt="AllviA" />
+          </p>
+          <div class="login_wrap">
+            <div class="login_before">
+              <a href="../login/Login.html" class="login_btn">LOG IN</a>
+              <a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
+              <a href="../pricing/pricing.html#price01" class="start_btn"
+                >GET STARTED FREE</a
+              >
+            </div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#;"><span>Explore</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../explore/Explore_1.html">Features</a>
+                  <ul>
+                    <li><a href="../explore/Explore_1.html">Overview</a></li>
+                    <li><a href="../explore/Remote.html">Remote</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_2.html">Preschool</a>
+                  <ul>
+                    <li><a href="../explore/Explore_2.html">Wings</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+                  <ul>
+                    <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                    <li>
+                      <a href="../explore/Explore_5.html">Oxford Discover</a>
+                    </li>
+                    <li><a href="../explore/Explore_6.html">Math Alive</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
+                  <ul>
+                    <li>
+                      <a href="../explore/Explore_4.html"
+                        >Oxford Discover Futures</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_play.html">Play the Demo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Pricing</a>
+              <ul>
+                <li>
+                  <a href="../pricing/pricing.html#price01">Get Started Free</a>
+                </li>
+                <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Resources</a>
+              <ul>
+                <li>
+                  <a href="../resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../resources/Resellers_1.html">Partners</a></li>
+                <li>
+                  <a href="../resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../resources/Contact_1.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Company</a>
+              <ul>
+                <li><a href="../company/Aboutus.html">About Us</a></li>
+                <li><a href="../company/Policy.html">Privacy Policy</a></li>
+                <li><a href="../company/Terms.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sns">
+            <a
+              href="https://www.facebook.com/visangeducation"
+              target="_blank"
+              title="새창"
+              class="facebook"
+              >facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+              target="_blank"
+              title="새창"
+              class="linkin"
+              >linkedin</a
+            >
+            <a
+              href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+              target="_blank"
+              title="새창"
+              class="youtube"
+              >youtube</a
+            >
+            <a href="../main/Main_1.html" class="home">home</a>
+          </div>
+          <div class="lang">
+            <a href="#;" class="on">EN</a>
+            <a href="#;">ES</a>
+            <a href="#;">JP</a>
+          </div>
+          <a href="#;" class="menu_close">menu close</a>
+        </div>
+      </header>
+      <div id="container" class="sub subA">
+        <div class="subtop_menu">
+          <ul class="wrapper">
+            <li>
+              <a href="../explore/Explore_1.html">Features</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_1.html">Overview</a>
+                </li>
+                <li><a href="../explore/Remote.html">Remote</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_2.html">Preschool</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_2.html">Wings</a>
+                </li>
+              </ul>
+            </li>
+            <li class="on">
+              <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+              <ul class="subtop_sub">
+                <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                <li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
+                <li class="on">
+                  <a href="../explore/Explore_6.html">Math Alive</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_4.html">Secondary (up to Gr.8)</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_4.html"
+                    >Oxford Discover Futures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+          </ul>
+        </div>
+        <a
+          class="floating_banner demo dp_mb"
+          href="../explore/Explore_play5.html"
+        >
+          <span>PLAY THE DEMO</span>
+        </a>
+        <div id="contents" class="nobtm toppd" style="padding-bottom: 0">
+          <div class="exp_intro mathalive">
+            <div class="exp_top">
+              <i
+                ><img
+                  class="logo"
+                  src="../../images/ico/ico_mathalive_logo.png"
+                  alt="MATH ALIVE"
+              /></i>
+              <div class="con">
+                <p class="tit">Why Math Alive?</p>
+                <ul class="math_intro">
+                  <li>
+                    <i><img src="../../images/pic/pic_math_top01.png" /></i>
+                    <h6>
+                      Accurate Undersdanding <br class="dp_pc" />of Deep
+                      Concepts
+                    </h6>
+                    <p>
+                      Understand concepts, principles, <br class="dp_pc" />and
+                      laws of mathematics firsthand!
+                    </p>
+                  </li>
+                  <li>
+                    <i><img src="../../images/pic/pic_math_top02.png" /></i>
+                    <h6>Acquire <br class="dp_pc" />Problem-Solving Skills</h6>
+                    <p>
+                      Structure the problem <br class="dp_pc" />to be solved
+                      step-by-step
+                    </p>
+                  </li>
+                  <li>
+                    <i><img src="../../images/pic/pic_math_top03.png" /></i>
+                    <h6>
+                      Form a Positive <br class="dp_pc" />Attitude Towards Math
+                    </h6>
+                    <p>
+                      Provide a mathematical experience that is interesting,
+                      challenging, and allows a taste of success
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <h4>Learning Features</h4>
+              <div class="math_learning_features">
+                <div class="depth-1">
+                  <button id="inclass"># In-Class</button>
+                  <button id="home"># Home Learning</button>
+                </div>
+                <div class="depth-2 inclass">
+                  <button class="btn_slide prev dp_mb">이전</button>
+                  <div class="slide">
+                    <div class="tab">
+                      <button id="inclass-1">Concept Learning</button>
+                      <button id="inclass-2">Problem Solving</button>
+                      <button id="inclass-3">
+                        Reasoning & <br />Communication
+                      </button>
+                      <button id="inclass-4">
+                        Adaptive & Engaging Learning
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn_slide next dp_mb">다음</button>
+                </div>
+                <div class="depth-2 home">
+                  <div class="tab">
+                    <button id="home-1">Homework</button>
+                    <button id="home-2">Report</button>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="inner">
+                    <div class="inclass-1 no_img">
+                      <div>
+                        <div>
+                          <h6>Episode</h6>
+                          <p>
+                            Explore concepts through activities and questioning
+                            exercises that ask, "Why?"
+                          </p>
+                        </div>
+                        <div>
+                          <h6>Concept Tool</h6>
+                          <p>
+                            Intuitively learn abstract mathematical concepts
+                            while manipulating the concept tool.
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <iframe
+                            src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/mathaliveconcept1.mp4"
+                            allow="fullscreen;"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                        <div>
+                          <iframe
+                            src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/mathaliveconcept2.mp4"
+                            allow="fullscreen;"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inclass-2">
+                      <h6>Problem Solving</h6>
+                      <p class="list">
+                        <span
+                          >Enhancement of mathematical reasoning ability</span
+                        >
+                        <span
+                          >Problem-solving learning oriented from the
+                          perspective of “How to Solve It”</span
+                        >
+                      </p>
+                      <div class="img_wrap">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass2_1.png"
+                            alt="Understand"
+                          />
+                          <p>Understand</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass2_2.png"
+                            alt="Strategize"
+                          />
+                          <p>Strategize</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass2_3.png"
+                            alt="Solve"
+                          />
+                          <p>Solve</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass2_4.png"
+                            alt="Look Back"
+                          />
+                          <p>Look Back</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inclass-3">
+                      <h6>Reasoning & Communication</h6>
+                      <p>
+                        Fosters metacognitive learning, which emphasizes
+                        self-realized understanding through <br class="dp_pc" />
+                        processes that use the students’ own language and
+                        expression <br class="dp_mb" />(text, drawing, speaking,
+                        etc.)
+                      </p>
+                      <div class="img_wrap">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass3_1.png"
+                            alt="Math Journal"
+                          />
+                          <p>Math Journal</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass3_2.png"
+                            alt="Role Play"
+                          />
+                          <p>Role Play</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass3_3.png"
+                            alt="Concept Board"
+                          />
+                          <p>Concept Board</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass3_4.png"
+                            alt="Lyrics Lab"
+                          />
+                          <p>Lyrics Lab</p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass3_5.png"
+                            alt="Let Me Explain"
+                          />
+                          <p>Let Me Explain</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inclass-4">
+                      <h6>Adaptive & Engaging Learning</h6>
+                      <p>
+                        Increases learner engagement and improves outcomes
+                        through personal learning data <br />
+                        - “Adaptive Learning” assigns problems based on each
+                        student’s achievement level derived <br class="dp_pc" />
+                        from the results of Concept Learning.
+                      </p>
+                      <div class="img_wrap">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass4_1.png"
+                            alt="Adaptive & Engaging Learning"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass4_2.png"
+                            alt="Adaptive & Engaging Learning"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass4_3.png"
+                            alt="Adaptive & Engaging Learning"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass4_4.png"
+                            alt="Adaptive & Engaging Learning"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass4_5.png"
+                            alt="Adaptive & Engaging Learning"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_inclass4_6.png"
+                            alt="Adaptive & Engaging Learning"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home-1">
+                      <h6>Homework</h6>
+                      <p>
+                        Review content for missed problems and other content for
+                        strategies are provided after class lessons
+                        <br class="dp_pc" />as homework.
+                      </p>
+                      <div class="img_wrap">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home1_1.png"
+                            alt="Homework"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home1_2.png"
+                            alt="Homework"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home1_3.png"
+                            alt="Homework"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home1_4.png"
+                            alt="Homework"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home1_5.png"
+                            alt="Homework"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home-2">
+                      <h6>Report</h6>
+                      <p>
+                        Parents can check their children's attendance and
+                        learning status. In addition, through the evaluation
+                        report, <br class="dp_pc" />
+                        you can identify the vulnerabilities of the analyzed
+                        students and set the learning direction.
+                      </p>
+                      <div class="img_wrap">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home2_1.png"
+                            alt="Report"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home2_2.png"
+                            alt="Report"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_math_home2_3.png"
+                            alt="Report"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- [s] 2023-06-09 버튼 추가 -->
+              <div class="try">
+                Want to experience various contents?
+                <a href="../explore/Explore_play.html">PLAY THE DEMO</a>
+              </div>
+              <!-- [e] 2023-06-09 버튼 추가 -->
+            </div>
+            <div class="exp_section">
+              <h4>Assessment</h4>
+              <ul class="math_assessment">
+                <li class="diagnostic">
+                  <h6>Diagnostic Test</h6>
+                  <div class="img">
+                    <img
+                      src="../../images/pic/pic_math_assessment_1.png"
+                      alt="Diagnostic Test"
+                      class="dp_pc"
+                    />
+                    <img
+                      src="../../images/pic/pic_math_assessment_1_m.png"
+                      alt="Diagnostic Test"
+                      class="dp_mb"
+                    />
+                    <img
+                      class="bg_line"
+                      src="../../images/pic/pic_math_assessment_line_l.png"
+                      alt="red bg line"
+                    />
+                  </div>
+                  <p>
+                    Each student takes a diagnostic test to determine
+                    <br class="dp_pc" />their level prior to starting classes.
+                  </p>
+                </li>
+                <li class="module">
+                  <h6>Module Assessment</h6>
+                  <div class="img">
+                    <img
+                      src="../../images/pic/pic_math_assessment_2.png"
+                      alt="Module Assessment"
+                    />
+                    <img
+                      class="bg_line"
+                      src="../../images/pic/pic_math_assessment_line_r.png"
+                      alt="red bg line"
+                    />
+                  </div>
+                  <p>Students are evaluated after completion of each Module.</p>
+                </li>
+              </ul>
+              <div class="certification">
+                <img
+                  src="../../images/ico/ico_certi_1.png"
+                  alt="1EDTECH CERTIFIED"
+                />
+                <p>
+                  Math Alive has been qualified as "Assessment Profile" of
+                  Caliper Analytics® from the international E-Learning
+                  organisation, 1EdTech™, which certifies Math Alive with the
+                  establishment of various pattern analysis and question
+                  manufacturing environment for student assessment.
+                </p>
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <h4>Learning Aids</h4>
+              <div class="math_aids">
+                <div class="bg_l">
+                  <div class="img_l">
+                    <img
+                      src="../../images/pic/pic_math_aid_1.png"
+                      alt="Math Tools"
+                    />
+                    <dl>
+                      <dt>Math Tools</dt>
+                      <dd>Use a variety of Math Tools during class.</dd>
+                    </dl>
+                  </div>
+                  <div class="img_r">
+                    <img
+                      src="../../images/pic/pic_math_aid_2.png"
+                      alt="3 Minutes Activity"
+                    />
+                    <dl>
+                      <dt>3 Minutes Activity</dt>
+                      <dd>
+                        Keep students interested through
+                        <br class="dp_pc" />game-based math activities.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="bg_r">
+                  <div class="img_l">
+                    <img
+                      src="../../images/pic/pic_math_aid_3.png"
+                      alt="Concept Library"
+                    />
+                    <dl>
+                      <dt>Concept Library</dt>
+                      <dd>
+                        Complete review activities by mathematical domain and
+                        concept.
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="img_r">
+                    <img
+                      src="../../images/pic/pic_math_aid_4.png"
+                      alt="Capsule World"
+                    />
+                    <dl>
+                      <dt>Capsule World</dt>
+                      <dd>
+                        Engage and achieve a sense of accomplishment
+                        <br class="dp_pc" />through a reward system.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exp_section">
+              <h4>Curriculum</h4>
+              <div class="math_curriculum">
+                <p>
+                  Math Alive is based on the US Common Core (CCSS) achievement
+                  standards. In addition, <br class="dp_pc" />by introducing the
+                  quantile measure of MetaMetrics®, an internationally renowned
+                  research institute, <br class="dp_pc" />
+                  each grade level of the program has been officially certified
+                  and meets all requirements of the Quantile measure. Based on
+                  the Quantile measure for each grade, teachers can determine a
+                  student's mathematical level and ensure they are provided
+                  customized learning services.
+                </p>
+                <div class="btn_right">
+                  <a href="#math_curriculum_pop" class="btn_blue next pop_call"
+                    >Class Structure</a
+                  >
+                </div>
+                <div class="curriculum_img">
+                  <img
+                    src="../../images/pic/pic_math_curriculum.png"
+                    alt="MathAlive Curriculum"
+                    class="dp_pc"
+                  />
+                  <img
+                    src="../../images/pic/pic_math_curriculum_m.png"
+                    alt="MathAlive Curriculum"
+                    class="dp_mb"
+                  />
+                  <div class="info_wrap" id="ccss">
+                    <button
+                      class="ico_info pop_call"
+                      pophref="#info_pop_ccss"
+                    ></button>
+                    <div class="cont_info">
+                      <dl>
+                        <dt>CCSS</dt>
+                        <dd>
+                          The Common Core State Standards Initiative
+                          <br />provides the learning standards by grade level
+                          <br />for K-12 education in the United States.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="info_wrap" id="qm">
+                    <button
+                      class="ico_info pop_call"
+                      pophref="#info_pop_qm"
+                    ></button>
+                    <div class="cont_info">
+                      <dl>
+                        <dt>QM</dt>
+                        <dd>
+                          The Quantile Measure is a scale that indicates
+                          <br />the relative difficulty of each math concept.
+                          <br />Each level may be indicated by a number and
+                          <br />appending a Q. EM is the abbreviation for minus.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/pdf/Math+Alive_Curriculum.pdf"
+                  target="_blank"
+                  class="btn_blue down"
+                  >DOWNLOAD</a
+                >
+              </div>
+            </div>
+            <div class="exp_section" id="quantile">
+              <h4>Aligned to the Quantile Framework</h4>
+              <div class="content">
+                <p>
+                  After a long period of collaboration and research, the Math
+                  Alive and MetaMetrics teams developed the Quantile measures
+                  tailored to each mathematical concept in the mathematics
+                  curriculum. Based on the mathematical learning concepts as
+                  defined in the Quantile Measure, teachers can set individual
+                  goals for students to grow, while providing high-quality,
+                  personalized mathematics education.
+                </p>
+                <img
+                  src="../../images/pic/pic_math_quantile.png"
+                  alt="Aligned to the Quantile Framework"
+                  class="dp_pc"
+                />
+                <img
+                  src="../../images/pic/pic_math_quantile_m.png"
+                  alt="Aligned to the Quantile Framework"
+                  class="dp_mb"
+                />
+                <div class="graph">
+                  <div class="desc">
+                    <img
+                      src="../../images/ico/ico_quantile.png"
+                      alt="QUANTILE"
+                      class="quantile_img"
+                    />
+                    <ul>
+                      <li>
+                        Data based on a sample of 3 million students
+                        administered <br />tests that reported Quantile measures
+                        from 2020 to 2019
+                      </li>
+                      <li>Math Alive's Content</li>
+                    </ul>
+                  </div>
+                  <img
+                    src="../../images/pic/pic_math_quantile_2.png"
+                    alt="Aligned to the Quantile Framework"
+                    class="dp_pc"
+                  />
+                  <img
+                    src="../../images/pic/pic_math_quantile_2_m.png"
+                    alt="Aligned to the Quantile Framework"
+                    class="dp_mb"
+                  />
+                </div>
+                <p>
+                  The Quantile measure of Math Alive's covers most of the range
+                  of the Quantile measure provided by MetaMetrics in the middle
+                  of the school year by grade, and is similar in structure.
+                  Accordingly, it has been determined that the mathematical
+                  contents in Math Alive meet global standards.
+                </p>
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <div class="wrapper">
+                <h4>Video & Brochure</h4>
+                <div class="video_bro">
+                  <div class="pro_video">
+                    <strong>Promotion video</strong>
+                    <div>
+                      <iframe
+                        src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/MathAlivePromotionVideo.mp4"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="MathAlive Promotion Video"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="brochure">
+                    <strong>Brochure</strong>
+                    <div class="bro_wrap">
+                      <iframe
+                        src="https://book.allviaedu.com/view/index.html?contbase=/[MathAlive]Brochure/&title=abcd"
+                        frameborder="0"
+                        allow="fullscreen"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo_ban bg02">
+              <div class="demo_math">
+                <strong>PLAY THE DEMO</strong>
+                <p>Discover AllviA's services <br />quickly and easily.</p>
+                <a
+                  href="https://www.allviaedu.com/explore/play-the-demo/math-alive"
+                  >DISCOVER</a
+                >
+              </div>
+            </div>
+            <div class="app_ban">
+              <div>
+                <p>
+                  <b>
+                    Don't forget to download the<br class="dp_mb" />
+                    AllviA edu Student App.
+                  </b>
+                  You can download it from the App Store.
+                </p>
+                <div class="download">
+                  <dl>
+                    <dt>In-Class App</dt>
+                    <dd>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://apps.apple.com/kr/app/allvia-math-alive/id1641058691"
+                            class="ios ico_only"
+                            target="_blank"
+                          ></a>
+                          <img
+                            class="qr"
+                            src="../../images/ico/qr_ios_math_inclass.png"
+                          />
+                        </li>
+                        <li>
+                          <a
+                            href="https://play.google.com/store/apps/details?id=com.visang.mathalive"
+                            class="aos ico_only"
+                            target="_blank"
+                          ></a>
+                          <img
+                            class="qr"
+                            src="../../images/ico/qr_aos_math_inclass.png"
+                          />
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Concept Tool</dt>
+                    <dd>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://apps.apple.com/kr/app/allvia-concept-tool/id1614783285"
+                            class="ios ico_only"
+                            target="_blank"
+                          ></a>
+                          <img
+                            class="qr"
+                            src="../../images/ico/qr_ios_math_tool.png"
+                          />
+                        </li>
+                        <li>
+                          <a
+                            href="https://play.google.com/store/apps/details?id=com.Visang.VisangMath2"
+                            class="aos ico_only"
+                            target="_blank"
+                          ></a>
+                          <img
+                            class="qr"
+                            src="../../images/ico/qr_aos_math_tool.png"
+                          />
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //container -->
+      <footer>
+        <div class="wrapper">
+          <div class="sitemap">
+            <ul>
+              <li>
+                <a href="../explore/Explore_1.html">EXPLORE</a>
+                <ul>
+                  <li>
+                    <a href="../explore/Explore_1.html">Features</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_1.html">Overview</a></li>
+                      <li><a href="../explore/Remote.html">Remote</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_2.html">Preschool</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_2.html">Wings</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                      <li>
+                        <a href="../explore/Explore_5.html">Oxford Discover</a>
+                      </li>
+                      <li>
+                        <a href="../explore/Explore_6.html">Math Alive</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_3.html"
+                      >Secondary (up to Gr.8)</a
+                    >
+                    <ul class="depth-2">
+                      <li>
+                        <a href="../explore/Explore_4.html"
+                          >Oxford Discover Futures</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_play.html">Play the Demo</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../pricing/pricing.html">PRICING</a>
+                <ul>
+                  <li>
+                    <a href="../pricing/pricing.html#price01"
+                      >Get Started Free</a
+                    >
+                  </li>
+                  <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                  <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                  <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../resources/News_1.html">RESOURCES</a>
+                <ul>
+                  <li>
+                    <a href="../resources/News_1.html">Blog</a>
+                    <ul class="depth-2">
+                      <li><a href="../resources/News_1.html">News</a></li>
+                      <li>
+                        <a href="../resources/VideoGuide_1.html"
+                          >Videos & Guides</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="../resources/Resellers_1.html">Partners</a></li>
+                  <li>
+                    <a href="../resources/Faq_1.html">Support</a>
+                    <ul class="depth-2">
+                      <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                      <li>
+                        <a href="../resources/Contact_1.html">Contact Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../company/Aboutus.html">COMPANY</a>
+                <ul>
+                  <li><a href="../company/Aboutus.html">About Us</a></li>
+                  <li><a href="../company/Policy.html">Privacy Policy</a></li>
+                  <li>
+                    <a href="../company/Terms.html">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_info">
+            <p class="btm_logo">
+              <img src="../../images/ico/ico_btm_logo.png" alt="VISANG" />
+            </p>
+            <p class="copy">
+              COPYRIGHT © VISANG EDUCATION INC. <br />ALL RIGHTS RESERVED
+            </p>
+            <div class="sns">
+              <strong>FOLLOW US</strong>
+              <a
+                href="https://www.facebook.com/visangeducation"
+                target="_blank"
+                title="새창"
+                class="facebook"
+                >facebook</a
+              >
+              <a
+                href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+                target="_blank"
+                title="새창"
+                class="linkedin"
+                >linkedin</a
+              >
+              <a
+                href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+                target="_blank"
+                title="새창"
+                class="youtube"
+                >youtube</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="math_curriculum_pop" class="popup_wrap">
+      <div class="popup">
+        <div class="inner">
+          <h4>Class Structure</h4>
+          <div class="txt_wrap">
+            <p>
+              • Math Alive reorganizes primary math concepts into 519 Concepts.
+            </p>
+            <p>
+              • Two to three concepts are grouped into meaningful learning units
+              and defined as Topics
+            </p>
+            <p>
+              • Three to four topics are grouped into meaningful learning and
+              assessment units and defined as Modules.
+            </p>
+          </div>
+          <img
+            src="../../images/pic/pic_math_curriculum_2.png"
+            alt="Class Composition"
+            class="dp_pc"
+          />
+          <img
+            src="../../images/pic/pic_math_curriculum_2_m.png"
+            alt="Class Composition"
+            class="dp_mb"
+          />
+        </div>
+        <button class="btn_close pop_close_btn">close</button>
+      </div>
+    </div>
+    <div id="info_pop_ccss" class="info_pop popup_wrap">
+      <div class="popup cont_info">
+        <dl>
+          <dt>CCSS</dt>
+          <dd>
+            The Common Core State Standards Initiative
+            <br />provides the learning standards by grade level <br />for K-12
+            education in the United States.
+          </dd>
+        </dl>
+        <a href="#;" class="pop_close pop_close_btn">close</a>
+      </div>
+    </div>
+    <div id="info_pop_qm" class="info_pop popup_wrap">
+      <div class="popup cont_info">
+        <dl>
+          <dt>QM</dt>
+          <dd>
+            The Quantile Measure is a scale that indicates
+            <br />the relative difficulty of each math concept. <br />Each level
+            may be indicated by a number and <br />appending a Q. EM is the
+            abbreviation for minus.
+          </dd>
+        </dl>
+        <a href="#;" class="pop_close pop_close_btn">close</a>
+      </div>
+    </div>
 
-	<script>
-		// Learning Features
-		const mathLearingFeatures = document.querySelector('.math_learning_features');
-		const depth1Tab = mathLearingFeatures.querySelectorAll('.depth-1 button');
-		const depth2 = mathLearingFeatures.querySelectorAll('.depth-2');
-		const depth2Tab = mathLearingFeatures.querySelectorAll('.depth-2 .tab button');
-		const content = mathLearingFeatures.querySelectorAll('.content .inner > div');
-		const prevBtn = mathLearingFeatures.querySelector('.prev');
-		const nextBtn = mathLearingFeatures.querySelector('.next');
+    <script>
+      // Learning Features
+      const mathLearingFeatures = document.querySelector(
+        ".math_learning_features"
+      );
+      const depth1Tab = mathLearingFeatures.querySelectorAll(".depth-1 button");
+      const depth2 = mathLearingFeatures.querySelectorAll(".depth-2");
+      const depth2Tab = mathLearingFeatures.querySelectorAll(
+        ".depth-2 .tab button"
+      );
+      const content = mathLearingFeatures.querySelectorAll(
+        ".content .inner > div"
+      );
+      const prevBtn = mathLearingFeatures.querySelector(".prev");
+      const nextBtn = mathLearingFeatures.querySelector(".next");
 
-		depth1Tab.forEach(tab => {
-			tab.addEventListener('click', (e) => {
-				for(let i = 0; i < depth1Tab.length; i++) {
-					if(depth1Tab[i] === tab) depth1Tab[i].classList.add('on');
-					else depth1Tab[i].classList.remove('on');
-				}
-				for(let i = 0; i < depth2.length; i++) {
-					if(depth2[i].classList.contains(e.target.id)) {
-						depth2[i].classList.add('view');
-						const thisDepth2Tab = depth2[i].querySelectorAll('.tab button');
-						for(let i = 0; i < thisDepth2Tab.length; i++) {
-							if(i === 0) thisDepth2Tab[i].classList.add('on');
-							else thisDepth2Tab[i].classList.remove('on');
-						}
-						for(let i = 0; i < content.length; i++) {
-							if(content[i].classList.contains(thisDepth2Tab[0].id)) {
-								content[i].classList.add('view');
-							} else content[i].classList.remove('view');
-						}
-					} else depth2[i].classList.remove('view');
-				}
-			});
-		})
+      depth1Tab.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          for (let i = 0; i < depth1Tab.length; i++) {
+            if (depth1Tab[i] === tab) depth1Tab[i].classList.add("on");
+            else depth1Tab[i].classList.remove("on");
+          }
+          for (let i = 0; i < depth2.length; i++) {
+            if (depth2[i].classList.contains(e.target.id)) {
+              depth2[i].classList.add("view");
+              const thisDepth2Tab = depth2[i].querySelectorAll(".tab button");
+              for (let i = 0; i < thisDepth2Tab.length; i++) {
+                if (i === 0) thisDepth2Tab[i].classList.add("on");
+                else thisDepth2Tab[i].classList.remove("on");
+              }
+              for (let i = 0; i < content.length; i++) {
+                if (content[i].classList.contains(thisDepth2Tab[0].id)) {
+                  content[i].classList.add("view");
+                } else content[i].classList.remove("view");
+              }
+            } else depth2[i].classList.remove("view");
+          }
+        });
+      });
 
-		depth1Tab[0].click();
+      depth1Tab[0].click();
 
-		depth2Tab.forEach(tab => {
-			tab.addEventListener('click', (e) => {
-				for(let i = 0; i < depth2Tab.length; i++) {
-					if(depth2Tab[i] === tab) depth2Tab[i].classList.add('on');
-					else depth2Tab[i].classList.remove('on');
-				}
-				for(let i = 0; i < content.length; i++) {
-					if(content[i].classList.contains(e.target.id)) content[i].classList.add('view');
-					else content[i].classList.remove('view');
-				}
-			});
-		})
+      depth2Tab.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          for (let i = 0; i < depth2Tab.length; i++) {
+            if (depth2Tab[i] === tab) depth2Tab[i].classList.add("on");
+            else depth2Tab[i].classList.remove("on");
+          }
+          for (let i = 0; i < content.length; i++) {
+            if (content[i].classList.contains(e.target.id))
+              content[i].classList.add("view");
+            else content[i].classList.remove("view");
+          }
+        });
+      });
 
-		let end = false;
-		let moveWidth = 0;
-		let moveNum = 0;
+      let end = false;
+      let moveWidth = 0;
+      let moveNum = 0;
 
-		nextBtn.addEventListener('click', (e) => {
-			const thisTab = e.target.parentNode.querySelector('.tab');
-			const thisTabBtn = thisTab.querySelectorAll('button');
-			const btnWidth = thisTabBtn[0].clientWidth;
-			if(moveNum === thisTabBtn.length - 3) return;
-			moveWidth += btnWidth;
-			thisTab.style.transform = `translateX(-${moveWidth}px)`;
-			moveNum++;
-		})
+      nextBtn.addEventListener("click", (e) => {
+        const thisTab = e.target.parentNode.querySelector(".tab");
+        const thisTabBtn = thisTab.querySelectorAll("button");
+        const btnWidth = thisTabBtn[0].clientWidth;
+        if (moveNum === thisTabBtn.length - 3) return;
+        moveWidth += btnWidth;
+        thisTab.style.transform = `translateX(-${moveWidth}px)`;
+        moveNum++;
+      });
 
-		prevBtn.addEventListener('click', (e) => {
-			const thisTab = e.target.parentNode.querySelector('.tab');
-			const thisTabBtn = thisTab.querySelectorAll('button');
-			const btnWidth = thisTabBtn[0].clientWidth;
-			if(moveNum === 0) return;
-			moveWidth -= btnWidth;
-			thisTab.style.transform = `translateX(-${moveWidth}px)`;
-			moveNum--;
-		})
-	</script>
-</body>
+      prevBtn.addEventListener("click", (e) => {
+        const thisTab = e.target.parentNode.querySelector(".tab");
+        const thisTabBtn = thisTab.querySelectorAll("button");
+        const btnWidth = thisTabBtn[0].clientWidth;
+        if (moveNum === 0) return;
+        moveWidth -= btnWidth;
+        thisTab.style.transform = `translateX(-${moveWidth}px)`;
+        moveNum--;
+      });
+    </script>
+  </body>
 </html>

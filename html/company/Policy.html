@@ -1,435 +1,3690 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="robots" content="all" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-	<script src="../../js/jquery-3.4.1.min.js"></script>
-	<script src="../../js/slick.min.js"></script>
-	<script src="../../js/jquery.selectric.min.js"></script>
-	<script src="../../js/common.js"></script>
-	<!-- <script src="../../js/sub.js"></script> -->
-	<meta property="og:image" content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg">
-	<title>비상교육</title>
-</head>
-<body>
-	<div id="wrap">
-		<div class="top_floating"><p><a href="../pricing/pricing.html">GET STARTED FREE FOR 30 DAYS!</a></p></div>
-		<header>
-			<h1><a href="../main/Main_1.html"><img src="../../images/ico/ico_logo.png" alt="AllviA"></a></h1>
-			<nav>
-				<h2><a href="#;">menu</a></h2>
-				<ul class="mb_hidden">
-					<li><a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
-						<ul class="depth02">
-							<li><a href="../explore/Explore_1.html">Features</a>
-								<ul>
-									<li><a href="../explore/Explore_1.html">Overview</a></li>
-									<li><a href="../explore/Remote.html">Remote</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_2.html">Wings</a></li>
-							<li><a href="../explore/Explore_3.html">ELiF</a></li>
-							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-						</ul>
-					</li>
-					<li><a href="../pricing/pricing.html"><span>PRICING</span></a>
-						<ul class="depth02">
-							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-						</ul>						
-					</li>
-					<li class="on"><a href="../resources/News_1.html"><span>RESOURCES</span></a>
-						<ul class="depth02">
-							<li><a href="../resources/News_1.html">Blog</a>
-								<ul>
-									<li><a href="../resources/News_1.html">News</a></li>
-									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-								</ul>
-							</li>
-							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-							<li><a href="../resources/Faq_1.html">Support</a>
-								<ul>
-									<li><a href="../resources/Faq_1.html">FAQ</a></li>
-									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-									<li><a href="#;">Chat</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="util mb_hidden">
-				<div class="user">
-					<a href="#;">MY DASHBOARD</a>
-					<a href="#;">SIGN UP</a>
-				</div>
-				<a href="#;" class="start">GET STARTED FREE</a>
-				<div class="lang">
-					<a href="#;" class="en">EN</a>
-					<ul>
-						<li>EN</li>
-						<li>KR</li>
-						<li>JP</li>
-						<li>CH</li>
-						<li>SP</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header_dim"></div>
-			<div class="mobile_menu">
-				<p class="menu_logo"><img src="../../images/ico/ico_logo_w.png" alt="AllviA"></p>
-				<div class="login_wrap">
-					<!-- <div class="login_after">
-						<p>WELCOME!</p>
-						<div class="user_info">
-							<strong>allvia123</strong>
-							<a href="../dashboard/CashPoint_1.html" class="my_btn">MY DASHBOARD</a>
-						</div>
-						<a href="#;" class="txt_btn">LOG OUT</a>
-						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
-					</div> -->
-					<div class="login_before">
-						<a href="../login/Login.html" class="login_btn">LOG IN</a>
-						<a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
-						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
-					</div>
-				</div>
-				<ul class="menu">
-					<li><a href="#;"><span>Explore</span></a>
-						<ul class="depth02">
-														<li><a href="../explore/Explore_1.html">Features</a>
-								<ul>
-									<li><a href="../explore/Explore_1.html">Overview</a></li>
-									<li><a href="../explore/Remote.html">Remote</a></li>
-								</ul>
-							</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/jquery.selectric.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <meta
+      property="og:image"
+      content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg"
+    />
+    <title>비상교육</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="top_floating">
+        <p>
+          <a href="../pricing/pricing.html">GET STARTED FREE FOR 30 DAYS!</a>
+        </p>
+      </div>
+      <header>
+        <h1>
+          <a href="../main/Main_1.html"
+            ><img src="../../images/ico/ico_logo.png" alt="AllviA"
+          /></a>
+        </h1>
+        <nav>
+          <h2><a href="#;">menu</a></h2>
+          <ul class="mb_hidden">
+            <li>
+              <a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../explore/Explore_1.html">Features</a>
+                  <ul>
+                    <li><a href="../explore/Explore_1.html">Overview</a></li>
+                    <li><a href="../explore/Remote.html">Remote</a></li>
+                  </ul>
+                </li>
+                <li><a href="../explore/Explore_2.html">Wings</a></li>
+                <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                <li>
+                  <a href="../explore/Explore_play.html">Play the Demo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../pricing/pricing.html"><span>PRICING</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../pricing/pricing.html#price01">Get Started Free</a>
+                </li>
+                <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+              </ul>
+            </li>
+            <li class="on">
+              <a href="../resources/News_1.html"><span>RESOURCES</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../resources/Resellers_1.html">Resellers</a></li>
+                <li>
+                  <a href="../resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../resources/Contact_1.html">Contact Us</a>
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="util mb_hidden">
+          <div class="user">
+            <a href="#;">MY DASHBOARD</a>
+            <a href="#;">SIGN UP</a>
+          </div>
+          <a href="#;" class="start">GET STARTED FREE</a>
+          <div class="lang">
+            <a href="#;" class="en">EN</a>
+            <ul>
+              <li>EN</li>
+              <li>KR</li>
+              <li>JP</li>
+              <li>CH</li>
+              <li>SP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_dim"></div>
+        <div class="mobile_menu">
+          <p class="menu_logo">
+            <img src="../../images/ico/ico_logo_w.png" alt="AllviA" />
+          </p>
+          <div class="login_wrap">
+            <div class="login_before">
+              <a href="../login/Login.html" class="login_btn">LOG IN</a>
+              <a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
+              <a href="../pricing/pricing.html#price01" class="start_btn"
+                >GET STARTED FREE</a
+              >
+            </div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#;"><span>Explore</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../explore/Explore_1.html">Features</a>
+                  <ul>
+                    <li><a href="../explore/Explore_1.html">Overview</a></li>
+                    <li><a href="../explore/Remote.html">Remote</a></li>
+                  </ul>
+                </li>
 
-							<li><a href="../explore/Explore_2.html">Wings</a></li>
-							<li><a href="../explore/Explore_3.html">ELiF</a></li>
-							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-						</ul>
-					</li>
-					<li><a href="#;">Pricing</a>
-						<ul>
-							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-						</ul>
-					</li>
-					<li><a href="#;">Resources</a>
-						<ul>
-							<li><a href="../resources/News_1.html">Blog</a>
-								<ul>
-									<li><a href="../resources/News_1.html">News</a></li>
-									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-								</ul>
-							</li>
-							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-							<li><a href="../resources/Faq_1.html">Support</a>
-								<ul>
-									<li><a href="../resources/Faq_1.html">FAQ</a></li>
-									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-									<li><a href="#;">Chat</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#;">Company</a>
-						<ul>
-							<li><a href="../company/Aboutus.html">About Us</a></li>
-							<li class="current"><a href="../company/Policy.html">Privacy Policy</a></li><!-- 현재페이지에 해당하는 메뉴에 current 클래스 추가 -->
-							<li><a href="../company/Terms.html">Terms & Conditions</a></li>
-						</ul>
-					</li>
-				</ul>
-				<div class="sns">
-					<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
-					<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkin">linkedin</a>
-					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
-					<a href="../main/Main_1.html" class="home">home</a>
-				</div>
-				<div class="lang">
-					<a href="#;" class="on">EN</a>
-					<a href="#;">ES</a>
-					<a href="#;">JP</a>
-					<!-- <a href="#;">KR</a>
-					<a href="#;">CH</a> -->
-				</div>
-				<a href="#;" class="menu_close">menu close</a>
-			</div>
-		</header>
-		<div id="container" class="sub policy_tablewrap subC">
-			<!-- s : 2021-10-19 수정 -->
-			<div id="contents" class="wrapper no_pd">
-				<h3>VISANG EDUCATION INC. PRIVACY POLICY</h3>				
-				<div class="scroll_table">
-					<table class="poli_table_new">
-						<caption>VISANG EDUCATION INC. PRIVACY POLICY</caption>
-						<colgroup>
-							<col style="width:15%">
-							<col style="width:14%">
-							<col style="width:23%">
-							<col style="width:23%">
-							<col style="width:25%">
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col">Classification</th>
-								<th scope="col">Category</th>
-								<th scope="col">Items Collected/Used</th>
-								<th scope="col">Purpose of Collection and Use</th>
-								<th scope="col">Period of Retention and Use </th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="3">Required</td>
-								<td>All Members</td>
-								<td>Names and e-mail addresses</td>
-								<td class="tal">Membership subscription, checking double registration, Service provision and consultation, prevention of unlawful use, satisfaction survey.</td>
-								<td rowspan="3" class="tal">To be deleted immediately upon <br>Membership withdrawal; provided, it will be retained for a statutory period if specified in relevant statues and internal policies such as the Act on Consumer Protection in <br>Electronic Commerce, etc., and the <br>Protection of Communication Secrets Act.</td>
-							</tr>
-							<tr>
-								<td class="bd_la">Partner</td>
-								<td class="tal">Company name, representative’s name, contact information, address, business registration number, language used, country, bank account number (account holder name), billing and payment records.</td>
-								<td class="tal">Prevention of unlawful use, identification for Service provision, payment, <br>cancellation, and information necessary for processing refund, information on <br>payment method authentication and prevention of payment misappropriation, account creation and management.</td>
-							</tr>
-							<tr>
-								<td class="bd_la">School</td>
-								<td class="tal">School name, contact number, address, language used, country, bank account number (account holder name), billing and payment records,* information on School teachers, students and parents.</td>
-								<td class="tal">Information on processing payment, cancellation, and refund, information on payment method authentication and prevention of payment misappropriation </td>
-							</tr>
-							<tr>
-								<td rowspan="2">Optional</td>
-								<td rowspan="2">Optional information <br>when using Services </td>
-								<td class="tal">Information on learning purpose, preference (class time, tuition)</td>
-								<td>Purpose of product recommendation </td>
-								<td rowspan="3" class="tal">Until the Service provision is achieved; provided, it will be retained for a statutory period if specified in relevant statues and internal policies.</td>
-							</tr>
-							<tr>
-								<td class="bd_la tal">Nationality, contact information, date of birth, standard time, currency unit, codified identification information (CI),</td>
-								<td>Service provision</td>
-							</tr>
-							<tr>
-								<td class="tal" colspan="2">Other automatically collected information </td>
-								<td class="tal">
-									<span>1) Device information: Platform access device type, operating system and version, mobile <br>network information, access country, URL, system activity area</span>
-									<span>2) Software information: information on the version and information on updated software being used.</span>
-									<span>3) Platform use information: information on using platform, browser, preferred language, connected time, page, Member activity, Internet protocol address, etc.</span>
-								</td>
-								<td>Purpose of providing various Services</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="scroll_table para01">
-					<div class="policy_table wd33">                  
-						<div class="row thead">
-							<div class="cell">Trustee</div>
-							<div class="cell">Details of entrustment</div>
-							<div class="cell">Retention and use period of personal information </div>
-						</div>	
-						<div class="row">                    
-							<div class="cell wd_lf">
-								<div>
-									<p>Payletter Co.,Ltd.</p>
-									<p>Payment for Service for Charge</p>   
-								</div>
-								<div>
-									<p>Amazon Web Service Inc</p>
-									<p>Provision of infrastructure </p>
-								</div>
-							</div>
-							<div class="cell wd_rf">Until Member’s withdrawal or expiry of entrustment contract</div>
-						</div>
-					</div>
-				</div>
-				<div class="scroll_table para01">
-					<div class="policy_table type03">				  
-						<div class="pth_thead">
-							<div class="ptb_th"><span>Trustee</span><br>Recipient</div>
-							<div class="ptb_th">Items transferred</div>
-							<div class="ptb_th">Recipient country</div>
-							<div class="ptb_th">Date, time and method of <br>transfer</div>
-							<div class="ptb_th">Recipient’s purpose of <br>using the information</div>
-							<div class="ptb_th">Period of retention and <br>use of personal information</div>
-						</div>	
-						<div class="pth_tbody">	  
-							<div class="ptb_td">Amazon Web Services Inc.</div>
-							<div class="ptb_td">Service use record or personal <br>information collected</div>
-							<div class="ptb_td">Singapore</div>
-							<div class="ptb_td">To be transmitted through <br>the network at the time of usingthe<br> Service</div>
-							<div class="ptb_td">operating data storage <br>and Service to provide <br>AllviA Edu’s Service, etc. </div>
-							<div class="ptb_td">Until Service changes <br>(Until changes in the use of <br>cloud Services currently <br>used by the Company)</div>
-						</div>
-					</div>
-				</div>
-				<div class="scroll_table para01">
-					<table class="poli_table_new type02">
-						<caption>VISANG EDUCATION INC. PRIVACY POLICY</caption>
-						<colgroup>
-							<col style="width:29%">
-							<col style="width:49%">
-							<col style="width:22%">
-						</colgroup>
-						<thead>
-							<tr>
-								<th class="bg_gr" scope="col">Relevant Statutes</th>
-								<th class="bg_gr" scope="col">Items Retained</th>
-								<th class="bg_gr" scope="col">Retention Period</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="4">Article 6 of the Act on Consumer Protection<br>in Electronic Commerce, etc.</td>
-								<td>Records on withdrawal from contract or subscription, etc. </td>
-								<td>5 years</td>
-							</tr>
-							<tr>
-								<td class="bd_la">Records on payment and supply of goods, etc.</td>
-								<td>5 years</td>
-							</tr>
-							<tr>
-								<td class="bd_la">Records of consumer complaints or dispute resolution</td>
-								<td>3 years</td>
-							</tr>
-							<tr>
-								<td class="bd_la">records related to representations and advertisements</td>
-								<td>6 months</td>
-							</tr>
-							<tr>
-								<td>Communication Secret Protection Act </td>
-								<td>Internet log record, access point tracking record</td>
-								<td>3 months</td>
-							</tr>
-						</tbody>	
-					</table>
-				</div>
-				<div class="policy_table type05 fix_hei para01">				  
-					<div class="pth_tbody">	  
-						<div class="ptb_td">Personal Information Protection Officer (CPO)</div>
-						<div class="ptb_td">Affiliation: IT Strategy Core <br>Name: Jung-woo Lee</div>
-					</div>
-					<div class="pth_tbody">	  
-						<div class="ptb_td">Personal Information Protection Officer (CPO)</div>
-						<div class="ptb_td">
-							<p>Affiliation: IT Strategy CoreName: Jung-woo Lee</p>
-						</div>
-					</div>
-					<div class="pth_tbody">	  
-						<div class="ptb_td">Personal Information Protection Officer (CPO)</div>
-						<div class="ptb_td">
-							<p>Affiliation: IT Strategy CoreName: Jung-woo Lee</p>
-						</div>
-					</div>
-				</div>
-				<div class="scroll_table para01">
-					<div class="policy_table type06 fix_hei">				  
-						<div class="pth_thead">
-							<div class="ptb_th wd01 bg_gr">Category</div>
-							<div class="ptb_th wd02">Homepage</div>
-							<div class="ptb_th wd03">Phone</div>
-						</div>					  
-						<div class="pth_tbody">	  
-							<div class="ptb_td wd01 bg_gr">Personal Information Infringement Report Center <br>(operated by Korea Internet & Security Agency) </div>
-							<div class="ptb_td wd02"><a href="privacy.kisa.or.kr" target="_blank">privacy.kisa.or.kr</a></div>
-							<div class="ptb_td wd03">(no area code) 118</div>
-						</div>
-						<div class="pth_tbody">	  
-							<div class="ptb_td wd01 bg_gr">Personal Information Dispute Mediation Board</div>
-							<div class="ptb_td wd02"><a href="www.kopico.go.kr" target="_blank">www.kopico.go.kr</a></div>
-							<div class="ptb_td wd03">(no area code) <br>1833-6972</div>
-						</div>
-						<div class="pth_tbody">	  
-							<div class="ptb_td wd01 bg_gr">Supreme Prosecutor's Office Cyber Crime Investigatory Team</div>
-							<div class="ptb_td wd02"><a href="www.spo.go.kr" target="_blank">www.spo.go.kr</a></div>
-							<div class="ptb_td wd03">(no area code) 1301</div>
-						</div>
-						<div class="pth_tbody">	  
-							<div class="ptb_td wd01 bg_gr">National Police Agency Cyber Security Bureau</div>
-							<div class="ptb_td wd02"><a href="cyberbureau.police.go.kr" target="_blank">cyberbureau.police.go.kr</a></div>
-							<div class="ptb_td wd03">(no area code) 182</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- e : 2021-10-19 수정 -->
-		</div><!-- //container -->
-		<footer>
-			<div class="wrapper">
-				<div class="sitemap">
-					<ul>
-						<li>
-							<a href="../explore/Explore_1.html">EXPLORE</a>
-							<ul>
-								<li><a href="../explore/Explore_1.html">Features</a>
-									<ul class="depth-2">
-										<li><a href="../explore/Explore_1.html">Overview</a></li>
-										<li><a href="../explore/Remote.html">Remote</a></li>
-									</ul>
-								</li>
-								<li><a href="../explore/Explore_2.html">Wings</a></li>
-								<li><a href="../explore/Explore_3.html">ELiF</a></li>
-								<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="../pricing/pricing.html">PRICING</a>
-							<ul>
-								<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-								<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-								<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-								<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="../resources/News_1.html">RESOURCES</a>
-							<ul>
-								<li><a href="../resources/News_1.html">Blog</a>
-									<ul class="depth-2">
-										<li><a href="../resources/News_1.html">News</a></li>
-										<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-									</ul>
-								</li>
-								<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-								<li><a href="../resources/Faq_1.html">Support</a>
-									<ul class="depth-2">
-										<li><a href="../resources/Faq_1.html">FAQ</a></li>
-										<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-										<li><a href="#;">Chat</a></li>
-									</ul>
-								</li>	
-							</ul>
-						</li>
-						<li>
-							<a href="../company/Aboutus.html">COMPANY</a>
-							<ul>
-								<li><a href="../company/Aboutus.html">About Us</a></li>
-								<li><a href="../company/Policy.html">Privacy Policy</a></li>
-								<li><a href="../company/Terms.html">Terms & Conditions</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="foot_info">
-					<p class="btm_logo"><img src="../../images/ico/ico_btm_logo.png" alt="VISANG"></p>
-					<p class="copy">COPYRIGHT © VISANG EDUCATION INC. <br>ALL RIGHTS RESERVED</p>
-					<div class="sns">
-						<strong>FOLLOW US</strong>
-						<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
-						<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkedin">linkedin</a>
-						<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-</body>
+                <li><a href="../explore/Explore_2.html">Wings</a></li>
+                <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                <li>
+                  <a href="../explore/Explore_play.html">Play the Demo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Pricing</a>
+              <ul>
+                <li>
+                  <a href="../pricing/pricing.html#price01">Get Started Free</a>
+                </li>
+                <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Resources</a>
+              <ul>
+                <li>
+                  <a href="../resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../resources/Resellers_1.html">Resellers</a></li>
+                <li>
+                  <a href="../resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../resources/Contact_1.html">Contact Us</a>
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Company</a>
+              <ul>
+                <li><a href="../company/Aboutus.html">About Us</a></li>
+                <li class="current">
+                  <a href="../company/Policy.html">Privacy Policy</a>
+                </li>
+                <li><a href="../company/Terms.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sns">
+            <a
+              href="https://www.facebook.com/visangeducation"
+              target="_blank"
+              title="새창"
+              class="facebook"
+              >facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+              target="_blank"
+              title="새창"
+              class="linkin"
+              >linkedin</a
+            >
+            <a
+              href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+              target="_blank"
+              title="새창"
+              class="youtube"
+              >youtube</a
+            >
+            <a href="../main/Main_1.html" class="home">home</a>
+          </div>
+          <div class="lang">
+            <a href="#;" class="on">EN</a>
+            <a href="#;">ES</a>
+            <a href="#;">JP</a>
+          </div>
+          <a href="#;" class="menu_close">menu close</a>
+        </div>
+      </header>
+      <div id="container" class="sub subC">
+        <!-- [s] 2023-05-19 -->
+        <div id="contents" class="wrapper no_pd">
+          <div id="policy_cont">
+            <!-- [s] en -->
+            <div class="policy_lang_cont en">
+              <h3>Guideline for Processing Personal Information</h3>
+              <div class="policy_wrap">
+                <div class="para01">
+                  <p class="stit">
+                    Article 1 (Purpose of use and processing of personal
+                    information)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      Visang Education Co., Ltd. (hereinafter referred to as the
+                      “Company”) values and is committed to protecting Users’
+                      personal information. The Company complies with statutory
+                      sources relating to personal information protection such
+                      as Personal Information Protection Act, Act on Promotion
+                      of Information and Communications Network Utilization and
+                      Information Protection, etc., and General Data Protection
+                      Regulation (GDPR), a set of international regulations, as
+                      well as the Guideline for Handling Personal Information
+                      that the Company enacted based on the authority of
+                      relevant laws and regulations, which is disclosed on the
+                      Internet Site and mobile application so that Users can
+                      easily access and view at any time.
+                    </p>
+                    <p>
+                      Users may refuse to give consent to collection, use and
+                      provision of personal information if they do not wish to
+                      do so. However, we advise that the whole or part of the
+                      Service will not be available to Users who refuse to
+                      consent.
+                    </p>
+                    <p>
+                      The Company processes personal information for the
+                      following purposes. The personal information being
+                      processed will not be used for any purpose other than set
+                      forth in the following, and if the purpose of use is
+                      changed, we will take the necessary measures such as
+                      obtaining separate consent pursuant to Article 18 of the
+                      Personal Information Protection Act:
+                    </p>
+                    <p>1. Providing Service;</p>
+                    <p>
+                      2. Member management and identification, confirmation of
+                      intention to subscribe membership, confirmation of User
+                      identity and age, prevention of unlawful use;
+                    </p>
+                    <p>
+                      3. Developing new Services, providing various Services,
+                      processing of inquiries or complaints/disputes, and
+                      communicating notices;
+                    </p>
+                    <p>
+                      4. Information delivery, marketing, and advertising at
+                      various events;
+                    </p>
+                    <p>
+                      5. Preparing statistics on service usage records, access
+                      frequency and Service use, providing customized Service,
+                      and improving Services;
+                    </p>
+                    <p>
+                      6. Preventing from and sanctioning against acts that
+                      impinges on the smooth operation of the Service, including
+                      unlawful use, and prevention of account misappropriation
+                      and fraudulent transactions.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">Article 2 (Definition of Terms)</p>
+                  <div class="para02">
+                    <p>
+                      The following terms used herein are defined as follows:
+                    </p>
+                    <p>
+                      1. “Member” refers to a person who has subscribed
+                      Membership to the AllviA Edu Site (allviaedu.com) by
+                      providing personal information and thereby can use the
+                      classes and Services provided by the AllviA Edu’s Website
+                      (allviaedu.com).
+                    </p>
+                    <p>
+                      2. “Service” refers to the service available on AllviA
+                      Edu’s Website (allviaedu.com) which Users can use
+                      regardless of the implementing terminal (including various
+                      wired and wireless devices such as PC, mobile, tablet PC).
+                    </p>
+                    <p>
+                      3. “ID” refers to a combination of letters and numbers
+                      formulated by a Member and approved by the Company for the
+                      purpose of the Member’s identification and Service use,
+                      including the ID formulated by the Member.
+                    </p>
+                    <p>
+                      4. “Password” refers to any English letters, numbers,
+                      etc., formulated by the Member and approved by the Company
+                      to confirm identity and protect information of the Member.
+                    </p>
+                    <p>
+                      5. “Service for Charge” refers to various online digital
+                      contents and other Services provided by the Company that
+                      can be used by Members for certain fee through the AllviA
+                      Edu Website (allviaedu.com), including without limitation
+                      the information and advertisement posting services.
+                    </p>
+                    <p>
+                      6. “IMEI (Intel Management Engine Interface)” refers to a
+                      15-digit number embedded in a portable mobile terminal
+                      representing the unique serial number of the terminal. (It
+                      is encrypted and protected safely.)
+                    </p>
+                    <p>
+                      7. “Unlawful Use” refers to copyright infringement and
+                      identity misappropriation or any other act prohibited by
+                      the Service User Agreement of the AllviA Edu Website
+                      (allviaedu.com) provided by the Company, or any wrongful
+                      act prescribed by a statute.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 3 (Collection and Use of Personal Information)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      The Company collects, uses, provides, and destroys
+                      personal information in the following manner depending on
+                      the type of Service used. Furthermore, the Company
+                      invariably obtains the User's consent when collecting
+                      personal information that can personally identify the
+                      User. When the personal information processing policy is
+                      changed, such change is always notified to the User and
+                      posted publicly so that Users may check it from time to
+                      time.
+                    </p>
+                    <p>
+                      1. Pursuant to the GDPR, if a Member resides in the
+                      European Economic Area (“EEA”), we rely on one of the
+                      following legal grounds for processing information about
+                      the Member.
+                    </p>
+                    <p>① The Member has consented to the User Agreement;</p>
+                    <p>② There is a legitimate interest; or</p>
+                    <p>
+                      ③ Processing of it is necessary to fulfill the Agreement
+                      with the Company,
+                    </p>
+                    <p>obligations under law or regulations</p>
+                    <p>
+                      2. The items of personal information to be processed by
+                      the Company and the period of retention and use are as set
+                      forth in the following table:
+                    </p>
+                    <p>▶Additional information collected after user consent.</p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          ▶Additional information collected after user consent.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">Classification</th>
+                            <th scope="col" colspan="2">Category</th>
+                            <th scope="col">Items Collected/Used</th>
+                            <th scope="col">Purpose of Collection and Use</th>
+                            <th scope="col">Period of Retention and Use</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">Required</td>
+                            <td rowspan="2">Membership subscription</td>
+                            <td>Partner</td>
+                            <td class="tal">
+                              ID, password, name, phone number, email, address,
+                              partner name, contract country
+                            </td>
+                            <td rowspan="4" class="tal">
+                              Membership subscription, checking double
+                              registration, Service provision and consultation,
+                              Prevention of unlawful use, identification for
+                              Service provision, payment, cancellation, and
+                              information necessary for processing refund,
+                              information on payment method authentication and
+                              prevention of payment misappropriation, account
+                              creation and management.
+                            </td>
+                            <td rowspan="4" class="tal">
+                              To be deleted immediately upon <br />Membership
+                              withdrawal; provided, it will be retained for a
+                              statutory period if specified in relevant statues
+                              and internal policies such as the Act on Consumer
+                              Protection in <br />Electronic Commerce, etc., and
+                              the <br />Protection of Communication Secrets Act.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">School</td>
+                            <td class="tal">
+                              ID, password, name, school name, phone number,
+                              email, country, brand
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="bd_la">
+                              Payment and refund
+                            </td>
+                            <td class="tal">
+                              1) Payment Information Card ID, credit card
+                              number, bank name, depositor/depositor, account
+                              number, mobile phone information <br />
+                              2) Refund Information Bank name, account holder
+                              name, bank account number.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la" colspan="2">Customer Inquiry</td>
+                            <td>Names and e-mail addresses</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>▶Additional information collected after user consent.</p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          Additional information collected after user consent.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2">Optional</td>
+                            <td>Partner</td>
+                            <td>
+                              Business Registration Number, Partner Information
+                            </td>
+                            <td rowspan="2">
+                              Service and consultancy, customer service.
+                            </td>
+                            <td rowspan="3" class="tal">
+                              Until the Service provision is achieved; provided,
+                              it will be retained for a statutory period if
+                              specified in relevant statues and internal
+                              policies.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">Customer Inquiry</td>
+                            <td>Service and consultancy, customer service.</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              Other automatically collected information
+                            </td>
+                            <td class="tal">
+                              <span
+                                >1) Device information: Platform access device
+                                type, operating system and version, mobile
+                                <br />network information, access country, URL,
+                                system activity area</span
+                              >
+                              <span
+                                >2) Software information: information on the
+                                version and information on updated software
+                                being used.</span
+                              >
+                              <span
+                                >3) Platform use information: information on
+                                using platform, browser, preferred language,
+                                connected time, page, Member activity, Internet
+                                protocol address, etc.</span
+                              >
+                            </td>
+                            <td>Purpose of providing various Services</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3. Period retention and use under the statutes and under
+                      the internal policies will be as follows:
+                    </p>
+                    <p>1) Records on Membership subscription and management</p>
+                    <p>
+                      - Retention period: Until Membership withdrawal (or until
+                      the following events come to an end, if applicable)
+                    </p>
+                    <p>
+                      - If an investigation/inspection is in progress due to a
+                      violation of applicable laws, until such
+                      investigation/inspection is completed.
+                    </p>
+                    <p>
+                      - Until settlement of receivables/payables arising from
+                      the Service use
+                    </p>
+                    <p>
+                      2) Records on the provision of goods/Services: Until the
+                      completion of the supply of goods/Services and the
+                      completion of payment/settlement (however, in the case of
+                      the following items, until the end of the relevant item)
+                    </p>
+                    <p>
+                      - Records on contract or withdrawal from subscription: 5
+                      years
+                    </p>
+                    <p>
+                      - Records on displayed advertisements: 6 months after the
+                      end of advertisement posting
+                    </p>
+                    <p>- Records on payment and supply of goods: 5 years</p>
+                    <p>
+                      - Records on consumer complaints or dispute resolution: 3
+                      years
+                    </p>
+                    <p>
+                      3) Retention of communication history confirmation data in
+                      accordance with Article 15-2 of the Communication Secrets
+                      Protection Act
+                    </p>
+                    <p>
+                      - Computer communication, Internet log record, connection
+                      point tracking: 3 months
+                    </p>
+                    <p>4) Company’s internal policy</p>
+                    <p>- Records of unlawful use, etc.: 10 years</p>
+                    <p>
+                      4. To guarantee the rights of Users, the Company may
+                      contact Users using User information for the purpose of
+                      Service advisory.
+                    </p>
+                    <p>
+                      5. The information collected by the Company under this
+                      Article may be used for statistics and analysis as a
+                      consequence of using the Service.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">Article 4 (Utilization of Cookies)</p>
+                  <div class="para02">
+                    <p>
+                      1. While using Internet Services, access IP addresses,
+                      cookies, Service use records, etc. may be created and
+                      collected.
+                    </p>
+                    <p>
+                      2. The Company collects cookie information and uses it to
+                      check whether Users are having access to each Service they
+                      have visited previously, and to confirm and answer User
+                      inquiries.
+                    </p>
+                    <p>
+                      3. Users have the right to elect to accept cookies.
+                      Accordingly, you can permit all cookies by setting options
+                      in the web browser, or check each time a cookie is saved,
+                      or refuse to save any cookies. However, if you refuse to
+                      save cookies, you may have some difficulties in using
+                      certain part of Services that require login.
+                    </p>
+                    <p>* How to set cookies (example)</p>
+                    <p>
+                      ① Internet Explorer: Tools at the top of the web browser →
+                      Internet Options → Privacy → Advanced
+                    </p>
+                    <p>
+                      ② Chrome: Settings menu on the right side of the web
+                      browser → Advanced settings at the bottom of the screen →
+                      Contents setting button for personal information → Cookies
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 5 (Method to Collect Personal Information)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      Mobile application, web page, online consultation through
+                      customer center, event participation, etc.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 6 (Limitation on Minor’s Use of Services)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      The Company does not collect any personal information from
+                      a minor under the age of 14, and if such personal
+                      information is somehow collected, we may take reasonable
+                      steps to delete it from our personal information records.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 7 (Provision of Personal Information to Third
+                    Parties)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. The Company processes Users' personal information
+                      within the scope specified in this Guideline for
+                      Processing Personal Information, and will neither use it
+                      beyond the purpose of collection nor provide it to a third
+                      party without the User's prior consent. However, in the
+                      case of providing Members’ personal information to a third
+                      party, such as a partner company in the following manner
+                      to ensure the quality of our Service, we will notify the
+                      Member in advance of the third party’s name, personal
+                      information items to be provided, purpose of provision,
+                      retention period, etc. and seek to obtain individual
+                      consents of Members. Without consent, no information will
+                      be provided, and we will notify and seek Members’ consents
+                      even when such partner company is changed.
+                    </p>
+                    <p>
+                      2. The Company will not provide the User's personal
+                      information to a third party without the User's consent.
+                      However, in this case, the Service use may be restricted.
+                      We would like to advise that this is a necessary part for
+                      providing quality Service and smooth use of the Service.
+                    </p>
+                    <p>
+                      3. In any of the following cases, the Company may provide
+                      personal information to a third party without the User's
+                      consent:
+                    </p>
+                    <p>
+                      1) If it is information necessary for preparing
+                      statistics, scientific research, preservation of public
+                      record, etc. in pseudonymous form containing no
+                      information that can be used to identify a specific
+                      individual;
+                    </p>
+                    <p>
+                      2) If there is an inevitable reason required by the
+                      statutory provisions or law;
+                    </p>
+                    <p>
+                      3) If it is requested by an investigation agency for the
+                      purpose of investigation in compliance with the procedures
+                      and methods prescribed by laws and regulations;
+                    </p>
+                    <p>
+                      4) If it falls under Article 17 or 18 of the Personal
+                      Information Protection Act.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 8 (Entrustment of Personal Information Processing)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. In its endeavor to provide enhanced Services, the
+                      Company may entrust the processing of personal information
+                      to a third party. The Company has established rules on
+                      necessary matters in compliance with applicable laws to
+                      ensure that personal information can be safely managed
+                      when entering into an entrustment contract. In addition,
+                      when entrusting the processing of personal information,
+                      the Company discloses the details of the entrusted
+                      subjects and the person who handles by such entrustment
+                      (hereinafter referred to as the 'Trustee’) so that Users
+                      can readily view them at any time. The same will apply
+                      when the contents of the entrusted work are updated or the
+                      Trustee is changed.
+                    </p>
+                    <p>
+                      2. The details of entrusted work for personal information
+                      processing and domestic Trustees are as set forth below:
+                    </p>
+                    <div class="scroll_table para01">
+                      <div class="policy_table wd33">
+                        <div class="row thead">
+                          <div class="cell">Trustee</div>
+                          <div class="cell">Details of entrustment</div>
+                          <div class="cell">
+                            Retention and use period of personal information
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="cell wd_lf">
+                            <div>
+                              <p>Amazon Web Service Inc</p>
+                              <p>Provision of infrastructure</p>
+                            </div>
+                          </div>
+                          <div class="cell wd_rf">
+                            Until Member’s withdrawal or expiry of entrustment
+                            contract
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 9 (the transmission of personal information abroad)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      The Company transfers the collected payment information
+                      abroad and maintains the information obtained or derived
+                      from you in a database held by Paymentwall (physical
+                      storage locations: the European Union, the United States
+                      and India).
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>
+                              Trustee <br />
+                              Recipient
+                            </th>
+                            <th>Items transferred</th>
+                            <th>Recipient country</th>
+                            <th>Date, time and method of transfer</th>
+                            <th>
+                              Recipient’s purpose of using the information
+                            </th>
+                            <th>
+                              Period of retention and use of personal
+                              information
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Paymentwall</td>
+                            <td>Collected payment information</td>
+                            <td>European Union, USA and India.</td>
+                            <td>
+                              Transfer over the network at the time of use of
+                              the payment service
+                            </td>
+                            <td>Payment and refund</td>
+                            <td>Until Service changes</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 10 (Retention and Destruction of Personal
+                    Information)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. Once the period of retention and use of personal
+                      information has elapsed, the Company destroys Users'
+                      personal information without delay.
+                    </p>
+                    <p>
+                      2. Information that must be retained in accordance with
+                      the following related laws and regulations will be
+                      retained for the period specified in the statutes before
+                      being destroyed.
+                    </p>
+                    <div class="scroll_table para01">
+                      <table class="poli_table_new type02">
+                        <caption>
+                          VISANG EDUCATION INC. PRIVACY POLICY
+                        </caption>
+                        <colgroup>
+                          <col style="width: 29%" />
+                          <col style="width: 49%" />
+                          <col style="width: 22%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="bg_gr" scope="col">Relevant Statutes</th>
+                            <th class="bg_gr" scope="col">Items Retained</th>
+                            <th class="bg_gr" scope="col">Retention Period</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">
+                              Article 6 of the Act on Consumer Protection<br />in
+                              Electronic Commerce, etc.
+                            </td>
+                            <td>
+                              Records on withdrawal from contract or
+                              subscription, etc.
+                            </td>
+                            <td>5 years</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              Records on payment and supply of goods, etc.
+                            </td>
+                            <td>5 years</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              Records of consumer complaints or dispute
+                              resolution
+                            </td>
+                            <td>3 years</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              records related to representations and
+                              advertisements
+                            </td>
+                            <td>6 months</td>
+                          </tr>
+                          <tr>
+                            <td>Communication Secret Protection Act</td>
+                            <td>
+                              Internet log record, access point tracking record
+                            </td>
+                            <td>3 months</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3. If a Member does not have a record of activities to use
+                      the Service for one year, the Company treats him/her as a
+                      dormant Member and, after serving a notification to the
+                      Member, immediately destroys his/her personal information
+                      in compliance with Article 39-6 of the Personal
+                      Information Protection Act.
+                    </p>
+                    <p>
+                      4. The Company destroys personal information in the
+                      following methods to assure protection of personal
+                      information and prevention of damage caused by personal
+                      information leakage.
+                    </p>
+                    <p>
+                      1) Personal information printed on paper is destroyed
+                      through shredding or incineration.
+                    </p>
+                    <p>
+                      2) Personal information stored in the form of an
+                      electronic file is deleted using a technical method that
+                      does not allow reproduction of the record.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 11 (Rights of Users and Legal Representatives and
+                    How to Exercise them)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. Every User has right to view and/or modify his/her
+                      registered personal information at any time and to request
+                      for cancellation (withdrawal) of his/her Membership if
+                      he/she is a Member. However, the Company may refuse the
+                      request for viewing, modification, or cancellation of
+                      Membership subscription if there is a legitimate public
+                      interest to do so, as exemplified below. In case of
+                      refusal, the Company will within 10 days send e-mail
+                      notification to the information owner explaining the
+                      reason for such refusal as well as advising on how to
+                      appeal.
+                    </p>
+                    <p>- If viewing is prohibited or restricted by law</p>
+                    <p>
+                      2. Once a User requests correction of errors in his/her
+                      personal information, that personal information will not
+                      be used or provided until the correction is completed. If
+                      the incorrect personal information has already been
+                      provided to a third party, the result of the correction
+                      will be notified to the third party.
+                    </p>
+                    <p>
+                      3. The Company handles the personal information that has
+                      been canceled or deleted at the request of the User in
+                      accordance with this Guideline for Processing Personal
+                      Information and ensures that such personal information
+                      will not be viewed or used for any other purpose.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 12 (Measures to Ensure the Safety of Personal
+                    Information)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      Acknowledging the value of Users' personal information,
+                      the Company makes the following endeavors in handling
+                      personal information.
+                    </p>
+                    <p>① Establishment of internal management plan</p>
+                    <p>
+                      - The Company has established and implemented an internal
+                      management plan as a set of standards for safe processing
+                      of personal information.
+                    </p>
+                    <p>② Minimize the personal information staff</p>
+                    <p>
+                      - The Company minimizes the number of employees who
+                      process personal information, and the PCs of the employees
+                      are so systemized that external Internet network is
+                      separated from its intranet to reduce the chance of
+                      personal information leakage. In addition, the Company has
+                      systematically established access control criteria for
+                      databases and personal information processing systems,
+                      which are under its continuous monitoring and due
+                      diligence.
+                    </p>
+                    <p>③ Periodic Education</p>
+                    <p>
+                      -We provide periodic education for personal information
+                      processors and emphasize the value of personal information
+                      by disseminating personal information issues to all
+                      employees company-wide.
+                    </p>
+                    <p>④ Protection from Hacking or Viruses</p>
+                    <p>
+                      - The system is installed in an area where access is
+                      controlled from outside to protect personal information
+                      from leakage or damage. Furthermore, periodic backups are
+                      conducted in preparation for loss of personal information,
+                      vaccine programs are used to prevent data leakage and
+                      damage.
+                    </p>
+                    <p>⑤ Encryption of Personal Information</p>
+                    <p>
+                      - An encrypted communication segment is used for
+                      transmitting Users’ personal information, and critical
+                      information such as password is encrypted using a secure
+                      encryption algorithm.
+                    </p>
+                    <p>⑥ Physical Control</p>
+                    <p>
+                      -Systems related to personal information processing are
+                      located in the off-limit area where access is controlled.
+                      Documents and auxiliary storage media containing personal
+                      information are stored in a secure place where locking
+                      devices are installed.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Article 13 (Appointment of Personal Information Protection
+                    Officer and Manager)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. The personal information protection officer is the one
+                      tasked with protecting Users' personal information and
+                      preventing information leakage, who helps Users to use the
+                      Services provided by the Company with confidence, and
+                      bears responsibility for any deviation from the Company’s
+                      advisory to Users in protecting the personal information;
+                      except for damage or loss of information arising due to
+                      unexpected accidents such as natural disasters
+                      notwithstanding the Company having taken measures to
+                      secure the safety adequately, as well as various disputes
+                      caused by information provided by Users to the Company.
+                    </p>
+                    <p>
+                      2. The Company hereby appoints personal information
+                      protection officer in accordance with the Personal
+                      Information Protection Act, as follows:
+                    </p>
+                    <p>
+                      [Personal Information Protection Officer and Department in
+                      Charge]
+                    </p>
+                    <p>
+                      A. Visang Education Co.,Ltd. appoints a personal
+                      information protection officer and operates a department
+                      in charge to take the general responsibility for handling
+                      Users’ personal information as well as resolving Users'
+                      inquiries and complaints.
+                    </p>
+                    <div class="policy_table type05 fix_hei para01">
+                      <div class="pth_tbody">
+                        <div class="ptb_td">
+                          Personal Information Protection Officer (CPO)
+                        </div>
+                        <div class="ptb_td">
+                          Affiliation: IT Strategy Core <br />Name: Jung-woo Lee
+                        </div>
+                      </div>
+                      <div class="pth_tbody">
+                        <div class="ptb_td">
+                          Department in charge of Personal Information
+                        </div>
+                        <div class="ptb_td">
+                          <p>Information Security Cell</p>
+                        </div>
+                      </div>
+                      <div class="pth_tbody">
+                        <div class="ptb_td">Inquiry</div>
+                        <div class="ptb_td">
+                          <p><span>Phone</span><span>: 1544-0554</span></p>
+                          <p>
+                            <span>Email</span><span>: privacy@visang.com</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      B. Users may direct all inquiries related to personal
+                      information protection, complaint, and claim for damage,
+                      etc. that arise while using Visang Education’s Service to
+                      the personal information protection officer and the
+                      department in charge.
+                    </p>
+                    <p>
+                      3. In relation to infringement of personal information,
+                      the information owner may inquire about remedies from
+                      damage and consulting to the following authorities.
+                      &lt;The following authorities are independent units from
+                      the Company, so contact us if more information is
+                      needed.&gt;
+                    </p>
+                    <div class="scroll_table para01">
+                      <div class="policy_table type06 fix_hei">
+                        <div class="pth_thead">
+                          <div class="ptb_th wd01 bg_gr">Category</div>
+                          <div class="ptb_th wd02">Homepage</div>
+                          <div class="ptb_th wd03">Phone</div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Personal Information Infringement Report Center
+                            <br />(operated by Korea Internet &amp; Security
+                            Agency)
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://privacy.kisa.or.kr" target="_blank"
+                              >privacy.kisa.or.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(no area code)</span><span> 118</span>
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Personal Information Dispute Mediation Board
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://www.kopico.go.kr" target="_blank"
+                              >www.kopico.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(no area code)</span><br /><span
+                              >1833-6972</span
+                            >
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Supreme Prosecutor's Office Cyber Crime
+                            Investigatory Team
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://www.spo.go.kr" target="_blank"
+                              >www.spo.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(no area code)</span><span> 1301</span>
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            National Police Agency Cyber Security Bureau
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a
+                              href="https://cyberbureau.police.go.kr"
+                              target="_blank"
+                              >cyberbureau.police.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(no area code)</span><span> 182</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      For EEA members, contact information for data protection
+                      authorities can be found at the link below
+                    </p>
+                    <a
+                      href="https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+                      target="_blank"
+                      >*
+                      https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+                    >
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">Article 14 (Obligation to Notify)</p>
+                  <div class="para02">
+                    <p>
+                      Any addition, deletion or modification of the contents of
+                      this Privacy Policy will be notified through the Service
+                      notification at least seven days in advance, or
+                      immediately if any prior notice is difficult.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">&lt;Addendum&gt; Effective Date</p>
+                  <div class="para02">
+                    <p>
+                      This Guideline for Processing Personal Information comes
+                      into force on October 15, 2021 and onward.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- [e] en -->
+            <!-- [s] es -->
+            <div class="policy_lang_cont es">
+              <h3>Guía para Procesar Información Personal</h3>
+              <div class="policy_wrap">
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 1 (Propósito de uso y procesamiento de información
+                    personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      Educación Visang Co., Ltd. (en adelante referida como la
+                      "Compañía) valora y está comprometida en proteger la
+                      información personal de los Usuarios. La Compañía cumple
+                      con fuentes legales relacionadas con protección de
+                      información personal tal como Ley de Protección de
+                      Información Personal, Ley sobre Promoción de Información y
+                      Utilización de Red de Comunicaciones y Protección de
+                      Información, etc., y Regulación de Protección de Datos
+                      Generales (GDPR, por sus siglas en inglés), un conjunto de
+                      normas internacionales, así como también la Guía para
+                      Manejo de Información Personal que la Compañía promulgó
+                      basado en la autoridad de normas y leyes relevantes, que
+                      está declarada en el Sitio de Internet y aplicación móvil
+                      de modo que los Usuarios puedan acceder fácilmente y ver
+                      en cualquier momento.
+                    </p>
+                    <p>
+                      Los Usuarios pueden negarse a dar consentimiento a la
+                      recolección, uso y suministro de información personal si
+                      no desean hacerlo. Sin embargo, advertimos que parte o
+                      todo el Servicio no estará disponible a los Usuarios que
+                      se nieguen al consentimiento.
+                    </p>
+                    <p>
+                      La Compañía procesa la información personal para los
+                      siguientes propósitos. La información personal siendo
+                      procesada no será utilizada para ningún otro propósito que
+                      los explicados a continuación, y si el propósito de uso es
+                      cambiado, tomaremos las medidas necesarias tales como
+                      obtener un consentimiento separado conforme al Artículo 18
+                      de la Ley de Protección de Información Personal:
+                    </p>
+                    <p>1. Proporcionando Servicio;</p>
+                    <p>
+                      2. Administración e identificación del socio, confirmación
+                      de intención de suscribir membresía, confirmación de edad
+                      e identidad del Usuario, prevención de uso ilegal;
+                    </p>
+                    <p>
+                      3. Desarrollando nuevos Servicios, suministrando varios
+                      Servicios, procesando consultas o quejas/disputas, y
+                      comunicando avisos;
+                    </p>
+                    <p>
+                      4. Entrega de información, comercialización y publicidad
+                      en varios eventos;
+                    </p>
+                    <p>
+                      5. Preparación de estadísticas del registro de uso del
+                      servicio, frecuencia de acceso y uso del Servicio, entrega
+                      de Servicio personalizado y mejora de Servicios;
+                    </p>
+                    <p>
+                      6. Prevención de y sanción contra actos que afecte al
+                      funcionamiento fluido del Servicio, incluyendo uso ilegal,
+                      y prevención de apropiación indebida y transacciones
+                      fraudulentas.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">Artículo 2 (Definición de Términos)</p>
+                  <div class="para02">
+                    <p>
+                      Los siguientes términos utilizados aquí son definidos a
+                      continuación:
+                    </p>
+                    <p>
+                      1. "Miembro" refiere a una persona que ha suscripto una
+                      Membresía al Sitio Allvia Edu (allviaedu.com)
+                      proporcionando información personal y por lo tanto puede
+                      utilizar las clases y Servicios proporcionados por el
+                      sitio web de AllviA Edu (allviaedu.com).
+                    </p>
+                    <p>
+                      2. "Servicio" refiere al servicio disponible en el sitio
+                      web de AllviA Edu (allviaedu.com) que los Usuarios pueden
+                      usar independientemente de la terminal implementada
+                      (incluyendo varios dispositivos cableados e inalámbricos
+                      tales como PC, celular, tableta).
+                    </p>
+                    <p>
+                      3. “ID” se refiere a una combinación de letras y números
+                      formulados por un Miembro y aprobados por la Compañía con
+                      el propósito de la identificación del Miembro y uso del
+                      Servicio, incluyendo la ID formulada por el Miembro.
+                    </p>
+                    <p>
+                      4. "Contraseña" se refiere a cualquier letra inglesa,
+                      números, etc., formulado por el Miembro y aprobada por la
+                      Compañía para confirmar identidad y proteger información
+                      del Miembro.
+                    </p>
+                    <p>
+                      5. "Servicio con Cargo" se refiere a varios contenidos
+                      digitales virtuales y otros Servicios proporcionados por
+                      la Compañía que pueden ser utilizados por Miembros por
+                      cierta tarifa mediante el sitio web AllviA Edu
+                      (allviaedu.com), incluyendo pero sin limitación los
+                      servicios de publicación de publicidad e información.
+                    </p>
+                    <p>
+                      6. "IMEI (Interfaz Motor de Administración Intel, por sus
+                      siglas en inglés)" se refiere a un número de 15 dígitos
+                      integrado en una terminal móvil portátil representando el
+                      número de serie único de la terminal. (Está cifrado y
+                      protegido de manera segura).
+                    </p>
+                    <p>
+                      7. "Uso ilegal" se refiere a violación de derechos de
+                      autor y apropiación indebida de identidad o cualquier otro
+                      acto prohibido por el Acuerdo de Uso de Servicio del sitio
+                      web AllviA Edu (allviaedu.com) provisto por la Compañía, o
+                      cualquier acto ilícito prescrito por un estatuto."
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 3 (Recolección y Uso de Información Personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      La Compañía recolecta, utiliza, suministra y destruye
+                      información personal de la siguiente manera dependiendo
+                      del tipo de Servicio utilizado. Más aún, la Compañía
+                      invariablemente obtiene el consentimiento del Usuario
+                      cuando recolecta información personal que pueda
+                      identificar personalmente al Usuario. Cuando la política
+                      de procesamiento de información personal es cambiada, tal
+                      cambio es siempre notificado al Usuario y anunciado
+                      públicamente de modo que los Usuarios puedan verificarlo
+                      de vez en cuando.
+                    </p>
+                    <p>
+                      1. En virtud de la GDPR, si un Miembro reside en el Área
+                      Económica Europea ("EEA", por sus siglas en inglés),
+                      confiamos en los siguientes fundamentos legales para
+                      procesar información sobre el Miembro.
+                    </p>
+                    <p>① El Miembro ha consentido el Acuerdo del Usuario;</p>
+                    <p>② Existe un interés legítimo; o</p>
+                    <p>
+                      ③ Procesarlo es necesario para cumplir el Acuerdo con la
+                      Compañía,
+                    </p>
+                    <p>obligaciones de acuerdo con la ley o normas</p>
+                    <p>
+                      2. Los elementos de información personal a ser procesados
+                      por la Compañía y el período de retención y uso son
+                      explicados en la siguiente tabla:
+                    </p>
+                    <p>
+                      ▶Recopilar y recopilar información cuando sea necesario.
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          ▶Recopilar y recopilar información cuando sea
+                          necesario.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">Clasificación</th>
+                            <th scope="col" colspan="2">Categoría</th>
+                            <th scope="col">
+                              Elementos Recolectados/Utilizados
+                            </th>
+                            <th scope="col">
+                              Propósito de Recolección y Utilización
+                            </th>
+                            <th scope="col">
+                              Período de Retención y Utilización
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">Requerido</td>
+                            <td rowspan="2">Suscripción de membresía</td>
+                            <td>Socio</td>
+                            <td class="tal">
+                              ID, contraseña, nombre, número de teléfono, correo
+                              electrónico, dirección, nombre de socio, país de
+                              contrato
+                            </td>
+                            <td rowspan="4" class="tal">
+                              Suscripción de membresía, verificando doble
+                              inscripción, consulta y suministro del Servicio,
+                              identificación de suministro de Servicio, pago,
+                              cancelación e información necesaria para procesar
+                              devolución, información sobre autenticación de
+                              método de pago y prevención de apropiación
+                              indebida de pago, creación de cuenta y
+                              administración.
+                            </td>
+                            <td rowspan="4" class="tal">
+                              A ser borrado inmediatamente tras <br />retiro de
+                              Membresía; suministrado, será retenido durante un
+                              período estatutario si está especificado en
+                              estatutos relevantes y políticas internas tales
+                              como la Ley sobre Protección al Consumidor en
+                              <br />Comercio Electrónico, etc., y la <br />Ley
+                              de Protección de Secretos de Comunicación.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">Escuela</td>
+                            <td class="tal">
+                              ID, contraseña, nombre, nombre de escuela, número
+                              de teléfono, correo electrónico, país, marca
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="bd_la">Pago y reembolso</td>
+                            <td class="tal">
+                              1) Información de pago Número de tarjeta de
+                              crédito, nombre del banco, depósito / depósito,
+                              número de cuenta, información de teléfono móvil
+                              <br />
+                              2) Información de reembolso Nombre del banco,
+                              nombre del titular, número de cuenta bancaria.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la" colspan="2">
+                              Inquisición Cliente
+                            </td>
+                            <td>Nombres y direcciones de correo electrónico</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      ▶Información adicional recopilada después del
+                      consentimiento del usuario.
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          Additional information collected after user consent.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2">Opcional</td>
+                            <td>Socio</td>
+                            <td>
+                              Número de registro de empresa, información de
+                              socios
+                            </td>
+                            <td rowspan="2">
+                              Servicio y consultoría, servicio al cliente.
+                            </td>
+                            <td rowspan="3" class="tal">
+                              Hasta que el suministro de Servicio sea logrado;
+                              suministrado, será retenido por un período
+                              estatutario si está especificado en los estatutos
+                              relevantes y políticas internas.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">Inquisición Cliente</td>
+                            <td>
+                              Servicio y consultoría, servicio al cliente.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              Otra información recolectada automáticamente
+                            </td>
+                            <td class="tal">
+                              <span
+                                >1) Información del dispositivo: Tipo de
+                                dispositivo de acceso a plataforma, sistema
+                                operativo y versión, información <br />de red
+                                móvil, país de acceso, URL, área de actividad
+                                del sistema</span
+                              >
+                              <span
+                                >2) Información del software: Información sobre
+                                la versión e información del software
+                                actualizado que está siendo utilizado.</span
+                              >
+                              <span
+                                >3) Información de utilización de plataforma:
+                                información sobre uso de plataforma, buscador,
+                                idioma preferido, tiempo de conexión, página,
+                                actividad del Miembro, dirección del protocolo
+                                Internet, etc.</span
+                              >
+                            </td>
+                            <td>Propósito de suministrar varios Servicios</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3. Período de retención y utilización según los estatutos
+                      y conforme a las políticas internas será como se indica a
+                      continuación:
+                    </p>
+                    <p>
+                      1) Registros sobre administración y suscripción de
+                      Membresía
+                    </p>
+                    <p>
+                      Período de retención: Hasta retiro de la Membresía (o
+                      hasta que los próximos eventos finalicen, de corresponder)
+                    </p>
+                    <p>
+                      Si una investigación/inspección está en progreso debido a
+                      una violación de leyes correspondientes, hasta que tal
+                      investigación/inspección sea completada.
+                    </p>
+                    <p>
+                      Hasta acuerdo de créditos/deudas que surjan de la
+                      utilización del Servicio
+                    </p>
+                    <p>
+                      2) Registros sobre el suministro de bienes/Servicios:
+                      Hasta la finalización del suministro de bienes/Servicios y
+                      la finalización del pago/acuerdo (sin embargo, en el caso
+                      de los siguientes elementos, hasta el final del elemento
+                      correspondiente)
+                    </p>
+                    <p>
+                      Registros sobre contrato o retiro de suscripción: 5 años
+                    </p>
+                    <p>
+                      Registros sobre publicidad mostrada: 6 meses luego de la
+                      finalización de la publicación de publicidad
+                    </p>
+                    <p>
+                      Registros sobre el pago y suministro de bienes: 5 años
+                    </p>
+                    <p>
+                      Registros sobre quejas del consumidor o resolución de
+                      disputas: 3 años
+                    </p>
+                    <p>
+                      3) Retención de los datos de confirmación del historial de
+                      comunicación de acuerdo con el Artículo 15-2 de la Ley de
+                      Protección de Secretos de Comunicación
+                    </p>
+                    <p>
+                      Comunicación por computadora, registro del diario de
+                      Internet, seguimiento de punto de conexión: 3 meses
+                    </p>
+                    <p>4) Política interna de la Compañía</p>
+                    <p>Registros de uso ilegal, etc.: 10 años</p>
+                    <p>
+                      4. Para garantizar los derechos de Usuarios, la Compañía
+                      puede contactar Usuarios utilizando información de los
+                      Usuarios con el propósito de consultoría de Servicio.
+                    </p>
+                    <p>
+                      5. La información recolectada por la Compañía conforme a
+                      este Artículo puede ser utilizada para estadística y
+                      análisis como consecuencia de uso del Servicio.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">Artículo 4 (Utilización de Cookies)</p>
+                  <div class="para02">
+                    <p>
+                      1. Mientras se utilizan Servicios de Internet, pueden ser
+                      creados y recogidos direcciones IP de acceso, registros de
+                      utilización de Servicio, etc.
+                    </p>
+                    <p>
+                      2. La Compañía recoge información de cookies y la utiliza
+                      para verificar si los Usuarios están teniendo acceso a
+                      cada Servicio que han visitado previamente, y para
+                      confirmar y responder las consultas de los Usuarios.
+                    </p>
+                    <p>
+                      3. Los Usuarios tienen derecho a elegir aceptar cookies.
+                      Correspondientemente, pueden permitir todas las cookies
+                      configurando las opciones en el buscador de la web, o
+                      confirmar cada vez que una cookie es grabada, o rechazar
+                      grabar cualquier cookie. Sin embargo, si rechaza grabar
+                      las cookies, puede tener algunas dificultades en utilizar
+                      cierta parte del Servicio que requiere iniciar sesión.
+                    </p>
+                    <p>* Cómo configurar cookies (ejemplo)</p>
+                    <p>
+                      ① Explorador de Internet: Herramientas en la parte
+                      superior del buscador de la web→ Opciones de Internet →
+                      Privacidad → Avanzado
+                    </p>
+                    <p>
+                      ② Chrome: Menú configuración en la parte derecha del
+                      buscador de la web→ Configuraciones avanzadas en la parte
+                      inferior de la pantalla → Botón de configuración de
+                      contenidos para información personal → Cookies
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 5 (Método para Recolectar Información Personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      Aplicación móvil, página web, consulta virtual mediante
+                      centro del cliente, participación de evento, etc.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 6 (Limitación en el Uso de Servicios por parte de
+                    un Menor)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      La Compañía no recolecta ninguna información personal de
+                      un menor de menos de 14 años, y si de alguna manera tal
+                      información personal es recolectada, podemos tomar pasos
+                      razonables para borrarla de nuestros registros de
+                      información personal.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 7 (Suministro de Información Personal a Terceras
+                    Partes)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. La Compañía procesa información personal del Usuario
+                      dentro del alcance especificado en esta Guía para Procesar
+                      Información Personal, y no la utilizará más allá del
+                      propósito de recolección ni la suministrará a una tercera
+                      parte sin el consentimiento previo del Usuario. Sin
+                      embargo, en caso de suministrar información personal del
+                      Miembro a una tercera parte, tal como un socio de la
+                      compañía de modo de asegurar la calidad de nuestro
+                      Servicio, notificaremos al Miembro por anticipado el
+                      nombre de la tercera parte, elementos de información
+                      personal a ser suministrados, propósito de suministro,
+                      período de retención, etc. y buscaremos obtener
+                      consentimientos individuales de los Miembros. Sin
+                      consentimiento, no se suministrará información, y
+                      notificaremos y buscaremos consentimiento de los Miembros
+                      aún cuando tal compañía asociada haya cambiado.
+                    </p>
+                    <p>
+                      2. La Compañía no suministrará la información personal del
+                      Usuario a una tercera parte sin el consentimiento del
+                      Usuario. Sin embargo, en este caso, el Servicio puede ser
+                      restringido. Quisiéramos aconsejar que esta es una parte
+                      necesaria para brindar Servicio de calidad y uso fluido
+                      del Servicio.
+                    </p>
+                    <p>
+                      3. En cualquiera de los siguiente casos, la Compañía puede
+                      suministrar información personal a una tercera parte sin
+                      el consentimiento del Usuario:
+                    </p>
+                    <p>
+                      1) Si es información necesaria para preparar estadísticas,
+                      investigación científica, preservación de registro
+                      público, etc. mediante seudónimos sin contener información
+                      que pueda ser utilizada para identificar a un individuo
+                      específico;
+                    </p>
+                    <p>
+                      2) Si existe una razón inevitable requerida por la ley o
+                      disposición estatutaria;
+                    </p>
+                    <p>
+                      3) Si es requerido por una agencia de investigación con el
+                      propósito de investigación en cumplimiento con los
+                      procedimientos y métodos prescritos por leyes y normas;
+                    </p>
+                    <p>
+                      4) Si está comprendida en el Artículo 17 o 18 de la Ley de
+                      Protección de Información Personal.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 8 (Encomienda de Procesamiento de Información
+                    Personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1.En su esfuerzo por suministrar Servicios mejorados, la
+                      Compañía puede encomendar el procesamiento de información
+                      personal a una tercera parte. La Compañía ha establecido
+                      normas en asuntos necesarios en cumplimiento con las leyes
+                      correspondientes para asegurar que la información personal
+                      pueda ser administrada con seguridad cuando ingrese en un
+                      contrato de encomienda. Además, cuando encomiende el
+                      procesamiento de información personal, la Compañía da a
+                      conocer los detalles de los sujetos encomendados y la
+                      persona que manipula mediante tal encomienda (en adelante
+                      referido como el 'Mandatario') de modo que los Usuarios
+                      puedan fácilmente verlos en cualquier momento. Lo mismo
+                      aplicará cuando los contenidos del trabajo encomendado
+                      sean actualizados o el Mandatario sea cambiado.
+                    </p>
+                    <p>
+                      2. Los detalles de trabajo encomendado para procesamiento
+                      de información personal y Mandatarios domésticos son
+                      expuestos a continuación:
+                    </p>
+                    <div class="scroll_table para01">
+                      <div class="policy_table wd33">
+                        <div class="row thead">
+                          <div class="cell">Mandatario</div>
+                          <div class="cell">Detalles de encomienda</div>
+                          <div class="cell">
+                            Período de uso y retención de información personal
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="cell wd_lf">
+                            <div>
+                              <p>Servicio web Amazon Inc</p>
+                              <p>Suministro de infraestructura</p>
+                            </div>
+                          </div>
+                          <div class="cell wd_rf">
+                            Hasta el retiro del Miembro o vencimiento del
+                            contrato de encomienda
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 9 (Transmisión de información personal al
+                    extranjero)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      La Compañía transfiere la información de pago recopilada
+                      al extranjero y mantiene la información obtenida o
+                      derivada de usted en una base de datos mantenida por
+                      Paymentwall. (Lugares de almacenamiento físico: Unión
+                      Europea, Estados Unidos e India).
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>
+                              Receptor <br />
+                              Mandatario
+                            </th>
+                            <th>Elementos transferidos</th>
+                            <th>País receptor</th>
+                            <th>Fecha, hora y método de transferencia</th>
+                            <th>
+                              Propósito del receptor de utilizar la información
+                            </th>
+                            <th>
+                              Período de retención y utilización de información
+                              personal
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Paymentwall</td>
+                            <td>Información de pago recopilada</td>
+                            <td>Unión Europea, Estados Unidos e India.</td>
+                            <td>
+                              Transferencia a través de la red en el momento de
+                              la utilización del servicio de pago
+                            </td>
+                            <td>Pago y reembolso</td>
+                            <td>Hasta que cambie el Servicio</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 10 (Retención y Destrucción de Información
+                    Personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. Una vez que el período de retención y utilización de
+                      información personal ha transcurrido, la Compañía destruye
+                      la información personal del Usuario sin demora.
+                    </p>
+                    <p>
+                      2. La información que debe ser retenida de acuerdo con las
+                      siguientes leyes y normas relacionadas será retenida por
+                      el período especificado en los estatutos antes de ser
+                      destruida.
+                    </p>
+                    <div class="scroll_table para01">
+                      <table class="poli_table_new type02">
+                        <caption>
+                          POLÍTICA DE PRIVACIDAD DE EDUCACIÓN VISANG INC.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 29%" />
+                          <col style="width: 49%" />
+                          <col style="width: 22%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="bg_gr" scope="col">
+                              Estatutos relevantes
+                            </th>
+                            <th class="bg_gr" scope="col">
+                              Elementos retenidos
+                            </th>
+                            <th class="bg_gr" scope="col">
+                              Período de retención
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">
+                              Artículo 6 de la Ley de Protección al
+                              Consumidor<br />en Comercio Electrónico, etc.
+                            </td>
+                            <td>
+                              Registros en retiros de contrato o suscripción,
+                              etc.
+                            </td>
+                            <td>5 años</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              Registros sobre pago y suministro de bienes, etc.
+                            </td>
+                            <td>5 años</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              Registros de quejas del consumidor o resolución de
+                              disputa
+                            </td>
+                            <td>3 años</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              Registros relacionados a representaciones y
+                              publicidad
+                            </td>
+                            <td>6 meses</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Ley de Protección al Secreto de Comunicación
+                            </td>
+                            <td>
+                              Registro de Internet, registro de seguimiento de
+                              punto de acceso
+                            </td>
+                            <td>3 meses</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3. Si un Miembro no tiene un registro de actividades de
+                      uso del Servicio de un año, la Compañía lo trata como un
+                      Miembro inactivo y, luego de entregar una notificación al
+                      Miembro, inmediatamente destruye su información personal
+                      en cumplimiento con el Artículo 39-6 de la Ley de
+                      Protección de Información Personal.
+                    </p>
+                    <p>
+                      4. La Compañía destruye la información personal con los
+                      siguientes métodos para asegurar protección de información
+                      personal y evitar daño ocasionado por fuga de información
+                      personal.
+                    </p>
+                    <p>
+                      1) Información personal impresa en papel es destruida
+                      mediante trituración o incineración.
+                    </p>
+                    <p>
+                      2) Información personal almacenada en la forma de un
+                      archivo electrónico es borrada utilizando un método
+                      técnico que no permite reproducción del registro.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 11 (Derechos de Usuarios y Representantes Legales y
+                    Cómo Ejercerlos)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. Cada Usuario tiene derecho de ver y/o modificar su
+                      información personal registrada en cualquier momento y de
+                      requerir cancelación (retiro) de su Membresía si es un
+                      Miembro. Sin embargo, la Compañía puede rechazar el pedido
+                      de ver, modificar o cancelar la suscripción de Membresía
+                      si existe un interés público legítimo para hacerlo, como
+                      se ejemplifica a continuación. En caso de rechazo, la
+                      Compañía enviará dentro de los 10 días una notificación
+                      por correo electrónico al dueño de la información
+                      explicando la razón de tal rechazo así como también
+                      aconsejando cómo apelar.
+                    </p>
+                    <p>
+                      Si visualizar está prohibido o restringido por la ley.
+                    </p>
+                    <p>
+                      2. Una vez que un usuario solicita corrección de errores
+                      en su información personal, esa información personal no
+                      será utilizada o suministrada hasta que la corrección sea
+                      completada. Si la información personal incorrecta ya ha
+                      sido suministrada a una tercera parte, el resultado de la
+                      corrección será notificado a la tercera parte.
+                    </p>
+                    <p>
+                      3. La Compañía manipula la información personal que ha
+                      sido cancelada o borrada al pedido del Usuario de acuerdo
+                      con estas Guías para Procesar Información Personal y
+                      asegura que tal información personal no será vista o usada
+                      por cualquier otro propósito.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 12 (Medidas para Asegurar la Seguridad de la
+                    Información Personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      Reconociendo el valor de la información personal de los
+                      Usuarios, la Compañía realiza los siguientes esfuerzos al
+                      manipular la información personal.
+                    </p>
+                    <p>
+                      ① Establecimiento de un plan de administración interno
+                    </p>
+                    <p>
+                      La Compañía ha establecido e implementado un plan de
+                      administración interno como un conjunto de normas para
+                      procesamiento seguro de información personal.
+                    </p>
+                    <p>② Minimizar los trabajadores de información personal</p>
+                    <p>
+                      La Compañía minimiza la cantidad de empleados que procesan
+                      información personal, y las PC de los empleados están tan
+                      sistematizadas que la red Internet externa está separada
+                      de su intranet para reducir la posibilidad de fuga de
+                      información personal. Además, La Compañía ha
+                      sistemáticamente establecido criterios de control de
+                      acceso a bases de datos y sistemas de procesamiento de
+                      información personal, que están bajo continua supervisión
+                      y debida diligencia.
+                    </p>
+                    <p>③ Educación periódica</p>
+                    <p>
+                      Suministramos educación periódica para procesadores de
+                      información personal y enfatizamos el valor de información
+                      personal diseminando temas de información personal a todos
+                      los empleados en toda de la compañía,
+                    </p>
+                    <p>④ Protección de Piratería o Virus</p>
+                    <p>
+                      El sistema está instalado en un área donde el acceso está
+                      controlado desde afuera para proteger información personal
+                      de pérdida o daño. Más aún, son conducidos respaldos
+                      periódicos en preparación por la pérdida de información
+                      personal, se utilizan programas vacuna para evitar daño o
+                      fuga de datos.
+                    </p>
+                    <p>⑤ Cifrado de Información Personal</p>
+                    <p>
+                      Un segmento de comunicación cifrada es utilizado para
+                      transmitir información personal del Usuario, e información
+                      crítica tal como contraseña es cifrada utilizando un
+                      algoritmo de cifrado seguro.
+                    </p>
+                    <p>⑥ Control Físico</p>
+                    <p>
+                      Los sistemas relacionados con el procesamiento de
+                      información personal están ubicados en al área de acceso
+                      restringido donde el acceso puede ser controlado. Los
+                      documentos y medios de almacenamiento auxiliar conteniendo
+                      información personal son almacenados en lugar seguro donde
+                      están instalados dispositivos de cierre.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    Artículo 13 (Nombramiento de Gerente y Oficial de Protección
+                    de Información Personal)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. El oficial de protección de información personal es el
+                      encargado de proteger la información personal del Usuario
+                      y evitar fugas de información, quien ayuda a los Usuarios
+                      a utilizar los Servicios provistos por la Compañía con
+                      seguridad, y carga la responsabilidad por cualquier
+                      desviación de consultoría de la Compañía a los Usuarios en
+                      proteger la información personal; excepto por daño o
+                      pérdida de información que surja debido a accidentes
+                      inesperados tales como desastres naturales a pesar de que
+                      la Compañía haya tomado medidas para asegurar
+                      adecuadamente la seguridad, así como también varias
+                      disputas ocasionadas por información suministrada por
+                      Usuarios a la Compañía.
+                    </p>
+                    <p>
+                      2. La Compañía por la presente designa al oficial de
+                      protección de información personal de acuerdo con la Ley
+                      de Protección de Información Personal, como sigue:
+                    </p>
+                    <p>
+                      [Oficial de Protección de Información Personal y
+                      Departamento a Cargo]
+                    </p>
+                    <p>
+                      A. Educación Visang Co.,Ltd. designa un oficial de
+                      protección de información personal y opera un departamento
+                      a cargo para asumir responsabilidad general por la
+                      manipulación de la información personal del Usuario así
+                      como también resolver quejas y consultas del Usuario.
+                    </p>
+                    <div class="policy_table type05 fix_hei para01">
+                      <div class="pth_tbody">
+                        <div class="ptb_td">
+                          Oficial de Protección de Información Personal (CPO,
+                          por sus siglas en inglés)
+                        </div>
+                        <div class="ptb_td">
+                          Afiliación: Núcleo Estratégico IT
+                          <br />Nombre:Jung-woo Lee
+                        </div>
+                      </div>
+                      <div class="pth_tbody">
+                        <div class="ptb_td">
+                          Departamento a cargo de Información Personal
+                        </div>
+                        <div class="ptb_td">
+                          <p>Celda de Seguridad de Información</p>
+                        </div>
+                      </div>
+                      <div class="pth_tbody">
+                        <div class="ptb_td">Consulta</div>
+                        <div class="ptb_td">
+                          <p><span>Teléfono</span><span>: 1544-0554</span></p>
+                          <p>
+                            <span>Correo Electrónico</span
+                            ><span>: privacy@visang.com</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      B. Los Usuarios pueden dirigir todas las consultas
+                      relacionadas con la protección de información personal,
+                      quejas y reclamar daños, etc. que surjan mientras utilicen
+                      el Servicio de Educación Visang al oficial de protección
+                      de información personal y al departamento a cargo.
+                    </p>
+                    <p>
+                      3. En relación con la violación de información personal,
+                      el dueño de la información puede consultar sobre los
+                      remedios de daños y consultar a las siguientes
+                      autoridades. &lt;Las siguientes autoridades son unidades
+                      independientes de la Compañía, así que contáctenos por más
+                      información si es necesario.&gt;
+                    </p>
+                    <div class="scroll_table para01">
+                      <div class="policy_table type06 fix_hei">
+                        <div class="pth_thead">
+                          <div class="ptb_th wd01 bg_gr">Categoría</div>
+                          <div class="ptb_th wd02">Página de Inicio</div>
+                          <div class="ptb_th wd03">Teléfono</div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Centro de Informe de Violación a la Información
+                            Personal <br />(operado por la Agencia de Seguridad
+                            e Internet de Corea)
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://privacy.kisa.or.kr" target="_blank"
+                              >privacy.kisa.or.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(sin código de área)</span><span> 118</span>
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Consejo de Mediación de Disputa de Información
+                            Personal
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://www.kopico.go.kr" target="_blank"
+                              >www.kopico.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(sin código de área)</span><br /><span
+                              >1833-6972</span
+                            >
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Equipo de Investigación de Ciber Crimen Oficina del
+                            Fiscal Jefe
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://www.spo.go.kr" target="_blank"
+                              >www.spo.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(sin código de área)</span><span> 1301</span>
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            Oficina de Ciber Seguridad Agencia Nacional de
+                            Policía
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a
+                              href="https://cyberbureau.police.go.kr"
+                              target="_blank"
+                              >cyberbureau.police.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>(sin código de área)</span><span> 182</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Para miembros EEA, la información de contacto para
+                      autoridades de protección de datos puede hallarse en el
+                      link a continuación
+                    </p>
+                    <a
+                      href="https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+                      target="_blank"
+                      >*
+                      https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+                    >
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">Artículo 14 (Obligación de Notificar)</p>
+                  <div class="para02">
+                    <p>
+                      Cualquier agregado, borrado o modificación de los
+                      contenidos de esta Política de Privacidad será notificada
+                      mediante la notificación al Servicio con al menos siete
+                      días de anticipación, o inmediatamente si es difícil
+                      cualquier aviso previo.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">&lt;Adenda&gt; Fecha Efectiva</p>
+                  <div class="para02">
+                    <p>
+                      La Guía para Procesamiento de Información Personal entra
+                      en vigor el 15 de octubre de 2021 en adelante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- [e] es -->
+            <!-- [s] ja -->
+            <div class="policy_lang_cont ja">
+              <h3>個人情報処理ガイドライン</h3>
+              <div class="policy_wrap">
+                <div class="para01">
+                  <p class="stit">第1条（個人情報の利用及び処理の目的）</p>
+                  <div class="para02">
+                    <p>
+                      Visang Education Co.,
+                      Ltd.（以下、「会社」と称す）は、使用者の個人情報に価値を置き、その保護に努めています。会社は、個人情報保護法、情報通信網利用促進法等の個人情報保護に関する法令、及び国際的な規制である一般データ保護規則（GDPR）、また使用者がいつでも簡単にアクセス・閲覧できるように、インターネットサイトやモバイルアプリで公開している関連法令に基づいて会社が制定した個人情報の取り扱いに関するガイドラインに準拠します。
+                    </p>
+                    <p>
+                      使用者は、個人情報の収集・使用・提供に同意したくない場合は、同意を拒否することができます。ただし、同意を拒否した使用者は、本サービスの全部または一部を利用できません。
+                    </p>
+                    <p>
+                      会社は、以下の目的で個人情報を処理します。処理中の個人情報は、以下の目的以外に利用することはなく、利用目的が変更になった場合は、個人情報保護法第18条に基づき、別途同意を得るなどの措置を講じます。
+                    </p>
+                    <p>1.サービスの提供</p>
+                    <p>
+                      2.会員の管理と身元確認、会員登録の意思確認、使用者のID及び年齢の確認、違法使用の防止
+                    </p>
+                    <p>
+                      3.新しいサービス開発、様々なサービス提供、問い合わせまたは苦情/紛争処理、及び告知伝達
+                    </p>
+                    <p>4.様々なイベントの情報配信、マーケティング、及び広告</p>
+                    <p>
+                      5.サービス使用記録、アクセス頻度及びサービス使用に関する統計準備、カスタマイズされたサービス提供、及びサービス改善
+                    </p>
+                    <p>
+                      6.違法な使用、アカウントの不正流用及び不正取引の防止を含む、本サービスの円滑な運営に影響を与える行為の防止及び制裁
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第2条（用語の定義）</p>
+                  <div class="para02">
+                    <p>
+                      ここで使用される以下の用語は、次のように定義されます。
+                    </p>
+                    <p>
+                      1.「会員」とは、AllviA
+                      Eduのサイト（allviaedu.com）に個人情報を提供することにより会員資格を取得し、AllviA
+                      Eduのサイト（allviaedu.com）が提供するクラス及びサービスを利用できる人を言います。
+                    </p>
+                    <p>
+                      2.「サービス」とは、使用者が（PC、モバイル、タブレットPCなどの様々な有線及び無線デバイスを含む）実装端末に関係なく使用できる、AllviA
+                      Eduのサイト（allviaedu.com）で利用可能なサービスを言います。
+                    </p>
+                    <p>
+                      3.「ID」とは、会員の身元確認及びサービス利用を目的として会員が作成し、会社が承認した文字と数字の組み合わせを言います。
+                    </p>
+                    <p>
+                      4.「パスワード」とは、会員の身元確認をし、会員情報を保護するために会員が作成し、会社が承認した英数字等を言います。
+                    </p>
+                    <p>
+                      5.「有料サービス」とは、情報及び広告掲載サービスを含むがこれらに限定されない、AllviA
+                      Eduのサイト（allviaedu.com）を通じて会員が一定の料金で使用できる会社が提供する様々なオンラインデジタルコンテンツ及びその他のサービスを言います。
+                    </p>
+                    <p>
+                      6.「IMEI（Intel Management Engine
+                      Interface）」とは、携帯端末固有の15桁の番号で、端末の一意のシリアル番号を言います。（これは暗号化され、安全に保護されています）
+                    </p>
+                    <p>
+                      7.「違法な使用」とは、著作権侵害及びIDの不正流用、または会社が提供するAllviA
+                      Eduのサイト（allviaedu.com）のサービス使用者契約で禁止されているその他の行為、または法令で定められた不正行為を言います。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第3条（個人情報の収集及び使用）</p>
+                  <div class="para02">
+                    <p>
+                      会社は、利用するサービスの種類に応じて、以下の方法で個人情報を収集・利用・提供・破棄します。また、会社は、使用者を個人的に特定できる個人情報を収集する時に、必ず使用者の同意を得ます。個人情報処理方針が変更された場合、その変更は常に使用者に通知されて公開され、使用者が随時確認することができます。
+                    </p>
+                    <p>
+                      1.
+                      GDPRに従い、会員が欧州経済領域（「EEA」）に居住している場合、会員に関する情報を処理するために、次のいずれかの法的根拠に依存します。
+                    </p>
+                    <p>①会員は利用者契約に同意した</p>
+                    <p>②正当な利益がある</p>
+                    <p>③会社との契約を履行するために必要な処理である</p>
+                    <p>法律または規制に基づく義務</p>
+                    <p>
+                      2.会社が取り扱う個人情報の内容及び保管・使用期間は、以下の表の通りです。
+                    </p>
+                    <p>▶必要に応じて情報を収集し、収集する。</p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          ▶必要に応じて情報を収集し、収集する。
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">分類</th>
+                            <th scope="col" colspan="2">カテゴリー</th>
+                            <th scope="col">収集/使用された内容</th>
+                            <th scope="col">収集及び使用の目的</th>
+                            <th scope="col">保管及び使用期間</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">必須</td>
+                            <td rowspan="2">会員登録</td>
+                            <td>パートナー</td>
+                            <td class="tal">
+                              ID、パスワード、名前、電話番号、電子メール、住所、パートナー名、契約国
+                            </td>
+                            <td rowspan="4" class="tal">
+                              会員登録、二重登録の確認、サービスの提供と相談、違法使用の防止、サービス提供の識別、支払い、キャンセル、及び返金処理に必要な情報、支払い方法認証と支払いの不正流用防止、アカウントの作成と管理に関する情報
+                            </td>
+                            <td rowspan="4" class="tal">
+                              会員退会後すぐに削除されます。<br />ただし、電子商取引などの消費者保護法及び通信秘密保護法などの関連法令<br />及び内部ポリシーで指定されている場合は、法定期間保存されます。
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">学校</td>
+                            <td class="tal">
+                              ID、パスワード、名前、学校名、電話番号、メール、国、ブランド
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="bd_la">支払いと返金</td>
+                            <td class="tal">
+                              (1)支払い情報
+                              カードID、クレジットカード番号、銀行名、預金業者/預金者、アカウント番号、携帯電話情報
+                              <br />
+                              (2)返金情報 銀行名、口座名、銀行口座番号
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la" colspan="2">顧客調査</td>
+                            <td>名前とメールアドレス</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>▶ユーザーの同意後に収集される追加情報。</p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          Additional information collected after user consent.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2">オプション</td>
+                            <td>パートナー</td>
+                            <td>ビジネス登録番号、パートナー情報</td>
+                            <td rowspan="2">
+                              サービスとコンサルティング、顧客サービス
+                            </td>
+                            <td rowspan="3" class="tal">
+                              サービス提供が達成されるまで。ただし、関連する法令及び内部ポリシーで指定されている場合は、法定期間保存されます。
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">顧客調査</td>
+                            <td>サービスとコンサルティング、顧客サービス</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">その他、自動的に収集された情報</td>
+                            <td class="tal">
+                              <span
+                                >1）デバイス情報：プラットフォームアクセスデバイスの種類、オペレーティングシステムとバージョン、モバイル、<br />ネットワーク情報、アクセス国家、URL、システムアクティビティ領域</span
+                              >
+                              <span
+                                >2）ソフトウェア情報：使用されているバージョン及び更新されたソフトウェアに関する情報</span
+                              >
+                              <span
+                                >3）プラットフォーム使用情報：プラットフォーム、ブラウザ、優先言語、接続時間、ページ、会員活動、インターネットプロトコルアドレスなどの使用に関する情報</span
+                              >
+                            </td>
+                            <td>各種サービスの提供目的</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3.法令及び内部ポリシーに基づく保存及び使用期間は、次の通りです。
+                    </p>
+                    <p>1）会員登録と管理に関する記録</p>
+                    <p>
+                      保存期間:会員退会まで(または、該当する場合は以下のイベントが終了するまで)
+                    </p>
+                    <p>
+                      適用法違反により調査・点検が進行中の場合は、調査・点検が完了するまで
+                    </p>
+                    <p>-サービスの使用に起因する売掛金/買掛金の決済まで</p>
+                    <p>
+                      2）商品/サービスの提供に関する記録：商品/サービスの供給が完了し、支払い/決済が完了するまで（ただし、以下の項目の場合は、関連する項目が終了するまで）
+                    </p>
+                    <p>契約または会員登録撤回に関する記録：5年</p>
+                    <p>-表示された広告の記録：広告掲載終了後6ヵ月</p>
+                    <p>-商品の支払いと供給に関する記録：5年</p>
+                    <p>-消費者の苦情または紛争解決に関する記録：3年</p>
+                    <p>
+                      3）通信秘密保護法第15条の2に基づく通信履歴確認データの保存
+                    </p>
+                    <p>
+                      -コンピュータ通信、インターネットログ記録、接続ポイント追跡：3ヵ月
+                    </p>
+                    <p>4）会社の内部方針</p>
+                    <p>-違法使用等の記録：10年</p>
+                    <p>
+                      4.使用者の権利を保証するために、会社はサービスを推奨する目的で使用者情報を使用して使用者に連絡することがあります。
+                    </p>
+                    <p>
+                      5.本条に基づいて会社が収集した情報は、本サービスを利用した結果として、統計及び分析に使用されることがあります。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第4条（クッキーの利用）</p>
+                  <div class="para02">
+                    <p>
+                      1.インターネットサービス使用中に、アクセスIPアドレス、クッキー、サービス使用記録などが作成及び収集されることがあります。
+                    </p>
+                    <p>
+                      2.会社は、クッキー情報を収集し、これを利用して使用者が以前にアクセスした各サービスにアクセスするかどうかを確認し、使用者からの質問に回答します。
+                    </p>
+                    <p>
+                      3.使用者は、クッキーを受け入れることを選択する権利があります。したがって、Webブラウザでオプションを設定することですべてのクッキーを許可したり、クッキーが保存されるたびに確認したり、クッキーの保存を拒否したりすることができます。ただし、クッキーの保存を拒否した場合、ログインが必要な一部のサービスを使用する時に困難が生ずることがあります。
+                    </p>
+                    <p>※クッキーの設定方法（例）</p>
+                    <p>
+                      ①InternetExplorer：Webブラウザの上部にあるツール→インターネットオプション→プライバシー→詳細
+                    </p>
+                    <p>
+                      ②Chrome：Webブラウザ右側の設定メニュー→画面下部の詳細設定→個人情報のコンテンツ設定ボタン→クッキー
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第5条（個人情報の収集方法）</p>
+                  <div class="para02">
+                    <p>
+                      モバイルアプリ、Webページ、顧客センターを通したオンライン相談、イベント参加など
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第6条（未成年者によるサービス利用の制限）</p>
+                  <div class="para02">
+                    <p>
+                      会社は、14歳未満の未成年者から個人情報を収集することはありません。そのような個人情報が何らかの方法で収集された場合、会社の個人情報記録から削除するための合理的な措置を講じることがあります。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第7条（第三者への個人情報の提供）</p>
+                  <div class="para02">
+                    <p>
+                      1.会社は、本個人情報処理ガイドラインに定める範囲内で使用者の個人情報を処理し、使用者の事前の同意なしに収集目的を超えて利用したり、第三者に提供したりすることはありません。ただし、会社のサービスの質を確保するために、以下の方法でパートナー会社などの第三者に会員個人情報を提供する場合は、第三者の氏名、個人情報事項が提供されること、提供の目的、保存期間などを事前に会員に通知し、会員の個別の同意を得ることを求めます。同意なしに情報を提供することはありません。また、そのようなパートナー会社が変更された場合でも、会員の同意を通知して求めます。
+                    </p>
+                    <p>
+                      2.会社は、使用者の同意なしに使用者の個人情報を第三者に提供することはありません。ただし、この場合、本サービスの利用が制限されることがあります。これは、質の高いサービスを提供し、サービスを円滑に利用するために必要な部分であることを通知します。
+                    </p>
+                    <p>
+                      3.以下のいずれかの場合、会社は、使用者の同意なしに、第三者に個人情報を提供することがあります。
+                    </p>
+                    <p>
+                      1）特定の個人を特定するために使用できる情報を含まない仮名形式の統計、科学研究、公共記録の保存などを作成するために必要な情報である場合
+                    </p>
+                    <p>
+                      2）法律条項または法令により求められる不可避の理由がある場合
+                    </p>
+                    <p>
+                      ３）法令に定める手続き及び方法に基づく調査を目的として、調査機関から要請があった場合
+                    </p>
+                    <p>4）個人情報保護法第17条または第18条に該当する場合</p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第8条（個人情報処理の委託）</p>
+                  <div class="para02">
+                    <p>
+                      1.会社は、充実したサービスを提供するために、個人情報の処理を第三者に委託することがあります。会社は、委託契約を締結する時に個人情報を安全に管理できるよう、適用法を遵守して必要事項に関する規則を定めています。また、個人情報の処理を委託する場合には、委託科目及びその委託で処理する委託者（以下、「受託者」と称す）の詳細を開示し、使用者がいつでも閲覧できるようにします。受託業務の内容が更新された場合、または受託者が変更された場合も同様です。
+                    </p>
+                    <p>
+                      2.個人情報処理及び国内受託者の委託業務の内容は、以下の通りです。
+                    </p>
+                    <div class="scroll_table para01">
+                      <div class="policy_table wd33">
+                        <div class="row thead">
+                          <div class="cell">受託者</div>
+                          <div class="cell">委託内容</div>
+                          <div class="cell">個人情報の保存及び使用期間</div>
+                        </div>
+                        <div class="row">
+                          <div class="cell wd_lf">
+                            <div>
+                              <p>アマゾンウェブサービス株式会社</p>
+                              <p>インフラの提供</p>
+                            </div>
+                          </div>
+                          <div class="cell wd_rf">
+                            会員が委託契約を解約、またはが満了するまで
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第9条 (海外における個人情報の転送)</p>
+                  <div class="para02">
+                    <p>
+                      当社は、収集した支払い情報を海外に転送し、Paymentwallが保有するデータベースで、お客様から取得または取得した情報を保持します。
+                      (物理的貯蔵場所:欧州連合、米国、インド).
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>
+                              受託者 <br />
+                              受信者
+                            </th>
+                            <th>送信された項目</th>
+                            <th>受取国</th>
+                            <th>送信の 日付、時刻、及び方法</th>
+                            <th>情報を使用する 受信者の目的</th>
+                            <th>個人情報の保存及び 使用期間</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Paymentwall</td>
+                            <td>支払い情報の収集</td>
+                            <td>欧州連合、米国とインド</td>
+                            <td>
+                              支払いサービスの利用時にネットワーク上の転送
+                            </td>
+                            <td>支払いと返金</td>
+                            <td>サービスが変更されるまで</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第10条（個人情報の保存と破棄）</p>
+                  <div class="para02">
+                    <p>
+                      1.個人情報の保存及び使用期間が経過すると、会社は使用者の個人情報を遅滞なく破棄します。
+                    </p>
+                    <p>
+                      2.以下の関連法規に従って保存しなければならない情報は、破棄される前に法令で指定された期間、保存されます。
+                    </p>
+                    <div class="scroll_table para01">
+                      <table class="poli_table_new type02">
+                        <caption>
+                          VISANG EDUCATION株式会社プライバシーポリシー
+                        </caption>
+                        <colgroup>
+                          <col style="width: 29%" />
+                          <col style="width: 49%" />
+                          <col style="width: 22%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="bg_gr" scope="col">関連法令</th>
+                            <th class="bg_gr" scope="col">保存された項目</th>
+                            <th class="bg_gr" scope="col">保存期間</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">
+                              電子商取引等における<br />消費者保護法第6条
+                            </td>
+                            <td>契約や会員登録の撤回に関する記録</td>
+                            <td>5年</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">商品の支払いや供給などの記録</td>
+                            <td>5年</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              消費者の苦情または紛争解決の記録
+                            </td>
+                            <td>3年</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">告知及び広告に関連する記録</td>
+                            <td>6ヵ月</td>
+                          </tr>
+                          <tr>
+                            <td>通信秘密保護法</td>
+                            <td>
+                              インターネットログ記録、アクセスポイント追跡記録
+                            </td>
+                            <td>3ヵ月</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3.会員が本サービスを利用する活動記録が1年間ない場合、会社はその会員を休眠会員として扱い、会員に通知した後、個人情報保護法第39条の6に従い、直ちに個人情報を破棄します。
+                    </p>
+                    <p>
+                      4.会社は、個人情報の保護と個人情報の漏えいによる損害を防止するために、以下の方法で個人情報を破棄します。
+                    </p>
+                    <p>
+                      1）紙に印刷された個人情報は、細断または焼却して破壊されます。
+                    </p>
+                    <p>
+                      2）電子ファイルの形式で保存された個人情報は、記録の複製を許可しない技術的方法を使用して削除されます。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    第11条（使用者及び法定代理人の権利とその行使方法）
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1.すべての使用者は、登録された本人の個人情報をいつでも閲覧及び/または変更する権利、または会員である場合は会員のキャンセル（退会）を要請する権利を有します。ただし、会社は、以下に例示するように、正当な公益がある場合には、会員登録の閲覧、変更、またはキャンセルの要請を拒否することがあります。拒否された場合、会社は10日以内に情報所有者にその理由を説明し、上訴の方法を通知する電子メール通知を送信します。
+                    </p>
+                    <p>-法律により閲覧が禁止または制限されている場合</p>
+                    <p>
+                      2.使用者が個人情報の誤りの訂正を要請した場合、訂正が完了するまで、その個人情報は使用または提供されません。誤った個人情報が既に第三者に提供されている場合は、訂正の結果を第三者に通知します。
+                    </p>
+                    <p>
+                      3.会社は、使用者の要請によりキャンセルまたは削除された個人情報を、本個人情報処理ガイドラインに従って取り扱い、他の目的で閲覧または使用されないようにします。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    第12条（個人情報の安全を確保するための措置）
+                  </p>
+                  <div class="para02">
+                    <p>
+                      会社は、使用者の個人情報の価値を認識し、以下のように個人情報の取り扱いに努めます。
+                    </p>
+                    <p>①社内管理計画の策定</p>
+                    <p>
+                      会社は、個人情報を安全に取り扱うための一連の基準として、社内管理計画を策定し、実施しています。
+                    </p>
+                    <p>②個人情報従業員を最小限に抑える</p>
+                    <p>
+                      会社は、個人情報を処理する従業員の数を最小限に抑え、従業員のPCは、個人情報漏えいの可能性を減らすために、外部インターネットネットワークをイントラネットから分離するようにシステム化されています。また、会社は、データベース及び個人情報処理システムのアクセス制御基準を体系的に確立しており、継続的なモニタリングとデューデリジェンスを行っています。
+                    </p>
+                    <p>③定期教育</p>
+                    <p>
+                      私たちは、個人情報処理者に定期的な教育を提供し、全社従業員に個人情報イシューを拡散することにより、個人情報の価値を強調します。
+                    </p>
+                    <p>④ハッキングやウイルスからの保護</p>
+                    <p>
+                      システムは、個人情報の漏えいや破損から保護するために、外部からのアクセスが制御されているエリアに設置されています。また、個人情報の紛失に備えて定期的なバックアップを実施し、データ漏えいや破損防止のためのワクチンプログラムを実施します。
+                    </p>
+                    <p>⑤個人情報の暗号化</p>
+                    <p>
+                      -暗号化された通信セグメントは使用者の個人情報を送信するために使用され、パスワードなどの重要な情報は安全な暗号化アルゴリズムを使用して暗号化されます。
+                    </p>
+                    <p>⑥ 物理的制御</p>
+                    <p>
+                      個人情報処理に関連するシステムは、アクセスが制御されている立ち入り禁止区域にあります。個人情報を含む文書及び補助記憶媒体は、ロック装置が設置されている安全な場所に保管されます。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    第13条（個人情報保護責任者及び管理者の選任）
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1.個人情報保護責任者は、使用者の個人情報保護及び情報漏えいの防止を担当し、使用者が会社が提供するサービスを安心して利用できるように支援し、会社が安全を確保するための措置を講じたにも関わらず、自然災害等の予期せぬ事故により生じた情報の破損や喪失、及び使用者から会社に提供された情報に起因する様々な紛争を除いて、使用者に対する会社の個人情報保護に関する使用者推奨事項から逸脱した場合の責任を負います。
+                    </p>
+                    <p>
+                      2.会社は、個人情報保護法に基づき、以下の通り、個人情報保護責任者を選任します。
+                    </p>
+                    <p>[個人情報保護責任者及び担当部署］</p>
+                    <p>
+                      A. Visang
+                      Education株式会社は個人情報保護責任者を任命し、担当部署を運営し、使用者の個人情報取り扱い、使用者からの問い合わせや苦情の解決を担当します。
+                    </p>
+                    <div class="policy_table type05 fix_hei para01">
+                      <div class="pth_tbody">
+                        <div class="ptb_td">個人情報保護責任者（CPO）</div>
+                        <div class="ptb_td">
+                          所属：IT戦略コア<br />氏名：イ・ジョンウ
+                        </div>
+                      </div>
+                      <div class="pth_tbody">
+                        <div class="ptb_td">個人情報担当部</div>
+                        <div class="ptb_td">
+                          <p>情報セキュリティセル</p>
+                        </div>
+                      </div>
+                      <div class="pth_tbody">
+                        <div class="ptb_td">お問い合わせ</div>
+                        <div class="ptb_td">
+                          <p><span>電話</span><span>: 1544-0554</span></p>
+                          <p>
+                            <span>電子メール</span
+                            ><span>: privacy@visang.com</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      B.使用者は、Visang
+                      Educationサービスの利用中に発生する個人情報保護、苦情、損害賠償請求等に関する全ての質問を、個人情報保護責任者及び担当部署に直接、問い合わせることができます。
+                    </p>
+                    <p>
+                      3.個人情報の侵害に関して、情報所有者が損害賠償について問い合わせたり、以下の機関に相談したりすることができます。&lt;以下の機関は会社から独立した機関であるため、詳細な情報が必要な場合はお問い合わせください&gt;
+                    </p>
+                    <div class="scroll_table para01">
+                      <div class="policy_table type06 fix_hei">
+                        <div class="pth_thead">
+                          <div class="ptb_th wd01 bg_gr">カテゴリー</div>
+                          <div class="ptb_th wd02">ホームページ</div>
+                          <div class="ptb_th wd03">電話</div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            個人情報侵害報告センター<br />（韓国インターネット振興院運営）
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://privacy.kisa.or.kr" target="_blank"
+                              >privacy.kisa.or.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>（市外局番なし）</span><span> 118</span>
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            個人情報紛争調停委員会
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://www.kopico.go.kr" target="_blank"
+                              >www.kopico.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>（市外局番なし）</span><br /><span
+                              >1833-6972</span
+                            >
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            大検察庁サイバー犯罪捜査チーム
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a href="https://www.spo.go.kr" target="_blank"
+                              >www.spo.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>（市外局番なし）</span><span> 1301</span>
+                          </div>
+                        </div>
+                        <div class="pth_tbody">
+                          <div class="ptb_td wd01 bg_gr">
+                            警察庁サイバーセキュリティ局
+                          </div>
+                          <div class="ptb_td wd02">
+                            <a
+                              href="https://cyberbureau.police.go.kr"
+                              target="_blank"
+                              >cyberbureau.police.go.kr</a
+                            >
+                          </div>
+                          <div class="ptb_td wd03">
+                            <span>（市外局番なし）</span><span> 182</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      EEA会員の場合、データ保護当局の電話番号は以下のリンクにあります。
+                    </p>
+                    <a
+                      href="https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+                      target="_blank"
+                      >*
+                      https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+                    >
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">第14条（通知義務）</p>
+                  <div class="para02">
+                    <p>
+                      本プライバシーポリシーの内容の追加、削除、または変更は、少なくとも7日前に、または事前の通知が困難な場合は直ちに、サービス通知を通じて通知されます。
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">&lt;補遺&gt;発効日</p>
+                  <div class="para02">
+                    <p>
+                      本個人情報処理ガイドラインは、2021年10月15日以降に発効します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- [e] ja -->
+            <!-- [s] ko -->
+            <div class="policy_lang_cont ko">
+              <h3>개인정보처리방침</h3>
+              <div class="policy_wrap">
+                <div class="para01">
+                  <p class="stit">제1조 (개인정보의 이용 및 처리목적)</p>
+                  <div class="para02">
+                    <p>
+                      (주)비상교육 (이하 “회사”라 함)은 이용자의 개인정보를
+                      소중하게 생각하고, 보호하기 위하여 항상 최선을 다해
+                      노력하고 있습니다. 회사는 「개인정보보호법」, 「정보통신망
+                      이용촉진 및 정보보호 등에 관한 법률」, 국제규약
+                      GDPR(General Data Protection Regulation) 등 개인정보보호
+                      관련 법률규정을 준수하고 있으며, 관련 법령에 의거한
+                      「개인정보처리방침」을 제정하여 이를 준수하고 있으며, 이를
+                      인터넷사이트 및 모바일 어플리케이션에 공개하여 이용자가
+                      언제나 용이하게 열람할 수 있도록 하고 있습니다.
+                    </p>
+                    <p>
+                      이용자는 개인정보의 수집, 이용, 제공과 관련하여 원하지
+                      않는 경우 동의를 거부할 수 있습니다. 다만, 이용자가 동의를
+                      거부하는 경우 서비스의 전부 또는 일부를 이용할 수 없음을
+                      알려드립니다.
+                    </p>
+                    <p>
+                      회사는 다음의 목적을 위하여 개인정보를 처리합니다.
+                      처리하고 있는 개인정보는 다음의 목적 이외의 용도로는
+                      이용되지 않으며, 이용 목적이 변경되는 경우에는
+                      개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한
+                      조치를 이행합니다.
+                    </p>
+                    <p>1. 서비스 제공</p>
+                    <p>
+                      2. 회원 관리 및 식별, 가입의사 확인, 본인·연령확인,
+                      부정이용 방지
+                    </p>
+                    <p>
+                      3. 신규서비스 개발, 다양한 서비스 제공, 문의사항 또는
+                      불만·분쟁처리, 공지사항 전달
+                    </p>
+                    <p>4. 이벤트 행사 시 정보 전달, 마케팅 및 광고 등에 활용</p>
+                    <p>
+                      5. 서비스 이용 기록, 접속 빈도 및 서비스 이용에 대한 통계,
+                      맞춤형 서비스 제공, 서비스 개선에 활용
+                    </p>
+                    <p>
+                      6. 부정 이용 행위를 포함하여 서비스의 원활한 운영에 지장을
+                      주는 행위에 대한 방지 및 제재, 계정도용 및 부정거래 방지
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제2조 (용어정의)</p>
+                  <div class="para02">
+                    <p>이 방침에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+                    <p>
+                      1. 회원: 회원이란 올비아에듀 사이트(allviaedu.com)에
+                      개인정보를 제공하여 회원 가입을 한 자로, 올비아에듀
+                      사이트(allviaedu.com)에서 제공하는 수업 및 서비스를 이용할
+                      수 있는 자를 말합니다.
+                    </p>
+                    <p>
+                      2. 서비스: 구현되는 단말기(PC, 모바일, 태블릿 PC 등의 각종
+                      유무선 장치를 포함)와 상관없이 이용자가 이용할 수 있는
+                      올비아에듀 사이트(allviaedu.com) 서비스를 의미합니다.
+                    </p>
+                    <p>
+                      3. 아이디(ID): 회원의 식별과 서비스 이용을 위하여 회원이
+                      설정하고 회사가 승인한 회원 본인의 문자와 숫자의 조합을
+                      의미하며 회원이 설정한 아이디 등이 포함됩니다
+                    </p>
+                    <p>
+                      4. 비밀번호: 회원의 동일성 확인과 회원정보의 보호를 위하여
+                      회원이 설정하고 회사가 승인한 문자나 숫자의 조합을
+                      말합니다.
+                    </p>
+                    <p>
+                      5. 유료서비스: 회원들이 비용을 지불해 이용하는 올비아에듀
+                      사이트(allviaedu.com) 서비스를 통해 유료로 이용 가능한
+                      회사가 제공하는 각종 온라인 디지털 콘텐츠 및 제반 서비스를
+                      말합니다. 정보 및 광고 게시 서비스 등이 포함됩니다.
+                    </p>
+                    <p>
+                      6. IMEI (Intel Management Engine Interface): 휴대용 모바일
+                      단말기에 내장되어 있는 15자리 숫자로 된 번호이며 단말기
+                      고유의 일련번호를 말합니다. (암호화하여 안전하게 보호하고
+                      있습니다.)
+                    </p>
+                    <p>
+                      7. 부정 이용: 저작권 침해, 명의도용 등 회사가 제공하는
+                      올비아에듀 사이트(allviaedu.com) 서비스 이용약관에서
+                      금지하고 있는 행위 혹은 법률상 정하는 불법행위 등을
+                      말합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제3조 (개인정보 수집 및 이용)</p>
+                  <div class="para02">
+                    <p>
+                      회사는 이용하는 서비스의 형태에 따라 다음과 같이
+                      개인정보를 수집 및 이용∙제공∙파기하고 있습니다. 또한,
+                      회사는 이용자의 개인식별이 가능한 개인정보를 수집하는
+                      때에는 반드시 이용자의 동의를 받습니다. 또한,
+                      개인정보처리방침이 변경되었을 때는 이용자께 항상 알리며,
+                      수시로 확인할 수 있도록 게시하겠습니다.
+                    </p>
+                    <p>
+                      1. 국제규약(GDPR)에 따라, 회원이 유럽 경제 지역(European
+                      Economic Area,이하 "EEA")에 거주하는 경우, 당사는 회원에
+                      대한 정보를 처리하기 위한 다음 법적 근거 중 하나를
+                      사용합니다.
+                    </p>
+                    <p>① 회원이 약관에 동의하는 경우,</p>
+                    <p>② 정당한 이해관계가 있는 경우,</p>
+                    <p>③ 회사와 계약을 이행하기 위해 처리가 필요한 경우,</p>
+                    <p>법률상의 의무 또는 규정상의 의무</p>
+                    <p>
+                      2. 회사가 처리하는 이용자의 개인정보 항목과 보유 및
+                      이용기간은 다음과 같습니다.
+                    </p>
+                    <p>▶ 회원가입 및 결제 등 필요시점에서 수집하는 정보</p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          회원가입 및 결제 등 필요시점에서 수집하는 정보
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                          <col style="width: 20%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">분류</th>
+                            <th scope="col" colspan="2">구분</th>
+                            <th scope="col">수집∙이용 항목</th>
+                            <th scope="col">수집∙이용 목적</th>
+                            <th scope="col">보유 및 이용기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">필수</td>
+                            <td rowspan="2">회원가입시</td>
+                            <td>파트너</td>
+                            <td class="tal">
+                              아이디, 비밀번호, 이름, 휴대폰번호, 이메일, 주소,
+                              파트너 이름, 계약 국가
+                            </td>
+                            <td rowspan="4" class="tal">
+                              회원가입, 중복확인, 서비스 제공 및 상담, 부정이용
+                              방지, 결제, 취소, 환불 관련 업무처리를 위한 정보,
+                              결제수단 인증 및 결제도용 방지 정보, 계정생성 및
+                              관리
+                            </td>
+                            <td rowspan="4" class="tal">
+                              회원탈퇴 시 즉시 삭제. 단, 전자상거래 등에서의
+                              소비자 보호에 관한 법률, 통신비밀보호법 등 관련
+                              법령 및 내부방침에 따른 보관 의무가 있을 경우 해당
+                              기간 동안 보관함.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">스쿨</td>
+                            <td class="tal">
+                              아이디, 비밀번호, 이름, 학교 이름, 휴대폰번호,
+                              이메일, 국가, 브랜드
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="bd_la">결제 및 환불</td>
+                            <td class="tal">
+                              1) 결제정보 카드사, 신용카드번호, 은행명,
+                              입금인/예금주, 계좌번호, 휴대폰정보 <br />2)
+                              환불정보 예금주, 은행명, 계좌번호
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la" colspan="2">고객문의</td>
+                            <td>성명, 이메일 주소</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>▶ 이용자 동의 후 추가로 수집하는 정보</p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <caption>
+                          이용자 동의 후 추가로 수집하는 정보
+                        </caption>
+                        <colgroup>
+                          <col style="width: 10%" />
+                          <col style="width: 10%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                          <col style="width: 25%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2">선택</td>
+                            <td>파트너</td>
+                            <td>사업자 등록번호, 파트너 정보</td>
+                            <td rowspan="2">
+                              서비스 제공 및 상담, 고객문의 응대
+                            </td>
+                            <td rowspan="3" class="tal">
+                              서비스 제공 목적 달성 시까지. 단, 관련 법령 및
+                              내부방침에 따른 보관의무가 있을 경우 해당 기간
+                              동안 보관함.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">고객문의</td>
+                            <td>연락처</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">그 외 자동 수집정보</td>
+                            <td class="tal">
+                              1) 디바이스정보: 플랫폼접속 디바이스 종류,
+                              운영체제 및 버전, 모바일 네트워크 정보, 접속국가,
+                              URL, 시스템 활동 영역<br />2) 소프트웨어 정보:
+                              버전에 대한 정보 및 사용하고 있는 업데이트
+                              소프트웨어 정보 등<br />3) 플랫폼 이용 정보:
+                              플랫폼의 이용 정보, 브라우저, 선호언어, 접속시간,
+                              페이지, 회원 활동, 인터넷 프로토콜 주소 등
+                            </td>
+                            <td>다양한 서비스 제공 목적</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3. 법령 및 내부방침에 의한 보유 및 이용기간은 다음과
+                      같습니다.
+                    </p>
+                    <p>1) 회원 가입 및 관리에 관한 기록</p>
+                    <p>
+                      - 보유기간: 회원 탈퇴 시까지 (단. 다음 사유에 해당되는
+                      경우 해당 사유 종료 시까지)
+                    </p>
+                    <p>
+                      - 관계 법령 위반에 따른 수사/조사 등이 진행 중인 경우에는
+                      해당 수사/조사 종료 시까지
+                    </p>
+                    <p>- 서비스 이용에 따른 채권/채무관계 정산 시까지</p>
+                    <p>
+                      2) 재화/서비스 제공에 관한 기록: 재화/서비스 공급 완료 및
+                      요금결제/ 정산완료 시까지 (단. 다음 사유에 해당되는 경우
+                      해당 사유 종료 시까지)
+                    </p>
+                    <p>- 계약 또는 청약철회 등에 관한 기록: 5년</p>
+                    <p>- 표시 광고에 관한 기록: 광고 게재 종료 후 6개월</p>
+                    <p>- 대금결제 및 재화 등의 공급에 관한 기록: 5년</p>
+                    <p>- 소비자의 불만 또는 분쟁처리에 관한 기록: 3년</p>
+                    <p>
+                      3) 통신비밀보호법 제15조의2에 따른 통신사실확인자료 보관
+                    </p>
+                    <p>
+                      - 컴퓨터 통신, 인터넷로그기록자료, 접속지 추적자료 :3개월
+                    </p>
+                    <p>4) 회사 내부방침</p>
+                    <p>- 부정이용 등에 관한 기록: 10년</p>
+                    <p>
+                      4. 회사는 이용자의 권리를 보장해 드리기 위하여 서비스
+                      안내를 목적으로 이용자 정보를 이용하여 연락을 취할 수
+                      있습니다.
+                    </p>
+                    <p>
+                      5. 회사가 본조에 의하여 수집한 정보는 서비스 이용에 따른
+                      통계∙분석에 이용될 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제4조 (쿠키 활용)</p>
+                  <div class="para02">
+                    <p>
+                      1. 인터넷 서비스 이용 과정에서 접속 IP 주소, 쿠키, 서비스
+                      이용 기록 등이 생성되어 수집될 수 있습니다.
+                    </p>
+                    <p>
+                      2. 회사는 쿠키 정보를 수집하여 이용자가 방문한 각 서비스
+                      접속여부, 이용자 문의에 대한 확인 및 안내 등에 사용합니다.
+                    </p>
+                    <p>
+                      3. 이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다.
+                      따라서 이용자는 웹브라우저에서 옵션을 설정함으로써 모든
+                      쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나,
+                      아니면 모든 쿠키의 저장을 거부할 수도 있습니다. 다만,
+                      쿠키의 저장을 거부할 경우에는 로그인이 필요한 일부
+                      서비스의 이용에 어려움이 있을 수 있습니다.
+                    </p>
+                    <p>* 쿠키 설정방법 (예)</p>
+                    <p>
+                      ① Internet Explorer : 웹 브라우저 상단의 도구 → 인터넷
+                      옵션 → 개인정보 → 고급
+                    </p>
+                    <p>
+                      ② Chrome : 웹 브라우저 우측의 설정 메뉴 → 화면 하단의 고급
+                      설정 표시 → 개인정보의 콘텐츠 설정 버튼 → 쿠키
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제5조 (개인정보의 수집방법)</p>
+                  <div class="para02">
+                    <p>
+                      모바일 애플리케이션, 웹 페이지, 고객센터를 통한 온라인
+                      상담, 이벤트 응모 등.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제6조 (아동의 서비스 이용 제한)</p>
+                  <div class="para02">
+                    <p>
+                      만 14세 미만 아동으로부터 어떠한 개인정보도 수집하지
+                      않으며, 회사가 정보를 수집하게 될 경우, 개인정보 기록에서
+                      삭제하기 위한 합리적인 조치를 취할 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제7조 (개인정보의 제3자 제공)</p>
+                  <div class="para02">
+                    <p>
+                      1. 회사는 이용자의 개인정보를 이 개인정보처리방침에서
+                      고지한 범위 내에서 처리하며, 이용자의 사전 동의 없이
+                      수집목적 범위를 초과하여 이용하거나 제3자에게 제공하지
+                      않습니다. 다만, 양질의 서비스 제공을 위해 다음과 같이
+                      회원의 개인정보를 제휴사 등 제3자에게 제공하는 경우에는
+                      사전에 이용자에게 업체명, 제공되는 개인정보 항목, 제공
+                      목적, 보유기간 등에 대해서 고지하고 개별적으로 동의를
+                      구하는 절차를 제공합니다. 동의가 없는 경우에는 제공되지
+                      않으며, 제휴사 등이 변경된 경우에도 고지를 하고 동의를
+                      받습니다.
+                    </p>
+                    <p>
+                      2. 회사는 이용자의 동의가 없는 경우 이용자의 개인정보를
+                      제3자에게 제공하지 않습니다. 하지만 이 경우 서비스 이용이
+                      제한될 수 있습니다. 양질의 서비스 제공 및 원활한 서비스
+                      이용을 위하여 필요한 부분임을 말씀드립니다.
+                    </p>
+                    <p>
+                      3. 회사는 다음 각 호의 어느 하나에 해당하는 경우에는
+                      이용자의 동의 없이 개인정보를 제3자에게 제공할 수
+                      있습니다.
+                    </p>
+                    <p>
+                      1) 통계작성, 과학적 연구, 공익적 기록보존 등을 위한 것으로
+                      특정 개인을 알아보기 위하여 사용될 수 있는 정보가 포함되지
+                      않은 가명정보의 경우
+                    </p>
+                    <p>
+                      2) 법률의 규정 또는 법률에 의하여 필요한 불가피한 사유가
+                      있는 경우
+                    </p>
+                    <p>
+                      3) 수사 목적으로 법령에 정해진 절차와 방법에 따라
+                      수사기관의 요청이 있는 경우
+                    </p>
+                    <p>4) 개인정보 보호법 제17조 또는 제18조에 해당하는 경우</p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제8조 (개인정보처리의 위탁)</p>
+                  <div class="para02">
+                    <p>
+                      1. 회사는 향상된 서비스를 제공하기 위해 개인정보 처리를
+                      위탁하여 처리할 수 있습니다. 회사는 위탁계약 체결 시
+                      개인정보가 안전하게 관리될 수 있도록 관련 법령에 따라
+                      필요한 사항을 규정하고 있습니다. 또한 개인정보 처리를
+                      위탁하는 경우에는 위탁하는 업무의 내용과 위탁받아 처리하는
+                      자(이하 ‘수탁업체’) 등을 이용자가 언제든지 쉽게 확인할 수
+                      있도록 공개하며, 위탁하는 업무의 내용이나 수탁업체가
+                      변경된 경우에도 동일합니다.
+                    </p>
+                    <p>
+                      2. 개인정보처리의 위탁 업무 내용과 국내수탁업체는 다음과
+                      같습니다.
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>수탁업체</th>
+                            <th>위탁업무 내용</th>
+                            <th>개인정보의 보유 및 이용기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Amazon Web Service Inc</td>
+                            <td>인프라 제공</td>
+                            <td>회원 탈퇴 시 혹은 위탁 계약 종료 시까지</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제9조 (개인정보의 국외이전)</p>
+                  <div class="para02">
+                    <p>
+                      회사는 수집된 결제 정보를 국외에 이전하고 있으며,
+                      이용자로부터 취득 또는 생성한 정보를 Paymentwall이
+                      보유하고 있는 데이터베이스(물리적 저장 장소 : 유럽 연합,
+                      미국 및 인도)에 저장합니다.
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>수탁업체 이전받는 자</th>
+                            <th>이전 항목</th>
+                            <th>이전 국가</th>
+                            <th>이전 일시 및 방법</th>
+                            <th>이전받는자의 이용 목적</th>
+                            <th>개인정보 보유 및 이용기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Paymentwall</td>
+                            <td>수집된 결제 정보</td>
+                            <td>유럽 연합, 미국 및 인도</td>
+                            <td>
+                              결제 서비스 이용 시점에 네트워크를 통한 전송
+                            </td>
+                            <td>결제 및 환불</td>
+                            <td>서비스 변경 시까지</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제10조 (개인정보의 보유 및 파기)</p>
+                  <div class="para02">
+                    <p>
+                      1. 회사는 개인정보 보유 및 이용기간이 경과된 후에는
+                      이용자의 개인정보를 지체 없이 파기합니다.
+                    </p>
+                    <p>
+                      2. 다음 관계법령에 의해 보관해야 하는 정보는 법령에 명시된
+                      기간 동안 보관 후 파기합니다.
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>관계법령</th>
+                            <th>보존항목</th>
+                            <th>보존기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">
+                              전자상거래 등에서의 소비자보호에 관한 법률 제6조
+                            </td>
+                            <td>계약 또는 청약철회 등에 관한 기록</td>
+                            <td>5년</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              대금결제 및 재화 등의 공급에 관한 기록
+                            </td>
+                            <td>5년</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">
+                              소비자의 불만 또는 분쟁처리에 관한 기록
+                            </td>
+                            <td>3년</td>
+                          </tr>
+                          <tr>
+                            <td class="bd_la">표시ㆍ광고에 관한 기록</td>
+                            <td>6개월</td>
+                          </tr>
+                          <tr>
+                            <td>통신비밀보호법</td>
+                            <td>인터넷 로그기록자료, 접속지 추적자료</td>
+                            <td>3개월</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      3. 회사는 회원이 1년간 서비스 이용 기록이 없는 경우
+                      휴면회원으로 처리하며, 개인정보보호법 제39조의6에 따라
+                      회원에게 사전 통지하고 개인정보를 즉시 파기합니다.
+                    </p>
+                    <p>
+                      4. 회사는 개인정보를 보호하여 개인정보 유출로 인한 피해가
+                      발생하지 않도록 하기 위하여 다음과 같은 방법을 통하여
+                      개인정보를 파기합니다.
+                    </p>
+                    <p>
+                      1) 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을
+                      통하여 파기합니다.
+                    </p>
+                    <p>
+                      2) 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수
+                      없는 기술적 방법을 사용하여 삭제합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    제11조 (이용자 및 법정대리인의 권리와 그 행사방법)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. 이용자는 언제든지 등록되어 있는 개인정보를 조회하거나
+                      수정할 수 있으며 회원의 경우 가입해지(탈퇴)를 요청할 수
+                      있습니다. 단, 회사는 다음과 같이 조회, 수정, 가입해지 등의
+                      요청을 거절할 만한 정당한 공익적 사유가 있는 경우에는
+                      요청을 거부할 수 있으며, 거부하는 경우에는 10일 이내에
+                      이메일로 거부 사유 및 불복 방법을 정보주체에게 통지합니다.
+                    </p>
+                    <p>- 법률에 따라 열람이 금지되거나 제한되는 경우</p>
+                    <p>
+                      2. 이용자가 개인정보의 오류에 대한 정정을 요청한 경우에는
+                      정정을 완료하기 전까지 개인정보를 이용 또는 제공하지
+                      않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한
+                      경우에는 정정 처리결과를 제3자에게 통지합니다.
+                    </p>
+                    <p>
+                      3. 회사는 이용자 요청에 의해 해지 또는 삭제된 개인정보를
+                      이 개인정보처리방침에 따라 처리하고 그 외의 용도로 열람
+                      또는 이용할 수 없도록 처리하고 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제12조 (개인정보의 안전성 확보조치)</p>
+                  <div class="para02">
+                    <p>
+                      회사는 이용자의 개인정보를 소중히 여기며, 개인정보를
+                      처리함에 있어서 다음과 같은 노력을 다하고 있습니다.
+                    </p>
+                    <p>① 내부관리계획의 수립</p>
+                    <p>
+                      - 개인정보의 안전한 처리를 위한 기준으로 내부관리계획을
+                      수립 및 시행하고 있습니다.
+                    </p>
+                    <p>② 개인정보 취급자 최소화</p>
+                    <p>
+                      - 개인정보를 처리하는 직원을 최소화 하며, 해당 직원들의
+                      PC는 외부 인터넷망과 내부망을 분리하여 개인정보 유출
+                      가능성을 줄이고 있습니다. 또한 개인정보를 처리하는
+                      데이터베이스와 개인정보처리시스템에 대한 접근 통제 기준을
+                      체계적으로 마련하고 지속적인 감사를 시행하고 있습니다.
+                    </p>
+                    <p>③ 정기 교육</p>
+                    <p>
+                      - 개인정보 취급자들을 대상으로 정기 교육을 실시하고, 전사
+                      직원을 대상으로 개인정보 이슈 사항을 전파하여 개인정보의
+                      중요성을 강조하고 있습니다.
+                    </p>
+                    <p>④ 해킹이나 바이러스로부터 보호</p>
+                    <p>
+                      - 시스템은 외부로부터 접근이 통제된 구역에 설치하여
+                      개인정보의 유출이나 훼손으로부터 보호합니다. 또한,
+                      개인정보 훼손에 대비하여 정기적 백업을 수행하고
+                      백신프로그램을 이용하여 자료의 유출 및 손상을 방지하고
+                      있습니다.
+                    </p>
+                    <p>⑤ 개인정보의 암호화</p>
+                    <p>
+                      - 이용자의 개인정보 전송 시 암호화된 통신구간을 이용하고,
+                      비밀번호 등 중요정보는 안전한 암호화 알고리즘을 사용하여
+                      암호화 합니다.
+                    </p>
+                    <p>⑥ 물리적 통제</p>
+                    <p>
+                      - 개인정보 처리와 관련된 시스템들은 통제구역에 위치하며,
+                      출입을 통제합니다. 또한 개인정보가 포함된 서류,
+                      보조저장매체는 잠금장치가 있는 안전한 장소에 보관합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">
+                    제13조 (개인정보 보호책임자 및 관리자 지정)
+                  </p>
+                  <div class="para02">
+                    <p>
+                      1. 개인정보 보호책임자는 이용자의 개인정보를 보호하고
+                      유출을 방지하는 책임자로서 이용자가 안심하고 회사가
+                      제공하는 서비스를 이용할 수 있도록 도우며, 개인정보를
+                      보호하는데 있어 이용자에게 고지한 사항들에 반하여 사고가
+                      발생할 시에는 이에 관한 책임을 집니다. 단, 회사가 적절한
+                      안정성 확보 조치를 취하였음에도 불구하고 천재지변과 같이
+                      예기치 못한 사고로 인한 정보의 훼손 및 멸실, 이용자가
+                      회사에 제공한 정보에 의한 각종 분쟁 등에 관해서는 예외로
+                      합니다.
+                    </p>
+                    <p>
+                      2. 회사는 개인정보보호법에서 규정한 개인정보 보호책임자를
+                      다음과 같이 지정합니다.
+                    </p>
+                    <p>[개인정보 보호책임자 및 담당부서]</p>
+                    <p>
+                      가. 비상교육은 이용자의 개인정보 처리에 관한 업무를
+                      총괄해서 책임지고, 이용자의 궁금증 해결, 불만처리를 위해
+                      개인정보 보호책임자와 담당부서를 지정하여 운영하고
+                      있습니다.
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <colgroup>
+                          <col style="width: 45%" />
+                          <col style="width: 55%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>개인정보보호책임자 (CPO)</td>
+                            <td class="tal">
+                              소속 : IT전략 Core<br />이름 : 이정우
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>개인정보 담당부서</td>
+                            <td class="tal">정보보안 Cell</td>
+                          </tr>
+                          <tr>
+                            <td>문의</td>
+                            <td class="tal">
+                              전화 : 1544-0554<br />이메일 : privacy@visang.com
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      나. 용자는 비상교육의 서비스를 이용하면서 발생하는 모든
+                      개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한
+                      사항을 개인정보 보호책임자 및 담당부서로 하실 수 있습니다.
+                    </p>
+                    <p>
+                      3. 정보주체는 아래의 기관에 대해 개인정보 침해에 대한
+                      피해구제, 상담 등을 문의하실 수 있습니다. &#60;아래의
+                      기관은 회사와는 별개의 기관으로서, 보다 자세한 도움이
+                      필요하시면 문의하여 주시기 바랍니다.&#62;
+                    </p>
+                    <div class="scroll_table">
+                      <table class="poli_table_new">
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>홈페이지</th>
+                            <th>전화</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              개인정보 침해신고센터<br />(한국인터넷진흥원 운영)
+                            </td>
+                            <td>privacy.kisa.or.kr</td>
+                            <td>(국번없이) 118</td>
+                          </tr>
+                          <tr>
+                            <td>개인정보 분쟁조정위원회</td>
+                            <td>www.kopico.go.kr</td>
+                            <td>(국번없이) 1833-6972</td>
+                          </tr>
+                          <tr>
+                            <td>대검찰청 사이버범죄수사단</td>
+                            <td>www.spo.go.kr</td>
+                            <td>(국번없이) 1301</td>
+                          </tr>
+                          <tr>
+                            <td>경찰청 사이버안전국</td>
+                            <td>ecrm.police.go.kr</td>
+                            <td>(국번없이) 182</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      EEA의 회원의 경우 데이터 보호 기관에 대한 연락처 정보는
+                      아래 링크에서 확인할 수 있습니다
+                    </p>
+                    <a
+                      href="https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+                      target="_blank"
+                      >*
+                      https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+                    >
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">제14조 고지의 의무</p>
+                  <div class="para02">
+                    <p>
+                      이 개인정보처리방침의 내용의 추가, 삭제 및 수정이 있을
+                      경우에는 개정 최소 (7)일 전부터 서비스의 공지사항을 통해
+                      고지하며, 사전공지가 곤란한 경우 지체없이 공지합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="para01">
+                  <p class="stit">&#60;부칙&#62; 시행일</p>
+                  <div class="para02">
+                    <p>이 개인정보처리방침은 2021. 10. 15.부터 적용됩니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- [e] ko -->
+            <div class="lang_select">
+              <span>Language</span>
+              <select name="lang">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- [e] 2023-05-19 -->
+      </div>
+      <!-- //container -->
+      <footer>
+        <div class="wrapper">
+          <div class="sitemap">
+            <ul>
+              <li>
+                <a href="../explore/Explore_1.html">EXPLORE</a>
+                <ul>
+                  <li>
+                    <a href="../explore/Explore_1.html">Features</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_1.html">Overview</a></li>
+                      <li><a href="../explore/Remote.html">Remote</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_2.html">Preschool</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_2.html">Wings</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                      <li>
+                        <a href="../explore/Explore_5.html">Oxford Discover</a>
+                      </li>
+                      <li>
+                        <a href="../explore/Explore_6.html">Math Alive</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_3.html"
+                      >Secondary (up to Gr.8)</a
+                    >
+                    <ul class="depth-2">
+                      <li>
+                        <a href="../explore/Explore_4.html"
+                          >Oxford Discover Futures</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../explore/Explore_play.html">Play the Demo</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../pricing/pricing.html">PRICING</a>
+                <ul>
+                  <li>
+                    <a href="../pricing/pricing.html#price01"
+                      >Get Started Free</a
+                    >
+                  </li>
+                  <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                  <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                  <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../resources/News_1.html">RESOURCES</a>
+                <ul>
+                  <li>
+                    <a href="../resources/News_1.html">Blog</a>
+                    <ul class="depth-2">
+                      <li><a href="../resources/News_1.html">News</a></li>
+                      <li><a href="../resources/Press_1.html">Press</a></li>
+                      <li>
+                        <a href="../resources/VideoGuide_1.html"
+                          >Videos & Guides</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="../resources/Resellers_1.html">Partners</a></li>
+                  <li>
+                    <a href="../resources/Faq_1.html">Support</a>
+                    <ul class="depth-2">
+                      <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                      <li>
+                        <a href="../resources/Contact_1.html">Contact Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../company/Aboutus.html">COMPANY</a>
+                <ul>
+                  <li><a href="../company/Aboutus.html">About Us</a></li>
+                  <li><a href="../company/Policy.html">Privacy Policy</a></li>
+                  <li>
+                    <a href="../company/Terms.html">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_info">
+            <div class="foot_img">
+              <p class="btm_logo">
+                <img src="../../images/ico/ico_btm_logo.png" alt="VISANG" />
+              </p>
+              <img
+                class="certification"
+                src="../../images/ico/ico_partner06.png"
+                alt="1EDTECH"
+              />
+            </div>
+            <div class="sns">
+              <strong>FOLLOW US</strong>
+              <a
+                href="https://www.facebook.com/visangeducation"
+                target="_blank"
+                title="새창"
+                class="facebook"
+                >facebook</a
+              >
+              <a
+                href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+                target="_blank"
+                title="새창"
+                class="linkedin"
+                >linkedin</a
+              >
+              <a
+                href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+                target="_blank"
+                title="새창"
+                class="youtube"
+                >youtube</a
+              >
+            </div>
+            <p class="copy">
+              COPYRIGHT © VISANG EDUCATION INC. ALL RIGHTS RESERVED
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

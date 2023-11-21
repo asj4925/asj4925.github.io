@@ -1,5 +1,6 @@
 
-#student .student-send-btn{
+/* [s] 2023-03-02 #student 삭제 */
+.student-send-btn{
   position: absolute;
 	z-index: 9999999999999;
     touch-action: none;
@@ -13,7 +14,7 @@
     box-shadow: 4px 4px 15px rgb(0 0 0 / 15%);
 }
 
-#student .student-send-btn::before {
+.student-send-btn::before {
   content: "";
 	position: absolute;
 	left: 50%;
@@ -28,7 +29,7 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-#student .student-send-btn::after {
+.student-send-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -44,7 +45,7 @@
   animation-timing-function: linear;
   animation-delay: .1s;
 }
-
+/* [e] 2023-03-02 #student 삭제 */
 #student d-none {
 	display: none;
 }

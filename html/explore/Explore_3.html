@@ -1,690 +1,1284 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="robots" content="all" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-	<script src="../../js/jquery-3.4.1.min.js"></script>
-	<script src="../../js/slick.min.js"></script>
-	<script src="../../js/jquery.selectric.min.js"></script>
-	<script src="../../js/common.js"></script>
-	<script src="https://player.vimeo.com/api/player.js"></script>
-	<meta property="og:image" content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg">
-	<title>비상교육</title>
-</head>
-<body>
-	<div id="wrap">
-		<div class="top_floating"><p><a href="../pricing/pricing.html">GET STARTED FREE FOR 30 DAYS!</a></p></div>
-		<header>
-			<h1><a href="../main/Main_1.html"><img src="../../images/ico/ico_logo.png" alt="AllviA"></a></h1>
-			<nav>
-				<h2><a href="#;">menu</a></h2>
-				<ul class="mb_hidden">
-					<li class="on"><a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
-						<ul class="depth02">
-							<li><a href="../explore/Explore_1.html">Features</a>
-								<ul>
-									<li><a href="../explore/Explore_1.html">Overview</a></li>
-									<li><a href="../explore/Remote.html">Remote</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_2.html">Preschool</a>
-								<ul>
-									<li><a href="../explore/Explore_2.html">Wings</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
-								<ul>
-									<li><a href="../explore/Explore_3.html">ELiF</a></li>
-									<li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
-									<li><a href="../explore/Explore_6.html">Math Alive</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
-								<ul>
-									<li><a href="../explore/Explore_4.html">Oxford Discover Futures</a></li>
-								</ul>
-							</li>
-							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-						</ul>
-					</li>
-					<li><a href="../pricing/pricing.html"><span>PRICING</span></a>
-						<ul class="depth02">
-							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-						</ul>						
-					</li>
-					<li><a href="../resources/News_1.html"><span>RESOURCES</span></a>
-						<ul class="depth02">
-							<li><a href="../resources/News_1.html">Blog</a>
-								<ul>
-									<li><a href="../resources/News_1.html">News</a></li>
-									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-								</ul>
-							</li>
-							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-							<li><a href="../resources/Faq_1.html">Support</a>
-								<ul>
-									<li><a href="../resources/Faq_1.html">FAQ</a></li>
-									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-									<li><a href="#;">Chat</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="util mb_hidden">
-				<div class="user">
-					<a href="../login/Login.html">LOG IN</a>
-					<a href="../join/Signup_1.html">SIGN UP</a>
-				</div>
-				<a href="../pricing/pricing.html#price01" class="start">GET STARTED FREE</a>
-				<div class="lang">
-					<a href="#;" class="en">EN</a>
-					<ul>
-						<li>EN</li>
-						<li>KR</li>
-						<li>JP</li>
-						<li>CH</li>
-						<li>SP</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header_dim"></div>
-			<div class="mobile_menu">
-				<p class="menu_logo"><img src="../../images/ico/ico_logo_w.png" alt="AllviA"></p>
-				<div class="login_wrap">
-					<div class="login_before">
-						<a href="../login/Login.html" class="login_btn">LOG IN</a>
-						<a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
-						<a href="../pricing/pricing.html#price01" class="start_btn">GET STARTED FREE</a>
-					</div>
-				</div>
-				<ul class="menu">
-					<li><a href="#;"><span>Explore</span></a>
-						<ul class="depth02">
-														<li><a href="../explore/Explore_1.html">Features</a>
-								<ul>
-									<li><a href="../explore/Explore_1.html">Overview</a></li>
-									<li><a href="../explore/Remote.html">Remote</a></li>
-								</ul>
-							</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/jquery.selectric.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <meta
+      property="og:image"
+      content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg"
+    />
+    <title>비상교육</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="top_floating">
+        <p>
+          <a href="../pricing/pricing.html">GET STARTED FREE FOR 30 DAYS!</a>
+        </p>
+      </div>
+      <header>
+        <h1>
+          <a href="../main/Main_1.html"
+            ><img src="../../images/ico/ico_logo.png" alt="AllviA"
+          /></a>
+        </h1>
+        <nav>
+          <h2><a href="#;">menu</a></h2>
+          <ul class="mb_hidden">
+            <li class="on">
+              <a href="../explore/Explore_1.html"><span>EXPLORE</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../explore/Explore_1.html">Features</a>
+                  <ul>
+                    <li><a href="../explore/Explore_1.html">Overview</a></li>
+                    <li><a href="../explore/Remote.html">Remote</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_2.html">Preschool</a>
+                  <ul>
+                    <li><a href="../explore/Explore_2.html">Wings</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+                  <ul>
+                    <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                    <li>
+                      <a href="../explore/Explore_5.html">Oxford Discover</a>
+                    </li>
+                    <li><a href="../explore/Explore_6.html">Math Alive</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_3.html">Secondary (up to Gr.8)</a>
+                  <ul>
+                    <li>
+                      <a href="../explore/Explore_4.html"
+                        >Oxford Discover Futures</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../explore/Explore_play.html">Play the Demo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../pricing/pricing.html"><span>PRICING</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../pricing/pricing.html#price01">Get Started Free</a>
+                </li>
+                <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../resources/News_1.html"><span>RESOURCES</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../resources/Resellers_1.html">Resellers</a></li>
+                <li>
+                  <a href="../resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../resources/Contact_1.html">Contact Us</a>
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="util mb_hidden">
+          <div class="user">
+            <a href="../login/Login.html">LOG IN</a>
+            <a href="../join/Signup_1.html">SIGN UP</a>
+          </div>
+          <a href="../pricing/pricing.html#price01" class="start"
+            >GET STARTED FREE</a
+          >
+          <div class="lang">
+            <a href="#;" class="en">EN</a>
+            <ul>
+              <li>EN</li>
+              <li>KR</li>
+              <li>JP</li>
+              <li>CH</li>
+              <li>SP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_dim"></div>
+        <div class="mobile_menu">
+          <p class="menu_logo">
+            <img src="../../images/ico/ico_logo_w.png" alt="AllviA" />
+          </p>
+          <div class="login_wrap">
+            <div class="login_before">
+              <a href="../login/Login.html" class="login_btn">LOG IN</a>
+              <a href="../join/Signup_1.html" class="txt_btn">SIGN UP</a>
+              <a href="../pricing/pricing.html#price01" class="start_btn"
+                >GET STARTED FREE</a
+              >
+            </div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#;"><span>Explore</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../explore/Explore_1.html">Features</a>
+                  <ul>
+                    <li><a href="../explore/Explore_1.html">Overview</a></li>
+                    <li><a href="../explore/Remote.html">Remote</a></li>
+                  </ul>
+                </li>
 
-							<li><a href="../explore/Explore_2.html">Wings</a></li>
-							<li class="current"><a href="../explore/Explore_3.html">ELiF</a></li>
-							<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-						</ul>
-					</li>
-					<li><a href="#;">Pricing</a>
-						<ul>
-							<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-							<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-							<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-							<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-						</ul>
-					</li>
-					<li><a href="#;">Resources</a>
-						<ul>
-							<li><a href="../resources/News_1.html">Blog</a>
-								<ul>
-									<li><a href="../resources/News_1.html">News</a></li>
-									<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-								</ul>
-							</li>
-							<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-							<li><a href="../resources/Faq_1.html">Support</a>
-								<ul>
-									<li><a href="../resources/Faq_1.html">FAQ</a></li>
-									<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-									<li><a href="#;">Chat</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#;">Company</a>
-						<ul>
-							<li><a href="../company/Aboutus.html">About Us</a></li>
-							<li><a href="../company/Policy.html">Privacy Policy</a></li>
-							<li><a href="../company/Terms.html">Terms & Conditions</a></li>
-						</ul>
-					</li>
-				</ul>
-				<div class="sns">
-					<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
-					<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkin">linkedin</a>
-					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
-					<a href="../main/Main_1.html" class="home">home</a>
-				</div>
-				<div class="lang">
-					<a href="#;" class="on">EN</a>
-					<a href="#;">ES</a>
-					<a href="#;">JP</a>
-				</div>
-				<a href="#;" class="menu_close">menu close</a>
-			</div>
-		</header>
-		<div id="container" class="sub subA">
-			<div class="subtop_menu">
-				<ul class="wrapper">
-					<li><a href="../explore/Explore_1.html">Features</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_1.html">Overview</a></li>
-							<li><a href="../explore/Remote.html">Remote</a></li>
-						</ul>
-					</li>
-					<li><a href="../explore/Explore_2.html">Preschool</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_2.html">Wings</a></li>
-						</ul>
-					</li>
-					<li class="on"><a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_3.html">ELiF</a></li>
-							<li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
-							<li><a href="../explore/Explore_6.html">Math Alive</a></li>
-						</ul>
-					</li>
-					<li><a href="../explore/Explore_4.html">Secondary (up to Gr.8)</a>
-						<ul class="subtop_sub">
-							<li class="on"><a href="../explore/Explore_4.html">Oxford Discover Futures</a></li>
-						</ul>
-					</li>
-					<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-				</ul>
-			</div>
-			<a class="floating_banner demo dp_mb" href="../explore/Explore_play2.html">
-				<span>REPRODUZCA<br>LA<br>DEMOSTRACIÓN</span>
-			</a>
-			<div id="contents" class="nobtm">
-				<div class="exp_intro elif">
-					<div class="exp_top">
-						<i><img src="../../images/ico/ico_elif_logo.png" alt="ELiF"></i>
-						<p class="tit">ELiF is an interactive English language learning <br class="dp_pc">program designed to promote life skills</p>
-						<div class="con">
-							<i><img src="../../images/pic/pic_elif01.png" alt="ELiF"></i>
-							<p>ELiF is a knowledge-based digital elementary English learning program that <br class="dp_pc">aims to promote language learning and cultivate life skills.</p>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<h4>Maximize learning potential through <br class="dp_pc">a systematic learning flow</h4>
-						<p>The learning flow consisting of pre-class, main class, and review is a process <br class="dp_pc">for both learning and understanding students' progress.</p>
-						<div class="img_mt">
-							<p class="bg_txt"><span>Pre-Class (self-directed)</span></p>
-							<p><img src="../../images/pic/pic_elif02.png" alt="ELiF"></p>
-						</div>
-						<p>Get ready for what will be taught in upcoming classes through self-directed learning <br class="dp_pc">with digital devices. Learning outcomes are analyzed in real time to inform teachers and help them <br class="dp_pc">make decisions about instructional directions.</p>
-						<div class="wrapper">
-							<ul class="cont_info_wrap">
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info01.png" alt="Word Training"></p>		
-									<strong>Word Training</strong>
-									<span>Learn vocabulary and solve problems to understand your skills.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info02.png" alt="Listening Comprehension & Sentence Listening"></p>		
-									<strong>Listening Comprehension & Sentence Listening</strong>
-									<span>Learn as you watch multimedia. By listening to and repeating phrases, AI can measure the correctness of your intonation and pronunciation.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info03.png" alt="Reading Comprehension & Sentence Building"></p>		
-									<strong>Reading Comprehension & Sentence Building</strong>
-									<span>Practice reading about a variety of subjects. Practice sentence structures.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info04.png" alt="Expression & Grammar"></p>		
-									<strong>Expression & Grammar</strong>
-									<span>Enhance your skills by practicing the phrases learned in listening comprehension and grammar reading comprehension.</span>	
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="exp_section">
-						<div class="img_mt wrapper">
-							<p class="bg_txt"><span>In the classroom, where interactive learning produces</span><span>high learning outcomes</span></p>
-							<p class="mt20"><img src="../../images/pic/pic_elif03.png" alt="ELiF"></p>
-						</div>
-						<p>For face-to-face classes, teaching methods prioritize interaction to assist students <br class="dp_pc">who are easily distracted in maintaining concentration.</p>
-						<div class="wrapper">
-							<ul class="cont_info_wrap">
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info05.png" alt="Learning through multimedia interaction"></p>		
-									<strong>Learning through multimedia interaction</strong>
-									<span>Activities using video recordings and digital devices improve students’ participation.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info06.png" alt="Synchronized learning results"></p>		
-									<strong>Synchronized learning results</strong>
-									<span>Teachers can check their students’ pre-class results and decide what to teach in the main class.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info07.png" alt="Various QUIZ types"></p>		
-									<strong>Various QUIZ types</strong>
-									<span>Team-based quiz competitions increase the enjoyment of learning English.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info08.png" alt="Various tools provided"></p>		
-									<strong>Various tools provided</strong>
-									<span>Features such as polls and debates can facilitate student communication. By sharing the material prepared by the teacher, students can have a diverse classroom experience.</span>	
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<div class="img_mt wrapper">
-							<p class="bg_txt"><span>After-class with gamification</span></p>
-							<p class="mt40"><img src="../../images/pic/pic_elif04.png" alt="ELiF"></p>
-						</div>
-						<p>The learning process that ends with a review is provided as a video game, <br class="dp_pc">so students can remain interested in English learning.<br class="dp_pc"> Make your character stronger through battles with monsters and competitive games with friends. <br class="dp_pc">As the character grows, the capability of the student also grows.</p>
-						<div class="wrapper">
-							<ul class="cont_info_wrap fl_center">
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info09.png" alt="Hunt monsters to review"></p>		
-									<strong>Hunt monsters to review</strong>
-									<span>You can hunt monsters to review just as you do in a role-playing game. Level up and get your gold.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info10.png" alt="Mini games to play with friends"></p>		
-									<strong>Mini games to play with friends</strong>
-									<span>Compete with your friends by solving spelling mini games. The winner earns some gold.</span>	
-								</li>
-								<li>
-									<p class="pic"><img src="../../images/pic/pic_elif_info11.png" alt="Buy and customize my character"></p>		
-									<strong>Buy and customize my character</strong>
-									<span>Buy and customize your character with the golds you earned from review activities.</span>	
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="exp_section">
-						<h4>Gather in a classroom or learn from a distance at home</h4>
-						<p>ELiF delivers unrestricted learning activities on-site. <br class="dp_pc">Select where and how you want to run your classes freely.<br class="dp_pc"> It allows students to continue to learn and grow without any gaps in learning, <br class="dp_pc">even in uncertain circumstances.</p>
-						<div class="mt25">
-							<p><img src="../../images/pic/pic_elif05.png" alt="ELiF"></p>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<h4>Multimedia can make learning English fun</h4>
-						<p>ELiF provides multimedia such as videos based on real-world topics <br class="dp_pc">to maximize results with immersive learning.</p>
-						<ul class="exp_video_list wrapper">
-							<li>
-								<div class="exp_video">
-									<div class="type02">
-										<iframe src="https://player.vimeo.com/video/583652491?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_18]Converstional_Videos_Y4_L2_U1_021_main"></iframe>
-									</div>
-									<strong>Conversational Videos</strong>
-								</div>	
-							</li>
-							<li>
-								<div class="exp_video">
-									<div class="type02">
-										<iframe src="https://player.vimeo.com/video/594456392?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=aeba462583" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_19]Visual_Reading&amp;amp;Listening Modified"></iframe>
-									</div>
-									<strong>Visual Reading & Visual Listening</strong>
-								</div>	
-							</li>
-							<li>
-								<div class="exp_video">
-									<div class="type02">
-										<iframe src="https://player.vimeo.com/video/596390847?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=157020baca" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_20] 3D Animation Modified"></iframe>
-									</div>
-									<strong>3D Animations</strong>
-								</div>	
-							</li>
-							<li>
-								<div class="exp_video">
-									<div class="type02">
-										<iframe src="https://player.vimeo.com/video/583656373?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_21]2D_Animations_Y3_L2_U3_031_ani"></iframe>
-									</div>
-									<strong>2D Animations</strong>
-								</div>	
-							</li>
-							<li>
-								<div class="exp_video">
-									<div class="type02">
-										<iframe src="https://player.vimeo.com/video/583656964?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_22]Visual_Songs_PlanetSong"></iframe>
-									</div>
-									<strong>Visual Songs</strong>
-								</div>	
-							</li>
-							<li>
-								<div class="exp_video">
-									<div class="type02">
-										<iframe src="https://player.vimeo.com/video/596391908?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=73a067facf" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_23] Video Clips by Native English Teachers"></iframe>
-									</div>
-									<strong>Video Clips by Native English Teachers</strong>
-								</div>	
-							</li>
-						</ul>
-					</div>
-					<div class="exp_section">
-						<h4>Improve student understanding <br class="dp_pc">by teaching through a textbook</h4>
-						<p>The ELiF textbooks consist of three sets for each quarter. <br class="dp_pc">Completely connected textbooks with digital content provide students <br class="dp_pc">with a deeper level of learning material.</p>
-						<div class="ebook_wrap">
-							<div class="tab_box el">
-								<div class="el_tab01"><a href="#;">STARTER</a>
-									<ul class="inner">
-										<li><a href="Elif_1" class="ebooklink">Storybook</a></li>
-										<li><a href="Elif_2" class="ebooklink">Workbook</a></li>
-									</ul>
-								</div>
-								<div class="el_tab02"><a href="#;">JUMPER</a>
-									<ul class="inner">
-										<li><a href="ELiF_3" class="ebooklink">Storybook</a></li>
-										<li><a href="ELiF_4" class="ebooklink">Workbook</a></li>
-										<li><a href="ELiF_5" class="ebooklink">Storytelling Book</a></li>
-									</ul>
-								</div>
-								<div class="el_tab03"><a href="#;">BASIC</a>
-									<ul class="inner">
-										<li><a href="ELiF_6" class="ebooklink">Storybook</a></li>
-										<li><a href="ELiF_7" class="ebooklink">Workbook</a></li>
-										<li><a href="ELiF_8" class="ebooklink">Storytelling Book</a></li>
-									</ul>
-								</div>
-								<div class="el_tab04"><a href="#;">INTERMEDIATE</a>
-									<ul class="inner">
-										<li><a href="ELiF_9" class="ebooklink">Storybook</a></li>
-										<li><a href="ELiF_10" class="ebooklink">Workbook</a></li>
-										<li><a href="ELiF_11" class="ebooklink">Storytelling Book</a></li>
-									</ul>
-								</div>
-								<div class="el_tab05"><a href="#;">ADVANCED</a>
-									<ul class="inner">
-										<li><a href="ELif_12" class="ebooklink">Storybook</a></li>
-										<li><a href="ELiF_13" class="ebooklink">Workbook</a></li>
-										<li><a href="ELiF_14" class="ebooklink">Storytelling Book</a></li>
-									</ul>
-								</div>
-								<div class="el_tab06"><a href="#;">ELITE</a>
-									<ul class="inner">
-										<li><a href="ELiF_15" class="ebooklink">Storybook</a></li>
-										<li><a href="ELiF_16" class="ebooklink">Workbook</a></li>
-										<li><a href="ELiF_17" class="ebooklink">Storytelling Book</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="tab_con">
-								<div class="ebook_tabbox">
-									<iframe src="http://book.allviaedu.com/view/index.html?contbase=/Elif_1/&title=abcd&viewtype=html5" frameborder="0" allow="fullscreen"></iframe>	
-								</div>
-							</div>
-						</div><!-- //ebook_wrap -->
-					</div>
-					<div class="exp_section bg_blue">
-						<h4>Keep track of student accomplishments <br class="dp_pc">through systematic assessments and reports</h4>
-						<p>All learning and assessment processes generate reports that inform teachers <br class="dp_pc">and parents of student progress.</p>
-						<div class="normal_tab">
-							<ul class="nm_tab mb10">
-								<li><a href="#;">Assessment & Report</a></li>
-								<li><a href="#;">Web for Parents</a></li>
-							</ul>
-							<div class="nm_tabcon">
-								<div>
-									<p class="sm_txt">The completion rates of each sector are automatically processed and analyzed to give feedback that will inform you of the direction for your students to follow. </p>
-									<div>
-										<iframe src="http://book.allviaedu.com/view/index.html?contbase=/Elif_25/&title=abcd&viewtype=html5" frameborder="0" allow="fullscreen"></iframe>
-									</div>
-								</div>
-								<div>
-									<p class="sm_txt">Parents can check their student’s learning results through the Parent Web. </p>
-									<div>
-										<iframe src="http://book.allviaedu.com/view/index.html?contbase=/Elif_26/&title=abcd&viewtype=html5" frameborder="0" allow="fullscreen"></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="exp_section">
-						<h4>The ELiF content corresponds with the world-class <br class="dp_pc">assessment system</h4>
-						<p>The 6-year program corresponds to world-class English lessons such as Lexile and CEFR and <br class="dp_pc">provides students with the most effective English learning experience available.</p>
-						<p class="img_mt"><img src="../../images/pic/pic_elif06.png" alt="ELiF"></p>
-						<div class="btn_wrap">
-							<a href="../../media/ELiF_Syllabus.pdf" target="_blank" class="slim_btn skyblue">DOWNLOAD SYLLABUS</a>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<div class="wrapper">
-							<ul class="accordion">
-								<li class="a01 on">
-									<h6>It is possible to measure reading levels objectively through Lexile Tests.</h6>
-									<div class="content">
-										<p>
-											Lexile was developed by the American educational organization, MetaMetrics,<br class="dp_pc">
-											to measure English reading levels. Visang Education developed Lexile Test<br class="dp_pc">
-											through a formal agreement with MetaMetrics. Students learning on ELiF can check<br class="dp_pc">
-											their reading levels and monitor their improvements through Lexile Tests.
-										</p>
-										<div class="img_con">
-											<div>
-												<img src="../../images/pic/pic_lexile_1.png" alt="LEXILE TEST">
-											</div>
-											<div class="el_video">
-												<p>Message from MetaMatrics</p>
-												<div class="video">
-													<iframe src="https://player.vimeo.com/video/585245061?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Visang_MetaMetrics Testimonial_exported"></iframe>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="a02">
-									<h6>Check LMS to see your improvements in reading level.</h6>
-									<div class="content">
-										<p>You can see the improvements of students' reading levels that will be shown as graphs on a report after they complete each session on ELiF. Also, you can regularly check what level a student is at by comparing it to the grade-specific Lexile level of American students.</p>
-										<div class="img_con">
-											<div>
-												<img src="../../images/pic/pic_lexile_2.png" alt="LEXILE TEST">
-											</div>
-											<div>
-												<img src="../../images/pic/pic_lexile_3.png" alt="LEXILE TEST">
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="a03">
-									<h6>You can participate in a Lexile Test at any time.</h6>
-									<div class="content lexile">
-										<p>
-											We provides two kinds of Lexile Tests: Type A and Type B.<br class="dp_pc">
-											You can take either test after purchasing the Lexile Test Voucher.<br class="dp_pc">
-											Purchase the Lexile Test Voucher on the Admin page after signing up as a school member. Become a member of AllviA and join us today!
-										</p>
-										<div class="img_con">
-											<div>
-												<img src="../../images/pic/pic_lexile_4.png" alt="LEXILE TEST">
-												<p>Type A is the first test to take to measure the reading level, and the result is officially recognized as Lexile reading level.</p>
-											</div>
-											<div>
-												<img src="../../images/pic/pic_lexile_5.png" alt="LEXILE TEST">
-												<p>The difficulty of Type B is adjusted according to the Lexile measure determined through Type A before being provided to students. Type B is a cloze test to check the level at all times.</p>
-												<div class="info_wrap">
-													<!-- 2022-11-17 타이틀에도 pop_call 클래스와 pophref 넣어주기  -->
-													<span class="title pop_call" pophref="#info_pop">Lexile Test Vouchers</span>
-													<span class="ico_info pop_call" pophref="#info_pop"></span>
-													<div class="cont_info left">
-														<dl>
-															<dt>Lexile Test Vouchers</dt>
-															<dd>Lexile Test [1] (Single Type A) : <b>2.99 USD</b></dd>
-															<dd>Lexile Test [2] (Single Type A + 2times of Type B) : <b>5.99 USD</b></dd>
-															<dd>Lexile Test [3] (Single Type A + 4times of Type B) : <b>9.99 USD</b></dd>
-														</dl>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="exp_section">
-						<h4>You are ready to teach without any preparation stress</h4>
-						<p class="wrapper">We provide not only our outstanding content, but also support materials such as guides and videos so that the teacher can teach students without preparing things for the class.  Also, various toolbar supports teachers run their class without having stress and helps students to bring up their communication skills.</p>
-						<div class="normal_tab">
-							<ul class="nm_tab">
-								<li><a href="#;">Teacher‘s Guide Book</a></li>
-								<li><a href="#;">Teacher's Guide Video</a></li>
-								<li><a href="#;">AllviA Toolbar</a></li>
-								<li><a href="#;">LMS</a></li>
-							</ul>
-							<div class="nm_tabcon">
-								<div>
-									<iframe src="http://book.allviaedu.com/view/index.html?contbase=/ELiF_27/&title=abcd&viewtype=html5" frameborder="0" allow="fullscreen"></iframe>
-								</div>
-								<div>
-									<div class="video_box">
-										<iframe src="https://player.vimeo.com/video/585244028?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_28] TG Video"></iframe>
-									</div>
-								</div>
-								<div>
-									<iframe src="http://book.allviaedu.com/view/index.html?contbase=/ELiF_29/&title=abcd&viewtype=html5" frameborder="0" allow="fullscreen"></iframe>
-								</div>
-								<div>
-									<div class="video_box">
-										<iframe src="https://player.vimeo.com/video/583701033?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="[ELiF_30] LMS"></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="exp_section bg_blue">
-						<div class="wrapper">
-							<h4>Video & Brochure</h4>
-							<div class="video_bro">
-								<div class="pro_video">
-									<strong>Promotion video</strong>	
-									<div>
-										<iframe src="https://player.vimeo.com/video/583723573?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ELiF_33"></iframe>
-									</div>
-								</div>
-								<div class="brochure">
-									<strong>Brochure</strong>
-									<div class="bro_wrap">
-										<iframe src="http://book.allviaedu.com/view/index.html?contbase=/ELiF_34/&title=abcd&viewtype=html5" frameborder="0" allow="fullscreen"></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="demo_ban">
-						<div>
-							<strong>PLAY THE DEMO</strong>
-							<p>Discover AllviA's services <br class="dp_pc">quickly and easily.</p>
-							<a href="../../content/base/Explore_play1.html">DISCOVER</a>
-						</div>
-					</div>
-					<div class="app_ban">
-						<div>
-							<p><b>Don't forget to download the<br class="dp_mb"/> AllviA edu Student App.</b>You can download it from the App Store.</p>
-							<ul class="download">
-								<li>
-									<a class="ios" href="https://apps.apple.com/us/app/allviaedu-elif-in-class/id1629567464" target="_blank"></a>
-									<img class="qr" src="../../images/ico/qr_ios.png"/>
-								</li>
-								<li>
-									<a class="aos" href="https://play.google.com/store/apps/details?id=com.visang.pad_2view_allviaedu" target="_blank"></a>
-									<img class="qr" src="../../images/ico/qr_aos.png"/>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div><!-- //container -->
-		<footer>
-			<div class="wrapper">
-				<div class="sitemap">
-					<ul>
-						<li>
-							<a href="../explore/Explore_1.html">EXPLORE</a>
-							<ul>
-								<li><a href="../explore/Explore_1.html">Features</a>
-									<ul class="depth-2">
-										<li><a href="../explore/Explore_1.html">Overview</a></li>
-										<li><a href="../explore/Remote.html">Remote</a></li>
-									</ul>
-								</li>
-								<li><a href="../explore/Explore_2.html">Wings</a></li>
-								<li><a href="../explore/Explore_3.html">ELiF</a></li>
-								<li><a href="../explore/Explore_play.html">Play the Demo</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="../pricing/pricing.html">PRICING</a>
-							<ul>
-								<li><a href="../pricing/pricing.html#price01">Get Started Free</a></li>
-								<li><a href="../pricing/pricing.html#price02">Pricing</a></li>
-								<li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
-								<li><a href="../pricing/pricing.html#price04">Voucher</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="../resources/News_1.html">RESOURCES</a>
-							<ul>
-								<li><a href="../resources/News_1.html">Blog</a>
-									<ul class="depth-2">
-										<li><a href="../resources/News_1.html">News</a></li>
-										<li><a href="../resources/VideoGuide_1.html">Videos & Guides</a></li>
-									</ul>
-								</li>
-								<li><a href="../resources/Resellers_1.html">Resellers</a></li>
-								<li><a href="../resources/Faq_1.html">Support</a>
-									<ul class="depth-2">
-										<li><a href="../resources/Faq_1.html">FAQ</a></li>
-										<li><a href="../resources/Contact_1.html">Contact Us</a></li>
-										<li><a href="#;">Chat</a></li>
-									</ul>
-								</li>	
-							</ul>
-						</li>
-						<li>
-							<a href="../company/Aboutus.html">COMPANY</a>
-							<ul>
-								<li><a href="../company/Aboutus.html">About Us</a></li>
-								<li><a href="../company/Policy.html">Privacy Policy</a></li>
-								<li><a href="../company/Terms.html">Terms & Conditions</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="foot_info">
-					<p class="btm_logo"><img src="../../images/ico/ico_btm_logo.png" alt="VISANG"></p>
-					<p class="copy">COPYRIGHT © VISANG EDUCATION INC. <br>ALL RIGHTS RESERVED</p>
-					<div class="sns">
-						<strong>FOLLOW US</strong>
-						<a href="https://www.facebook.com/visangeducation" target="_blank" title="새창" class="facebook">facebook</a>
-						<a href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/" target="_blank" title="새창" class="linkedin">linkedin</a>
-						<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank" title="새창" class="youtube">youtube</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<div id="info_pop" class="popup_wrap">
-		<div class="popup cont_info">
-			<dl>
-				<dt>Lexile Test Vouchers</dt>
-				<dd>Lexile Test [1]<br>(Single Type A)<br>: <b>2.99 USD</b></dd>
-				<dd>Lexile Test [2]<br>(Single Type A + 2times of Type B)<br>: <b>5.99 USD</b></dd>
-				<dd>Lexile Test [3]<br>(Single Type A + 4times of Type B)<br>: <b>9.99 USD</b></dd>
-			</dl>
-			<a href="#;" class="pop_close pop_close_btn">close</a>
-		</div>
-	</div>
-</body>
+                <li><a href="../explore/Explore_2.html">Wings</a></li>
+                <li class="current">
+                  <a href="../explore/Explore_3.html">ELiF</a>
+                </li>
+                <li>
+                  <a href="../explore/Explore_play.html">Play the Demo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Pricing</a>
+              <ul>
+                <li>
+                  <a href="../pricing/pricing.html#price01">Get Started Free</a>
+                </li>
+                <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Resources</a>
+              <ul>
+                <li>
+                  <a href="../resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../resources/Resellers_1.html">Resellers</a></li>
+                <li>
+                  <a href="../resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../resources/Contact_1.html">Contact Us</a>
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Company</a>
+              <ul>
+                <li><a href="../company/Aboutus.html">About Us</a></li>
+                <li><a href="../company/Policy.html">Privacy Policy</a></li>
+                <li><a href="../company/Terms.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sns">
+            <a
+              href="https://www.facebook.com/visangeducation"
+              target="_blank"
+              title="새창"
+              class="facebook"
+              >facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+              target="_blank"
+              title="새창"
+              class="linkin"
+              >linkedin</a
+            >
+            <a
+              href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+              target="_blank"
+              title="새창"
+              class="youtube"
+              >youtube</a
+            >
+            <a href="../main/Main_1.html" class="home">home</a>
+          </div>
+          <div class="lang">
+            <a href="#;" class="on">EN</a>
+            <a href="#;">ES</a>
+            <a href="#;">JP</a>
+          </div>
+          <a href="#;" class="menu_close">menu close</a>
+        </div>
+      </header>
+      <div id="container" class="sub subA">
+        <div class="subtop_menu">
+          <ul class="wrapper">
+            <li>
+              <a href="../explore/Explore_1.html">Features</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_1.html">Overview</a>
+                </li>
+                <li><a href="../explore/Remote.html">Remote</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_2.html">Preschool</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_2.html">Wings</a>
+                </li>
+              </ul>
+            </li>
+            <li class="on">
+              <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+              <ul class="subtop_sub">
+                <li class="on"><a href="../explore/Explore_3.html">ELiF</a></li>
+                <li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
+                <li><a href="../explore/Explore_6.html">Math Alive</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_4.html">Secondary (up to Gr.8)</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_4.html"
+                    >Oxford Discover Futures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="../explore/Explore_play.html">Play the Demo</a></li>
+          </ul>
+        </div>
+        <a
+          class="floating_banner demo dp_mb"
+          href="../explore/Explore_play2.html"
+        >
+          <span>REPRODUZCA<br />LA<br />DEMOSTRACIÓN</span>
+        </a>
+        <div id="contents" class="nobtm">
+          <div class="exp_intro elif">
+            <div class="exp_top">
+              <i><img src="../../images/ico/ico_elif_logo.png" alt="ELiF" /></i>
+              <p class="tit">
+                ELiF is an interactive English language learning
+                <br class="dp_pc" />program designed to promote life skills
+              </p>
+              <div class="con">
+                <i><img src="../../images/pic/pic_elif01.png" alt="ELiF" /></i>
+                <p>
+                  ELiF is a knowledge-based digital elementary English learning
+                  program that <br class="dp_pc" />aims to promote language
+                  learning and cultivate life skills.
+                </p>
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <h4>
+                Maximize learning potential through <br class="dp_pc" />a
+                systematic learning flow
+              </h4>
+              <p>
+                The learning flow consisting of pre-class, main class, and
+                review is a process <br class="dp_pc" />for both learning and
+                understanding students' progress.
+              </p>
+              <div class="img_mt">
+                <p class="bg_txt"><span>Pre-Class (self-directed)</span></p>
+                <p><img src="../../images/pic/pic_elif02.png" alt="ELiF" /></p>
+              </div>
+              <p>
+                Get ready for what will be taught in upcoming classes through
+                self-directed learning <br class="dp_pc" />with digital devices.
+                Learning outcomes are analyzed in real time to inform teachers
+                and help them <br class="dp_pc" />make decisions about
+                instructional directions.
+              </p>
+              <!-- 2023-06-09 .mb70 클래스 추가 -->
+              <div class="wrapper mb70">
+                <ul class="cont_info_wrap">
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info01.png"
+                        alt="Word Training"
+                      />
+                    </p>
+                    <strong>Word Training</strong>
+                    <span
+                      >Learn vocabulary and solve problems to understand your
+                      skills.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info02.png"
+                        alt="Listening Comprehension & Sentence Listening"
+                      />
+                    </p>
+                    <strong
+                      >Listening Comprehension & Sentence Listening</strong
+                    >
+                    <span
+                      >Learn as you watch multimedia. By listening to and
+                      repeating phrases, AI can measure the correctness of your
+                      intonation and pronunciation.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info03.png"
+                        alt="Reading Comprehension & Sentence Building"
+                      />
+                    </p>
+                    <strong>Reading Comprehension & Sentence Building</strong>
+                    <span
+                      >Practice reading about a variety of subjects. Practice
+                      sentence structures.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info04.png"
+                        alt="Expression & Grammar"
+                      />
+                    </p>
+                    <strong>Expression & Grammar</strong>
+                    <span
+                      >Enhance your skills by practicing the phrases learned in
+                      listening comprehension and grammar reading
+                      comprehension.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- [s] 2023-06-09 버튼 추가 -->
+              <div class="try">
+                Want to experience various contents?
+                <a href="../explore/Explore_play.html">PLAY THE DEMO</a>
+              </div>
+              <!-- [e] 2023-06-09 버튼 추가 -->
+            </div>
+            <div class="exp_section">
+              <div class="img_mt wrapper">
+                <p class="bg_txt">
+                  <span
+                    >In the classroom, where interactive learning produces</span
+                  ><span>high learning outcomes</span>
+                </p>
+                <p class="mt20">
+                  <img src="../../images/pic/pic_elif03.png" alt="ELiF" />
+                </p>
+              </div>
+              <p>
+                For face-to-face classes, teaching methods prioritize
+                interaction to assist students <br class="dp_pc" />who are
+                easily distracted in maintaining concentration.
+              </p>
+              <div class="wrapper">
+                <ul class="cont_info_wrap">
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info05.png"
+                        alt="Learning through multimedia interaction"
+                      />
+                    </p>
+                    <strong>Learning through multimedia interaction</strong>
+                    <span
+                      >Activities using video recordings and digital devices
+                      improve students’ participation.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info06.png"
+                        alt="Synchronized learning results"
+                      />
+                    </p>
+                    <strong>Synchronized learning results</strong>
+                    <span
+                      >Teachers can check their students’ pre-class results and
+                      decide what to teach in the main class.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info07.png"
+                        alt="Various QUIZ types"
+                      />
+                    </p>
+                    <strong>Various QUIZ types</strong>
+                    <span
+                      >Team-based quiz competitions increase the enjoyment of
+                      learning English.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info08.png"
+                        alt="Various tools provided"
+                      />
+                    </p>
+                    <strong>Various tools provided</strong>
+                    <span
+                      >Features such as polls and debates can facilitate student
+                      communication. By sharing the material prepared by the
+                      teacher, students can have a diverse classroom
+                      experience.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <div class="img_mt wrapper">
+                <p class="bg_txt"><span>After-class with gamification</span></p>
+                <p class="mt40">
+                  <img src="../../images/pic/pic_elif04.png" alt="ELiF" />
+                </p>
+              </div>
+              <p>
+                The learning process that ends with a review is provided as a
+                video game, <br class="dp_pc" />so students can remain
+                interested in English learning.<br class="dp_pc" />
+                Make your character stronger through battles with monsters and
+                competitive games with friends. <br class="dp_pc" />As the
+                character grows, the capability of the student also grows.
+              </p>
+              <div class="wrapper">
+                <ul class="cont_info_wrap fl_center">
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info09.png"
+                        alt="Hunt monsters to review"
+                      />
+                    </p>
+                    <strong>Hunt monsters to review</strong>
+                    <span
+                      >You can hunt monsters to review just as you do in a
+                      role-playing game. Level up and get your gold.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info10.png"
+                        alt="Mini games to play with friends"
+                      />
+                    </p>
+                    <strong>Mini games to play with friends</strong>
+                    <span
+                      >Compete with your friends by solving spelling mini games.
+                      The winner earns some gold.</span
+                    >
+                  </li>
+                  <li>
+                    <p class="pic">
+                      <img
+                        src="../../images/pic/pic_elif_info11.png"
+                        alt="Buy and customize my character"
+                      />
+                    </p>
+                    <strong>Buy and customize my character</strong>
+                    <span
+                      >Buy and customize your character with the golds you
+                      earned from review activities.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp_section">
+              <h4>
+                A convenient, all-in-one service to check Pre-class,
+                <br class="dp_pc" />In-class, and test activities.
+              </h4>
+              <div class="mt25">
+                <p>
+                  <img
+                    class="dp_pc"
+                    src="../../images/pic/pic_elif05.png"
+                    alt="ELiF"
+                  />
+                  <img
+                    class="dp_mb"
+                    src="../../images/pic/pic_elif05_m.png"
+                    alt="ELiF"
+                  />
+                </p>
+              </div>
+              <!-- [e] -->
+            </div>
+            <div class="exp_section bg_blue">
+              <h4>Multimedia can make learning English fun</h4>
+              <p>
+                ELiF provides multimedia such as videos based on real-world
+                topics <br class="dp_pc" />to maximize results with immersive
+                learning.
+              </p>
+              <ul class="exp_video_list wrapper">
+                <li>
+                  <div class="exp_video">
+                    <div class="type02">
+                      <iframe
+                        src="https://player.vimeo.com/video/583652491?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_18]Converstional_Videos_Y4_L2_U1_021_main"
+                      ></iframe>
+                    </div>
+                    <strong>Conversational Videos</strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_video">
+                    <div class="type02">
+                      <iframe
+                        src="https://player.vimeo.com/video/594456392?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=aeba462583"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_19]Visual_Reading&amp;amp;Listening Modified"
+                      ></iframe>
+                    </div>
+                    <strong>Visual Reading & Visual Listening</strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_video">
+                    <div class="type02">
+                      <iframe
+                        src="https://player.vimeo.com/video/596390847?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=157020baca"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_20] 3D Animation Modified"
+                      ></iframe>
+                    </div>
+                    <strong>3D Animations</strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_video">
+                    <div class="type02">
+                      <iframe
+                        src="https://player.vimeo.com/video/583656373?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_21]2D_Animations_Y3_L2_U3_031_ani"
+                      ></iframe>
+                    </div>
+                    <strong>2D Animations</strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_video">
+                    <div class="type02">
+                      <iframe
+                        src="https://player.vimeo.com/video/583656964?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_22]Visual_Songs_PlanetSong"
+                      ></iframe>
+                    </div>
+                    <strong>Visual Songs</strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_video">
+                    <div class="type02">
+                      <iframe
+                        src="https://player.vimeo.com/video/596391908?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=73a067facf"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_23] Video Clips by Native English Teachers"
+                      ></iframe>
+                    </div>
+                    <strong>Video Clips by Native English Teachers</strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="exp_section">
+              <h4>
+                Improve student understanding <br class="dp_pc" />by teaching
+                through a textbook
+              </h4>
+              <p>
+                The ELiF textbooks consist of three sets for each quarter.
+                <br class="dp_pc" />Completely connected textbooks with digital
+                content provide students <br class="dp_pc" />with a deeper level
+                of learning material.
+              </p>
+              <div class="ebook_wrap">
+                <div class="tab_box el">
+                  <div class="el_tab01">
+                    <a href="#;">STARTER</a>
+                    <ul class="inner">
+                      <li><a href="Elif_1" class="ebooklink">Storybook</a></li>
+                      <li><a href="Elif_2" class="ebooklink">Workbook</a></li>
+                    </ul>
+                  </div>
+                  <div class="el_tab02">
+                    <a href="#;">JUMPER</a>
+                    <ul class="inner">
+                      <li><a href="ELiF_3" class="ebooklink">Storybook</a></li>
+                      <li><a href="ELiF_4" class="ebooklink">Workbook</a></li>
+                      <li>
+                        <a href="ELiF_5" class="ebooklink">Storytelling Book</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="el_tab03">
+                    <a href="#;">BASIC</a>
+                    <ul class="inner">
+                      <li><a href="ELiF_6" class="ebooklink">Storybook</a></li>
+                      <li><a href="ELiF_7" class="ebooklink">Workbook</a></li>
+                      <li>
+                        <a href="ELiF_8" class="ebooklink">Storytelling Book</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="el_tab04">
+                    <a href="#;">INTERMEDIATE</a>
+                    <ul class="inner">
+                      <li><a href="ELiF_9" class="ebooklink">Storybook</a></li>
+                      <li><a href="ELiF_10" class="ebooklink">Workbook</a></li>
+                      <li>
+                        <a href="ELiF_11" class="ebooklink"
+                          >Storytelling Book</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="el_tab05">
+                    <a href="#;">ADVANCED</a>
+                    <ul class="inner">
+                      <li><a href="ELif_12" class="ebooklink">Storybook</a></li>
+                      <li><a href="ELiF_13" class="ebooklink">Workbook</a></li>
+                      <li>
+                        <a href="ELiF_14" class="ebooklink"
+                          >Storytelling Book</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="el_tab06">
+                    <a href="#;">ELITE</a>
+                    <ul class="inner">
+                      <li><a href="ELiF_15" class="ebooklink">Storybook</a></li>
+                      <li><a href="ELiF_16" class="ebooklink">Workbook</a></li>
+                      <li>
+                        <a href="ELiF_17" class="ebooklink"
+                          >Storytelling Book</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab_con">
+                  <div class="ebook_tabbox">
+                    <iframe
+                      src="http://book.allviaedu.com/view/index.html?contbase=/Elif_1/&title=abcd&viewtype=html5"
+                      frameborder="0"
+                      allow="fullscreen"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <!-- //ebook_wrap -->
+            </div>
+            <div class="exp_section bg_blue">
+              <h4>
+                Keep track of student accomplishments
+                <br class="dp_pc" />through systematic assessments and reports
+              </h4>
+              <p>
+                All learning and assessment processes generate reports that
+                inform teachers <br class="dp_pc" />and parents of student
+                progress.
+              </p>
+              <div class="normal_tab">
+                <ul class="nm_tab mb10">
+                  <li><a href="#;">Assessment & Report</a></li>
+                  <li><a href="#;">Web for Parents</a></li>
+                </ul>
+                <div class="nm_tabcon">
+                  <div>
+                    <p class="sm_txt">
+                      The completion rates of each sector are automatically
+                      processed and analyzed to give feedback that will inform
+                      you of the direction for your students to follow.
+                    </p>
+                    <div>
+                      <iframe
+                        src="http://book.allviaedu.com/view/index.html?contbase=/Elif_25/&title=abcd&viewtype=html5"
+                        frameborder="0"
+                        allow="fullscreen"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="sm_txt">
+                      Parents can check their student’s learning results through
+                      the Parent Web.
+                    </p>
+                    <div>
+                      <iframe
+                        src="http://book.allviaedu.com/view/index.html?contbase=/Elif_26/&title=abcd&viewtype=html5"
+                        frameborder="0"
+                        allow="fullscreen"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exp_section">
+              <h4>
+                The ELiF content corresponds with the world-class
+                <br class="dp_pc" />assessment system
+              </h4>
+              <p>
+                The 6-year program corresponds to world-class English lessons
+                such as Lexile and CEFR and <br class="dp_pc" />provides
+                students with the most effective English learning experience
+                available.
+              </p>
+              <p class="img_mt">
+                <img src="../../images/pic/pic_elif06.png" alt="ELiF" />
+              </p>
+              <div class="btn_wrap">
+                <a
+                  href="../../media/ELiF_Syllabus.pdf"
+                  target="_blank"
+                  class="slim_btn skyblue"
+                  >DOWNLOAD SYLLABUS</a
+                >
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <div class="wrapper">
+                <ul class="accordion">
+                  <li class="a01 on">
+                    <h6>
+                      It is possible to measure reading levels objectively
+                      through Lexile Tests.
+                    </h6>
+                    <div class="content">
+                      <p>
+                        Lexile was developed by the American educational
+                        organization, MetaMetrics,<br class="dp_pc" />
+                        to measure English reading levels. Visang Education
+                        developed Lexile Test<br class="dp_pc" />
+                        through a formal agreement with MetaMetrics. Students
+                        learning on ELiF can check<br class="dp_pc" />
+                        their reading levels and monitor their improvements
+                        through Lexile Tests.
+                      </p>
+                      <div class="img_con">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_lexile_1.png"
+                            alt="LEXILE TEST"
+                          />
+                        </div>
+                        <div class="el_video">
+                          <p>Message from MetaMatrics</p>
+                          <div class="video">
+                            <iframe
+                              src="https://player.vimeo.com/video/585245061?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                              frameborder="0"
+                              allow="autoplay; fullscreen; picture-in-picture"
+                              allowfullscreen
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                              title="Visang_MetaMetrics Testimonial_exported"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="a02">
+                    <h6>
+                      Check LMS to see your improvements in reading level.
+                    </h6>
+                    <div class="content">
+                      <p>
+                        You can see the improvements of students' reading levels
+                        that will be shown as graphs on a report after they
+                        complete each session on ELiF. Also, you can regularly
+                        check what level a student is at by comparing it to the
+                        grade-specific Lexile level of American students.
+                      </p>
+                      <div class="img_con">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_lexile_2.png"
+                            alt="LEXILE TEST"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_lexile_3.png"
+                            alt="LEXILE TEST"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="a03">
+                    <h6>You can participate in a Lexile Test at any time.</h6>
+                    <div class="content lexile">
+                      <p>
+                        We provides two kinds of Lexile Tests: Type A and Type
+                        B.<br class="dp_pc" />
+                        You can take either test after purchasing the Lexile
+                        Test Voucher.<br class="dp_pc" />
+                        Purchase the Lexile Test Voucher on the Admin page after
+                        signing up as a school member. Become a member of AllviA
+                        and join us today!
+                      </p>
+                      <div class="img_con">
+                        <div>
+                          <img
+                            src="../../images/pic/pic_lexile_4.png"
+                            alt="LEXILE TEST"
+                          />
+                          <p>
+                            Type A is the first test to take to measure the
+                            reading level, and the result is officially
+                            recognized as Lexile reading level.
+                          </p>
+                        </div>
+                        <div>
+                          <img
+                            src="../../images/pic/pic_lexile_5.png"
+                            alt="LEXILE TEST"
+                          />
+                          <p>
+                            The difficulty of Type B is adjusted according to
+                            the Lexile measure determined through Type A before
+                            being provided to students. Type B is a cloze test
+                            to check the level at all times.
+                          </p>
+                          <div class="info_wrap">
+                            <span class="title pop_call" pophref="#info_pop"
+                              >Lexile Test Vouchers</span
+                            >
+                            <span
+                              class="ico_info pop_call"
+                              pophref="#info_pop"
+                            ></span>
+                            <div class="cont_info left">
+                              <dl>
+                                <dt>Lexile Test Vouchers</dt>
+                                <dd>
+                                  Lexile Test [1] (Single Type A) :
+                                  <b>2.99 USD</b>
+                                </dd>
+                                <dd>
+                                  Lexile Test [2] (Single Type A + 2times of
+                                  Type B) : <b>5.99 USD</b>
+                                </dd>
+                                <dd>
+                                  Lexile Test [3] (Single Type A + 4times of
+                                  Type B) : <b>9.99 USD</b>
+                                </dd>
+                              </dl>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp_section">
+              <h4>You are ready to teach without any preparation stress</h4>
+              <p class="wrapper">
+                We provide not only our outstanding content, but also support
+                materials such as guides and videos so that the teacher can
+                teach students without preparing things for the class.
+                 Also, various toolbar supports teachers run their class without
+                having stress and helps students to bring up their communication
+                skills.
+              </p>
+              <div class="normal_tab">
+                <ul class="nm_tab">
+                  <li><a href="#;">Teacher‘s Guide Book</a></li>
+                  <li><a href="#;">Teacher's Guide Video</a></li>
+                  <li><a href="#;">AllviA Toolbar</a></li>
+                  <li><a href="#;">LMS</a></li>
+                </ul>
+                <div class="nm_tabcon">
+                  <div>
+                    <iframe
+                      src="http://book.allviaedu.com/view/index.html?contbase=/ELiF_27/&title=abcd&viewtype=html5"
+                      frameborder="0"
+                      allow="fullscreen"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <div class="video_box">
+                      <iframe
+                        src="https://player.vimeo.com/video/585244028?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_28] TG Video"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div>
+                    <iframe
+                      src="http://book.allviaedu.com/view/index.html?contbase=/ELiF_29/&title=abcd&viewtype=html5"
+                      frameborder="0"
+                      allow="fullscreen"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <div class="video_box">
+                      <iframe
+                        src="https://player.vimeo.com/video/583701033?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="[ELiF_30] LMS"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exp_section bg_blue">
+              <div class="wrapper">
+                <h4>Video & Brochure</h4>
+                <div class="video_bro">
+                  <div class="pro_video">
+                    <strong>Promotion video</strong>
+                    <div>
+                      <iframe
+                        src="https://player.vimeo.com/video/583723573?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                        "
+                        title="ELiF_33"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="brochure">
+                    <strong>Brochure</strong>
+                    <div class="bro_wrap">
+                      <iframe
+                        src="http://book.allviaedu.com/view/index.html?contbase=/ELiF_34/&title=abcd&viewtype=html5"
+                        frameborder="0"
+                        allow="fullscreen"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo_ban">
+              <div>
+                <strong>PLAY THE DEMO</strong>
+                <p>
+                  Discover AllviA's services <br class="dp_pc" />quickly and
+                  easily.
+                </p>
+                <a href="../../content/base/Explore_play1.html">DISCOVER</a>
+              </div>
+            </div>
+            <div class="app_ban">
+              <div>
+                <p>
+                  <b
+                    >Don't forget to download the<br class="dp_mb" />
+                    AllviA edu Student App.</b
+                  >You can download it from the App Store.
+                </p>
+                <ul class="download">
+                  <li>
+                    <a
+                      class="ios"
+                      href="https://apps.apple.com/us/app/allviaedu-elif-in-class/id1629567464"
+                      target="_blank"
+                    ></a>
+                    <img class="qr" src="../../images/ico/qr_ios.png" />
+                  </li>
+                  <li>
+                    <a
+                      class="aos"
+                      href="https://play.google.com/store/apps/details?id=com.visang.pad_2view_allviaedu"
+                      target="_blank"
+                    ></a>
+                    <img class="qr" src="../../images/ico/qr_aos.png" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //container -->
+      <footer>
+        <div class="wrapper">
+          <div class="sitemap">
+            <ul>
+              <li>
+                <a href="../explore/Explore_1.html">EXPLORE</a>
+                <ul>
+                  <li>
+                    <a href="../explore/Explore_1.html">Features</a>
+                    <ul class="depth-2">
+                      <li><a href="../explore/Explore_1.html">Overview</a></li>
+                      <li><a href="../explore/Remote.html">Remote</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../explore/Explore_2.html">Wings</a></li>
+                  <li><a href="../explore/Explore_3.html">ELiF</a></li>
+                  <li>
+                    <a href="../explore/Explore_play.html">Play the Demo</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../pricing/pricing.html">PRICING</a>
+                <ul>
+                  <li>
+                    <a href="../pricing/pricing.html#price01"
+                      >Get Started Free</a
+                    >
+                  </li>
+                  <li><a href="../pricing/pricing.html#price02">Pricing</a></li>
+                  <li><a href="../pricing/pricing.html#price03">v-Cash</a></li>
+                  <li><a href="../pricing/pricing.html#price04">Voucher</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../resources/News_1.html">RESOURCES</a>
+                <ul>
+                  <li>
+                    <a href="../resources/News_1.html">Blog</a>
+                    <ul class="depth-2">
+                      <li><a href="../resources/News_1.html">News</a></li>
+                      <li>
+                        <a href="../resources/VideoGuide_1.html"
+                          >Videos & Guides</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="../resources/Resellers_1.html">Resellers</a></li>
+                  <li>
+                    <a href="../resources/Faq_1.html">Support</a>
+                    <ul class="depth-2">
+                      <li><a href="../resources/Faq_1.html">FAQ</a></li>
+                      <li>
+                        <a href="../resources/Contact_1.html">Contact Us</a>
+                      </li>
+                      <li><a href="#;">Chat</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../company/Aboutus.html">COMPANY</a>
+                <ul>
+                  <li><a href="../company/Aboutus.html">About Us</a></li>
+                  <li><a href="../company/Policy.html">Privacy Policy</a></li>
+                  <li>
+                    <a href="../company/Terms.html">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_info">
+            <p class="btm_logo">
+              <img src="../../images/ico/ico_btm_logo.png" alt="VISANG" />
+            </p>
+            <p class="copy">
+              COPYRIGHT © VISANG EDUCATION INC. <br />ALL RIGHTS RESERVED
+            </p>
+            <div class="sns">
+              <strong>FOLLOW US</strong>
+              <a
+                href="https://www.facebook.com/visangeducation"
+                target="_blank"
+                title="새창"
+                class="facebook"
+                >facebook</a
+              >
+              <a
+                href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+                target="_blank"
+                title="새창"
+                class="linkedin"
+                >linkedin</a
+              >
+              <a
+                href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+                target="_blank"
+                title="새창"
+                class="youtube"
+                >youtube</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="info_pop" class="info_pop popup_wrap">
+      <div class="popup cont_info">
+        <dl>
+          <dt>Lexile Test Vouchers</dt>
+          <dd>Lexile Test [1]<br />(Single Type A)<br />: <b>2.99 USD</b></dd>
+          <dd>
+            Lexile Test [2]<br />(Single Type A + 2times of Type B)<br />:
+            <b>5.99 USD</b>
+          </dd>
+          <dd>
+            Lexile Test [3]<br />(Single Type A + 4times of Type B)<br />:
+            <b>9.99 USD</b>
+          </dd>
+        </dl>
+        <a href="#;" class="pop_close pop_close_btn">close</a>
+      </div>
+    </div>
+  </body>
 
-<script>
-	if(this.location.hash === '#accordion') {
-		const lexile = document.querySelector(".a03");
-		lexile.classList.add("on");
-		const a1 = document.querySelector(".a01");
-		a1.classList.remove("on");
-	};
-</script>
+  <script>
+    if (this.location.hash === "#accordion") {
+      const lexile = document.querySelector(".a03");
+      lexile.classList.add("on");
+      const a1 = document.querySelector(".a01");
+      a1.classList.remove("on");
+    }
+  </script>
 </html>

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/jquery.selectric.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="../../js/playdemo.js"></script>
+    <meta
+      content="http://wrapstudio.co.kr/visang/images/pic/meta_img.jpg"
+      property="og:image"
+    />
+    <title>AllviA</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="top_floating">
+        <p>
+          <a href="../../html/pricing/pricing.html"
+            >GET STARTED FREE FOR 30 DAYS!</a
+          >
+        </p>
+      </div>
+      <header>
+        <h1>
+          <a href="../../html/main/Main_1.html"
+            ><img src="../../images/ico/ico_logo.png" alt="AllviA"
+          /></a>
+        </h1>
+        <nav>
+          <h2><a href="#;">menu</a></h2>
+          <ul class="mb_hidden">
+            <li class="on">
+              <a href="../../html/explore/Explore_1.html"
+                ><span>EXPLORE</span></a
+              >
+              <ul class="depth02">
+                <li>
+                  <a href="../../html/explore/Explore_1.html">Features</a>
+                </li>
+                <li><a href="../../html/explore/Explore_2.html">Wings</a></li>
+                <li><a href="../../html/explore/Explore_3.html">ELiF</a></li>
+                <li>
+                  <a href="../../html/explore/Explore_play.html"
+                    >Play the Demo</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../html/pricing/pricing.html"><span>PRICING</span></a>
+              <ul class="depth02 nobold">
+                <li>
+                  <a href="../../html/pricing/pricing.html#price01"
+                    >Get Started Free</a
+                  >
+                </li>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price02">Pricing</a>
+                </li>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price03">v-Cash</a>
+                </li>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price04">Voucher</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../../html/resources/News_1.html"
+                ><span>RESOURCES</span></a
+              >
+              <ul class="depth02">
+                <li>
+                  <a href="../../html/resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../../html/resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../../html/resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../../html/resources/Resellers_1.html">Resellers</a>
+                </li>
+                <li>
+                  <a href="../../html/resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../../html/resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../../html/resources/Contact_1.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="util mb_hidden">
+          <div class="user">
+            <a href="../../html/login/Login.html">LOG IN</a>
+            <a href="../../html/join/Signup_1.html">SIGN UP</a>
+          </div>
+          <a href="../../html/pricing/pricing.html#price01" class="start"
+            >GET STARTED FREE</a
+          >
+          <div class="lang">
+            <a href="#;" class="en">EN</a>
+            <ul>
+              <li>EN</li>
+              <li>KR</li>
+              <li>JP</li>
+              <li>CH</li>
+              <li>SP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_dim"></div>
+        <div class="mobile_menu">
+          <p class="menu_logo">
+            <img src="../../images/ico/ico_logo_w.png" alt="AllviA" />
+          </p>
+          <div class="login_wrap">
+            <div class="login_before">
+              <a href="../../html/login/Login.html" class="login_btn">LOG IN</a>
+              <a href="../../html/join/Signup_1.html" class="txt_btn"
+                >SIGN UP</a
+              >
+              <a
+                href="../../html/pricing/pricing.html#price01"
+                class="start_btn"
+                >GET STARTED FREE</a
+              >
+            </div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#;"><span>Explore</span></a>
+              <ul class="depth02">
+                <li>
+                  <a href="../../html/explore/Explore_1.html">Features</a>
+                </li>
+                <li><a href="../../html/explore/Explore_2.html">Wings</a></li>
+                <li><a href="../../html/explore/Explore_3.html">ELiF</a></li>
+                <li class="current">
+                  <a href="../../html/explore/Explore_play.html"
+                    >Play the Demo</a
+                  >
+                </li>
+                <!-- 현재페이지에 해당하는 메뉴에 current 클래스 추가 -->
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Pricing</a>
+              <ul>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price01"
+                    >Get Started Free</a
+                  >
+                </li>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price02">Pricing</a>
+                </li>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price03">v-Cash</a>
+                </li>
+                <li>
+                  <a href="../../html/pricing/pricing.html#price04">Voucher</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Resources</a>
+              <ul>
+                <li>
+                  <a href="../../html/resources/News_1.html">Blog</a>
+                  <ul>
+                    <li><a href="../../html/resources/News_1.html">News</a></li>
+                    <li>
+                      <a href="../../html/resources/VideoGuide_1.html"
+                        >Videos & Guides</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../../html/resources/Resellers_1.html">Resellers</a>
+                </li>
+                <li>
+                  <a href="../../html/resources/Faq_1.html">Support</a>
+                  <ul>
+                    <li><a href="../../html/resources/Faq_1.html">FAQ</a></li>
+                    <li>
+                      <a href="../../html/resources/Contact_1.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li><a href="#;">Chat</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;">Company</a>
+              <ul>
+                <li><a href="../../html/company/Aboutus.html">About Us</a></li>
+                <li>
+                  <a href="../../html/company/Policy.html">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="../../html/company/Terms.html">Terms & Conditions</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sns">
+            <a
+              href="https://www.facebook.com/visangeducation"
+              target="_blank"
+              title="새창"
+              class="facebook"
+              >facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+              target="_blank"
+              title="새창"
+              class="linkin"
+              >linkedin</a
+            >
+            <a
+              href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+              target="_blank"
+              title="새창"
+              class="youtube"
+              >youtube</a
+            >
+            <a href="../../html/main/Main_1.html" class="home">home</a>
+          </div>
+          <div class="lang">
+            <a href="#;" class="on">EN</a>
+            <a href="#;">ES</a>
+            <a href="#;">JP</a>
+          </div>
+          <a href="#;" class="menu_close">menu close</a>
+        </div>
+      </header>
+      <div id="container" class="sub pb0 subA">
+        <div class="subtop_menu">
+          <ul class="wrapper">
+            <li>
+              <a href="../explore/Explore_1.html">Features</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_1.html">Overview</a>
+                </li>
+                <li><a href="../explore/Remote.html">Remote</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_2.html">Preschool</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_2.html">Wings</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_3.html">Primary (up to Gr.6)</a>
+              <ul class="subtop_sub">
+                <li class="on"><a href="../explore/Explore_3.html">ELiF</a></li>
+                <li><a href="../explore/Explore_5.html">Oxford Discover</a></li>
+                <li><a href="../explore/Explore_6.html">Math Alive</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../explore/Explore_4.html">Secondary (up to Gr.8)</a>
+              <ul class="subtop_sub">
+                <li class="on">
+                  <a href="../explore/Explore_4.html"
+                    >Oxford Discover Futures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="on">
+              <a href="../explore/Explore_play.html">Play the Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div id="contents" class="playdm_wrap pt0 pb0 long">
+          <div class="pc_wrap">
+            <div class="playdm_top bg wrapper">
+              <h3>PLAY THE DEMO</h3>
+              <p class="sub_con_tit dp_pc">
+                Experience the interactive way of learning by clicking<br />
+                and dragging the images and words from ‘Teacher’s View’.<br />
+                And, see what happens on ‘Student View’ screen.
+              </p>
+              <p class="sub_con_tit dp_mb">
+                If you visit the website with PC,<br />
+                you can experience the interactive learning classes<br />
+                between teacher and student in real-time.<br />
+                Click and drag your mouse<br />
+                to enjoy the interactive way of learning.
+              </p>
+              <div class="step_cnt long">
+                <div class="top">
+                  <div class="step play_mark">
+                    Step<span class="num">1</span>
+                  </div>
+                  <p>Choose a Learners.</p>
+                </div>
+                <div class="btm">
+                  <label
+                    class="choice_item"
+                    onclick="location.href='./Explore_play1.html';"
+                  >
+                    <!-- 윙스로 연결 -->
+                    <input type="radio" name="choice-learner" /><i></i>
+                    Preschool
+                  </label>
+                  <label
+                    class="choice_item"
+                    onclick="location.href='./Explore_play2.html';"
+                  >
+                    <!-- 엘리프로 연결 -->
+                    <input type="radio" name="choice-learner" checked /><i></i>
+                    Primary (up to Gr.6)
+                  </label>
+                  <label
+                    class="choice_item"
+                    onclick="location.href='./Explore_play3.html';"
+                  >
+                    <!-- ODF로 연결 -->
+                    <input type="radio" name="choice-learner" /><i></i>
+                    Secondary (up to Gr.8)
+                  </label>
+                </div>
+              </div>
+              <div class="step_cnt">
+                <div class="top">
+                  <div class="step play_mark">
+                    Step<span class="num">2</span>
+                  </div>
+                  <p>Choose a program.</p>
+                </div>
+                <div class="btm">
+                  <div
+                    class="play_brand elif"
+                    onclick="location.href='./Explore_play2.html';"
+                  ></div>
+                  <div
+                    class="play_brand od on"
+                    onclick="location.href='./Explore_play4.html';"
+                  ></div>
+                  <div
+                    class="play_brand mathalive"
+                    onclick="location.href='./Explore_play5.html';"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="activity_tabwrap oxford">
+              <div class="wrapper">
+                <span class="play_mark lesson">Lesson</span>
+                <div class="txt_tabcon">
+                  <div><p class="ac_tit">Interactive Book</p></div>
+                </div>
+                <p class="explanation">
+                  The Student Book, Workbook, video and audio files, and
+                  teaching resources are<br />
+                  all included in the interactive books. The teacher can send
+                  questions to the<br />
+                  students’ devices, and students can write and check their
+                  answers in real time.
+                </p>
+                <ul class="ac_videolist">
+                  <li>
+                    <p class="view_tit">Teacher View</p>
+                    <div class="video_con">
+                      <img src="../../images/bg/bg_videowrap01.png" alt="" />
+                      <div id="teacher"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="view_tit">Student View</p>
+                    <div class="video_con">
+                      <img src="../../images/bg/bg_videowrap02.png" alt="" />
+                      <div id="student"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="wrapper ma">
+                <p class="ac_tit">More Activities</p>
+                <p class="explanation">
+                  On top of the activities in the books, additional digital
+                  activities are available for students.<br />
+                  Basically it consists of word learning, word quiz, reading,
+                  listening, speaking, and writing.
+                </p>
+                <ul class="ma_list">
+                  <!-- OD용 스크립트 사용 -->
+                  <li class="on" onclick="my_o.loadDiscoverMA(14261)">
+                    Word Quiz
+                  </li>
+                  <li onclick="my_o.loadDiscoverMA(14351)">Reading Practice</li>
+                  <li onclick="my_o.loadDiscoverMA(14350)">Song</li>
+                  <li onclick="my_o.loadDiscoverMA(14353)">
+                    Listening Practice
+                  </li>
+                  <li onclick="my_o.loadDiscoverMA(14347)">
+                    Speaking Practice
+                  </li>
+                </ul>
+                <ul class="ac_videolist">
+                  <li>
+                    <p class="view_tit">Teacher View</p>
+                    <div class="video_con">
+                      <img src="../../images/bg/bg_videowrap01.png" alt="" />
+                      <div id="teacherMA"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="view_tit">Student View</p>
+                    <div class="video_con">
+                      <img src="../../images/bg/bg_videowrap02.png" alt="" />
+                      <div id="studentMA"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="how_works cont2">
+                <div class="wrapper">
+                  <div class="con">
+                    <strong class="how_tit mb">How It Works?</strong>
+                    <div class="txt">
+                      <strong class="how_tit">How It Works?</strong>
+                      <p>
+                        The greatest feature of our program is that classes are
+                        conducted through <br />interactive activities between
+                        teachers and students' devices.<br />
+                        Check out the video to see how the interaction between
+                        each other's devices goes.
+                      </p>
+                    </div>
+                    <div class="thumb_wrap">
+                      <div>
+                        <h4>Interactive Book</h4>
+                        <div class="thumb">
+                          <iframe
+                            src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/(%EC%B5%9C%EC%A2%85)OD_i-book_howitworks_20220829.mp4"
+                            frameborder="0"
+                            allow="fullscreen; picture-in-picture"
+                            allowfullscreen
+                            title="Interactive Book"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h4>More Activities</h4>
+                        <div class="thumb">
+                          <iframe
+                            src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/(%EC%B5%9C%EC%A2%85)OD_MA_howitworks_20220829.mp4"
+                            frameborder="0"
+                            allow="fullscreen; picture-in-picture"
+                            allowfullscreen
+                            title="More Activities"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="go_learn">
+                    <p>Take a closer look and see what is Oxford Discover.</p>
+                    <div class="btn_wrap">
+                      <!-- OD홍보페이지 -->
+                      <a
+                        href="../../html/explore/Explore_5.html"
+                        class="slim_btn white"
+                        >Learn more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile_wrap">
+            <div class="con_head">
+              <h3>PLAY THE DEMO</h3>
+              <p>
+                Experience the interactive way of learning by<br />clicking and
+                dragging the images and words from ‘Teacher’s View’. And, see
+                what happens on ‘Student View’ screen.
+              </p>
+            </div>
+            <div class="go_main">
+              <a href="./Explore_play.html">&#60; Grade Selection</a>
+            </div>
+            <div class="step_wrap">
+              <div class="step" activeView="activity">
+                <p class="inst">Choose a program.</p>
+                <div class="program">
+                  <div>
+                    <a href="./Explore_play2.html" class="pr_btn elif">ELiF</a>
+                    <button class="btn_how elif" how_num="1">
+                      How It Works?
+                    </button>
+                  </div>
+                  <div>
+                    <!-- 2023-05-08 on클래스 삭제, onActive 속성 추가 -->
+                    <a href="./Explore_play4.html" class="pr_btn od" onActive
+                      >Oxford Discover</a
+                    >
+                    <button class="btn_how od" how_num="1">
+                      How It Works?
+                    </button>
+                  </div>
+                  <div>
+                    <a href="./Explore_play5.html" class="pr_btn ma"
+                      >Math Alive</a
+                    >
+                    <button class="btn_how ma" how_num="1">
+                      How It Works?
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step_btns">
+              <button class="btn_next">NEXT >></button>
+              <button class="btn_done">DONE</button>
+            </div>
+            <div class="demo_pop howit elif">
+              <div class="inner">
+                <button class="btn_back">뒤로</button>
+                <p class="title"><span>How It Works?</span></p>
+                <div class="thumb">
+                  <iframe
+                    src="https://player.vimeo.com/video/583700500?badge=0&autopause=0&player_id=0&app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="Story"
+                  ></iframe>
+                  <iframe
+                    src="https://player.vimeo.com/video/583700566?contbase=/Elif_1/&title=abcd?badge=0&autopause=0&player_id=0&app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="Word"
+                  ></iframe>
+                  <iframe
+                    src="https://player.vimeo.com/video/583700626?contbase=/Elif_1/&title=abcd?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="Listening Comprehension"
+                  ></iframe>
+                  <iframe
+                    src="https://player.vimeo.com/video/583700664?contbase=/Elif_1/&title=abcd?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="Reading Comprehension"
+                  ></iframe>
+                </div>
+                <p class="desc">
+                  The greatest feature of our program is that classes are
+                  conducted through interactive activities between teachers and
+                  students' devices. Check out the video to see how the
+                  interaction between each other's devices goes.
+                </p>
+                <div class="go_learn">
+                  <p>Take a closer look and see what is ELiF.</p>
+                  <div class="btn_wrap">
+                    <a
+                      href="../../html/explore/Explore_3.html"
+                      class="slim_btn white"
+                      >LEARN MORE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo_pop howit od">
+              <div class="inner">
+                <button class="btn_back">뒤로</button>
+                <p class="title"><span>How It Works?</span></p>
+                <h5 class="thumb_tit">Interactive Book</h5>
+                <div class="thumb">
+                  <video
+                    controls=""
+                    loop=""
+                    poster="../../images/pic/ibook.png"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    title="Interactive Book"
+                  >
+                    <source
+                      src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/(%EC%B5%9C%EC%A2%85)OD_i-book_howitworks_20220829.mp4"
+                    />
+                  </video>
+                </div>
+                <h5 class="thumb_tit">More Activities</h5>
+                <div class="thumb">
+                  <video
+                    controls=""
+                    loop=""
+                    poster="../../images/pic/MA.png"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    title="More Activities"
+                  >
+                    <source
+                      src="https://contents-allviaedu-com.s3.ap-northeast-2.amazonaws.com/WWW/video/(%EC%B5%9C%EC%A2%85)OD_MA_howitworks_20220829.mp4"
+                    />
+                  </video>
+                </div>
+                <p class="desc">
+                  The greatest feature of our program is that classes are
+                  conducted through interactive activities between teachers and
+                  students' devices. Check out the video to see how the
+                  interaction between each other's devices goes.
+                </p>
+                <div class="go_learn">
+                  <p>Take a closer look and see what is Oxford Discover.</p>
+                  <div class="btn_wrap">
+                    <a
+                      href="../../html/explore/Explore_5.html"
+                      class="slim_btn white"
+                      >LEARN MORE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo_pop howit ma">
+              <div class="inner">
+                <button class="btn_back">뒤로</button>
+                <p class="title"><span>How It Works?</span></p>
+                <div class="thumb">
+                  <iframe
+                    src="https://player.vimeo.com/video/751521937?h=4bfd9c619f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="MathAlive Activity1,4 Play the demo"
+                  ></iframe>
+                </div>
+                <p class="desc">
+                  The greatest feature of our program is that classes are
+                  conducted through interactive activities between teachers and
+                  students' devices. Check out the video to see how the
+                  interaction between each other's devices goes.
+                </p>
+                <div class="go_learn">
+                  <p>Take a closer look and see what is Math Alive.</p>
+                  <div class="btn_wrap">
+                    <a
+                      href="../../html/explore/Explore_6.html"
+                      class="slim_btn white"
+                      >LEARN MORE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo_pop activity">
+              <div class="inner">
+                <button class="btn_back">뒤로</button>
+                <div class="ac_tit more">
+                  <p
+                    class="title"
+                    onclick="my_o.loadMobile(9972, 6, 15, 9973, 2, 9)"
+                  >
+                    <span>Interactive Book</span>
+                  </p>
+                  <p class="title" haveSub="true">
+                    <span>More Activities</span>
+                  </p>
+                </div>
+                <div class="sub_tit wide">
+                  <ul>
+                    <li onclick="my_o.loadMobileMA(14261)">Word</li>
+                    <li onclick="my_o.loadMobileMA(14351)">Reading</li>
+                    <li onclick="my_o.loadMobileMA(14350)">Grammar</li>
+                    <li onclick="my_o.loadMobileMA(14353)">Listening</li>
+                    <li onclick="my_o.loadMobileMA(14347)">Speaking</li>
+                  </ul>
+                </div>
+                <div class="ac_con">
+                  <ul class="ac_videolist">
+                    <li>
+                      <div class="video_con">
+                        <img
+                          src="../../images/bg/bg_videowrap01_m.png"
+                          alt=""
+                        />
+                        <div id="teacher_m"></div>
+                      </div>
+                      <p class="view_tit">Teacher’s View</p>
+                    </li>
+                    <li>
+                      <div class="video_con">
+                        <img
+                          src="../../images/bg/bg_videowrap02_m.png"
+                          alt=""
+                        />
+                        <div id="student_m"></div>
+                      </div>
+                      <p class="view_tit">Student’s View</p>
+                    </li>
+                  </ul>
+                  <span class="arrow arr1"></span>
+                  <span class="arrow arr2"></span>
+                </div>
+                <button class="btn_info pop_call" pophref="#demo_tip">
+                  Demo Tips
+                </button>
+                <div class="popup_wrap" id="demo_tip">
+                  <div class="popup">
+                    <h4>Play the Demo Tips!</h4>
+                    <p>
+                      On top of the activities in the books, additional digital
+                      activities are available for students. These are made up
+                      of words, reading, Grammar, listening, and speaking
+                      activities.
+                    </p>
+                    <p>
+                      The Student Book, Workbook, video and audio files, and
+                      teaching resources are all included in the interactive
+                      books. The teacher can send questions to the students’
+                      devices, and students can write and check their answers in
+                      real time.
+                    </p>
+                    <button class="pop_close pop_close_btn">닫기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //container -->
+      <footer>
+        <div class="wrapper">
+          <div class="sitemap">
+            <ul>
+              <li>
+                <a href="../../html/explore/Explore_1.html">EXPLORE</a>
+                <ul>
+                  <li>
+                    <a href="../../html/explore/Explore_1.html">Features</a>
+                  </li>
+                  <li><a href="../../html/explore/Explore_2.html">Wings</a></li>
+                  <li><a href="../../html/explore/Explore_3.html">ELiF</a></li>
+                  <li>
+                    <a href="../../html/explore/Explore_play.html"
+                      >Play the Demo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../html/pricing/pricing.html">PRICING</a>
+                <ul>
+                  <li>
+                    <a href="../../html/pricing/pricing.html#price01"
+                      >Get Started Free</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../html/pricing/pricing.html#price02"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../html/pricing/pricing.html#price03">v-Cash</a>
+                  </li>
+                  <li>
+                    <a href="../../html/pricing/pricing.html#price04"
+                      >Voucher</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../html/resources/News_1.html">RESOURCES</a>
+                <ul>
+                  <li><a href="../../html/resources/News_1.html">News</a></li>
+                  <li>
+                    <a href="../../html/resources/VideoGuide_1.html"
+                      >Videos & Guides</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../html/resources/Resellers_1.html"
+                      >Resellers</a
+                    >
+                  </li>
+                  <li><a href="../../html/resources/Faq_1.html">FAQ</a></li>
+                  <li>
+                    <a href="../../html/resources/Contact_1.html">Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/company/Aboutus.html">COMPANY</a>
+                <ul>
+                  <li>
+                    <a href="../../html/company/Aboutus.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="../../html/company/Policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="../../html/company/Terms.html"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_info">
+            <p class="btm_logo">
+              <img src="../../images/ico/ico_btm_logo.png" alt="VISANG" />
+            </p>
+            <p class="copy">
+              COPYRIGHT © VISANG EDUCATION INC. <br />ALL RIGHTS RESERVED
+            </p>
+            <div class="sns">
+              <strong>FOLLOW US</strong>
+              <a
+                href="https://www.facebook.com/visangeducation"
+                target="_blank"
+                title="새창"
+                class="facebook"
+                >facebook</a
+              >
+              <a
+                href="https://www.linkedin.com/company/visang-education-inc-100220-/mycompany/"
+                target="_blank"
+                title="새창"
+                class="linkedin"
+                >linkedin</a
+              >
+              <a
+                href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL"
+                target="_blank"
+                title="새창"
+                class="youtube"
+                >youtube</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/base.common.js"></script>
+    <script src="./js/base.bundle.js"></script>
+    <script src="./js/demo.js"></script>
+    <script>
+      var my_o = {};
+      document.addEventListener("DOMContentLoaded", () => {
+        const demo_o = demo_init(
+          document.getElementById("teacher"),
+          document.getElementById("student")
+        );
+        const demo_o_ma = demo_init(
+          document.getElementById("teacherMA"),
+          document.getElementById("studentMA")
+        );
+
+        my_o.loadDiscover = function (
+          sbook_key,
+          sbook_spage,
+          sbook_epage,
+          wbook_key,
+          wbook_spage,
+          wbook_epage
+        ) {
+          demo_o.loadIBook(
+            `https://contents.fel40.com/content`,
+            { bookkey: sbook_key, spage: sbook_spage, epage: sbook_epage },
+            { bookkey: wbook_key, spage: wbook_spage, epage: wbook_epage },
+            "discover"
+          );
+        };
+        my_o.loadDiscoverMA = function (bookkey) {
+          demo_o_ma.loadIBook(
+            `https://contents.fel40.com/content`,
+            { bookkey },
+            undefined,
+            "discover"
+          );
+        };
+
+        // 2023-02 pc일 경우에만 실행하도록
+        if (document.body.clientWidth > 1200) {
+          my_o.loadDiscover(9972, 6, 15, 9973, 2, 9);
+          my_o.loadDiscoverMA(14261);
+        }
+
+        // 2023-02 모바일용 추가
+        const demo_o_mb = demo_init(
+          document.getElementById("teacher_m"),
+          document.getElementById("student_m")
+        );
+        my_o.loadMobile = function (
+          sbook_key,
+          sbook_spage,
+          sbook_epage,
+          wbook_key,
+          wbook_spage,
+          wbook_epage
+        ) {
+          demo_o_mb.loadIBook(
+            `https://contents.fel40.com/content`,
+            { bookkey: sbook_key, spage: sbook_spage, epage: sbook_epage },
+            { bookkey: wbook_key, spage: wbook_spage, epage: wbook_epage },
+            "discover"
+          );
+        };
+        my_o.loadMobileMA = function (bookkey) {
+          demo_o_mb.loadIBook(
+            `https://contents.fel40.com/content`,
+            { bookkey },
+            undefined,
+            "discover"
+          );
+        };
+      });
+    </script>
+  </body>
+</html>
