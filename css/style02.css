@@ -1886,13 +1886,16 @@
   height: 84%;
 }
 .playdm_wrap .mobile_wrap .demo_pop .ac_videolist.one .video_con > img {
-  height: 61.5vw;
-} /* 2023-11-07 */
+  height: auto;
+} /* 2023-11-21 */
 .playdm_wrap .mobile_wrap .demo_pop .ac_videolist.one .video_con > div {
   top: 9.5%;
-  left: 3%;
-  width: 94.3%;
-} /* 2023-11-07 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 85%;
+  height: 86%;
+} /* 2023-11-21 */
 .playdm_wrap .mobile_wrap .demo_pop .ac_con {
   position: relative;
 }
