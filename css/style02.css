@@ -4800,6 +4800,10 @@
   .playdm_wrap .mobile_wrap .demo_pop .ac_videolist > li + li {
     margin-top: 0;
   }
+  .playdm_wrap .mobile_wrap .demo_pop .ac_videolist.one .video_con {
+    width: 80%;
+    margin: 0 auto;
+  } /* 2023-11-21 */
   .playdm_wrap .mobile_wrap .demo_pop .video_con > img {
     height: 29.5vw;
   }
