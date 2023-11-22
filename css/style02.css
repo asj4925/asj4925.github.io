@@ -4795,9 +4795,8 @@
     height: 30vw;
   } /* 2023-11-21 */
   .playdm_wrap .mobile_wrap .demo_pop .ac_videolist.one .video_con > div {
-    left: 4.6%;
     width: 91%;
-    height: 84%;
+    height: 88%;
   } /* 2023-11-21 */
   .playdm_wrap .mobile_wrap .demo_pop .ac_videolist::after {
     display: none;
