@@ -4792,12 +4792,11 @@
     justify-content: center;
   } /* 2023-11-07 */
   .playdm_wrap .mobile_wrap .demo_pop .ac_videolist.one .video_con > img {
-    height: 29vw;
+    height: 28vw;
   } /* 2023-11-21 */
   .playdm_wrap .mobile_wrap .demo_pop .ac_videolist.one .video_con > div {
-    top: 15%;
+    top: 10%;
     left: 10.5%;
-    height:300%;
   } /* 2023-11-21 */
   .playdm_wrap .mobile_wrap .demo_pop .ac_videolist::after {
     display: none;
